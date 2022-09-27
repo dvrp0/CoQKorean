@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<genotypes>
+  <genotype ID="Mutated Human" MutationPoints="12" AllowedMutations="*" DisplayName="Mutated Human" BodyTypes="Humanoid" Kits="Kits" Class="ChargenManagerMutatedHuman" Code="b">
+    <startingstat Name="Strength" Minumum="10" Maximum="24"></startingstat>
+    <startingstat Name="Agility" Minumum="10" Maximum="24"></startingstat>
+    <startingstat Name="Toughness" Minumum="10" Maximum="24"></startingstat>
+    <startingstat Name="Intelligence" Minumum="10" Maximum="24"></startingstat>
+    <startingstat Name="Willpower" Minumum="10" Maximum="24"></startingstat>
+    <startingstat Name="Ego" Minumum="10" Maximum="24"></startingstat>
+    <chargendisplay></chargendisplay>
+  </genotype>
+
+  <genotype ID="True Kin" MutationPoints="0" AllowedMutations="" DisplayName="True Kin" BodyTypes="Humanoid" Kits="Castes" Class="ChargenManagerTrueKin" Code="a">
+    <startingstat Name="Strength" Minumum="12" Maximum="24"></startingstat>
+    <startingstat Name="Agility" Minumum="12" Maximum="24"></startingstat>
+    <startingstat Name="Toughness" Minumum="12" Maximum="24"></startingstat>
+    <startingstat Name="Intelligence" Minumum="12" Maximum="24"></startingstat>
+    <startingstat Name="Willpower" Minumum="12" Maximum="24"></startingstat>
+    <startingstat Name="Ego" Minumum="12" Maximum="24"></startingstat>
+    <chargendisplay></chargendisplay>
+  </genotype>
+</genotypes>

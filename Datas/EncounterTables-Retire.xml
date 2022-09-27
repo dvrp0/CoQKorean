@@ -1,0 +1,3848 @@
+<encountertables>
+
+  <!-- Weights
+
+  minimum // ~1  Use for very rare features
+  low     // ~10 Use for new tables
+  medium  // ~100 Use for standard features
+  high    // ~200 Use for overweight standard features
+  very high // ~400 Use for really overweight standard features
+  maximum // ~1000 Really high
+
+  -->
+
+  <!-- Density
+
+  minimum // no correlation
+  low     // 25x25
+  medium  // 15x15
+  high    // 10x10
+  very high // 5x5
+  maximum // all touching
+
+  -->
+
+  <!-- Amount
+
+  none    // only objects table
+  minimum // 1-2
+  low     // 2-4
+  medium  // 5-8
+  high    // 10-15
+  very high // 20-40
+  maximum // 80
+
+  -->
+
+  <encountertable Name="Ammo 1">
+    <objects>
+      <object Chance="114" Number="1" Blueprint="@Ammo 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 2">
+    <objects>
+      <object Chance="221" Number="1" Blueprint="@Ammo 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 3">
+    <objects>
+      <object Chance="122" Number="1" Blueprint="@Ammo 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 4">
+    <objects>
+      <object Chance="155" Number="1" Blueprint="@Ammo 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 5">
+    <objects>
+      <object Chance="146" Number="1" Blueprint="@Ammo 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 6">
+    <objects>
+      <object Chance="153" Number="1" Blueprint="@Ammo 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 7">
+    <objects>
+      <object Chance="154" Number="1" Blueprint="@Ammo 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Ammo 8">
+    <objects>
+      <object Chance="153" Number="1" Blueprint="@Ammo 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 1">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Armor 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 1C">
+    <objects>
+      <object Chance="288" Number="1" Blueprint="@Armor 1C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 1R">
+    <objects>
+      <object Chance="103" Number="1" Blueprint="@Armor 1R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 2">
+    <objects>
+      <object Chance="2" Number="1" Blueprint="@Armor 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 2C">
+    <objects>
+      <object Chance="111" Number="1" Blueprint="@Armor 2C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 2R">
+    <objects>
+      <object Chance="67" Number="1" Blueprint="@Armor 2R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 3">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Armor 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 3C">
+    <objects>
+      <object Chance="291" Number="1" Blueprint="@Armor 3C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 3R">
+    <objects>
+      <object Chance="211" Number="1" Blueprint="@Armor 3R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 4">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Armor 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 4C">
+    <objects>
+      <object Chance="106" Number="1" Blueprint="@Armor 4C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 4R">
+    <objects>
+      <object Chance="191" Number="1" Blueprint="@Armor 4R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 5">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Armor 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 5C">
+    <objects>
+      <object Chance="111" Number="1" Blueprint="@Armor 5C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 5R">
+    <objects>
+      <object Chance="154" Number="1" Blueprint="@Armor 5R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 6">
+    <objects>
+      <object Chance="2" Number="1" Blueprint="@Armor 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 6C">
+    <objects>
+      <object Chance="101" Number="1" Blueprint="@Armor 6C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 6R">
+    <objects>
+      <object Chance="160" Number="1" Blueprint="@Armor 6R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 7">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Armor 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 7C">
+    <objects>
+      <object Chance="121" Number="1" Blueprint="@Armor 7C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 7R">
+    <objects>
+      <object Chance="135" Number="1" Blueprint="@Armor 7R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 8">
+    <objects>
+      <object Chance="2" Number="1" Blueprint="@Armor 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 8C">
+    <objects>
+      <object Chance="120" Number="1" Blueprint="@Armor 8C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Armor 8R">
+    <objects>
+      <object Chance="136" Number="1" Blueprint="@Armor 8R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 0">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 0" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 0C">
+    <objects>
+      <object Chance="16" Number="1" Blueprint="@Artifact 0C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 0R">
+    <objects>
+      <object Chance="155" Number="1" Blueprint="@Artifact 0R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 1">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 1C">
+    <objects>
+      <object Chance="44" Number="1" Blueprint="@Artifact 1C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 1R">
+    <objects>
+      <object Chance="170" Number="1" Blueprint="@Artifact 1R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 2">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 2C">
+    <objects>
+      <object Chance="49" Number="1" Blueprint="@Artifact 2C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 2R">
+    <objects>
+      <object Chance="222" Number="1" Blueprint="@Artifact 2R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 3">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 3C">
+    <objects>
+      <object Chance="64" Number="1" Blueprint="@Artifact 3C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 3R">
+    <objects>
+      <object Chance="362" Number="1" Blueprint="@Artifact 3R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 4">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 4C">
+    <objects>
+      <object Chance="64" Number="1" Blueprint="@Artifact 4C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 4R">
+    <objects>
+      <object Chance="599" Number="1" Blueprint="@Artifact 4R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 5">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 5C">
+    <objects>
+      <object Chance="265" Number="1" Blueprint="@Artifact 5C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 5R">
+    <objects>
+      <object Chance="372" Number="1" Blueprint="@Artifact 5R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 6">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 6C">
+    <objects>
+      <object Chance="34" Number="1" Blueprint="@Artifact 6C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 6R">
+    <objects>
+      <object Chance="547" Number="1" Blueprint="@Artifact 6R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 7">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 7C">
+    <objects>
+      <object Chance="37" Number="1" Blueprint="@Artifact 7C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 7R">
+    <objects>
+      <object Chance="415" Number="1" Blueprint="@Artifact 7R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 8">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Artifact 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 8C">
+    <objects>
+      <object Chance="26" Number="1" Blueprint="@Artifact 8C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Artifact 8R">
+    <objects>
+      <object Chance="310" Number="1" Blueprint="@Artifact 8R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Books">
+    <objects>
+      <object Chance="374" Number="1" Blueprint="@Books" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 1">
+    <objects>
+      <object Chance="25" Number="1" Blueprint="@Cash 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 2">
+    <objects>
+      <object Chance="55" Number="1" Blueprint="@Cash 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 3">
+    <objects>
+      <object Chance="87" Number="1" Blueprint="@Cash 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 4">
+    <objects>
+      <object Chance="121" Number="1" Blueprint="@Cash 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 5">
+    <objects>
+      <object Chance="144" Number="1" Blueprint="@Cash 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 6">
+    <objects>
+      <object Chance="186" Number="1" Blueprint="@Cash 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 7">
+    <objects>
+      <object Chance="206" Number="1" Blueprint="@Cash 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cash 8">
+    <objects>
+      <object Chance="225" Number="1" Blueprint="@Cash 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cells">
+    <objects>
+      <object Chance="130" Number="1" Blueprint="@Cells" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 1">
+    <objects>
+      <object Chance="73" Number="1" Blueprint="@Food 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 2">
+    <objects>
+      <object Chance="123" Number="1" Blueprint="@Food 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 3">
+    <objects>
+      <object Chance="123" Number="1" Blueprint="@Food 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 4">
+    <objects>
+      <object Chance="72" Number="1" Blueprint="@Food 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 5">
+    <objects>
+      <object Chance="118" Number="1" Blueprint="@Food 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 6">
+    <objects>
+      <object Chance="118" Number="1" Blueprint="@Food 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 7">
+    <objects>
+      <object Chance="118" Number="1" Blueprint="@Food 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Food 8">
+    <objects>
+      <object Chance="118" Number="1" Blueprint="@Food 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Gemstones">
+    <objects>
+      <object Chance="108" Number="1" Blueprint="@Gemstones" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Injectors">
+    <objects>
+      <object Chance="451" Number="1" Blueprint="@Injectors" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 0">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Junk 0" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 0C">
+    <objects>
+      <object Chance="325" Number="1" Blueprint="@Junk 0C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 0R">
+    <objects>
+      <object Chance="180" Number="1" Blueprint="@Junk 0R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 1">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Junk 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 1C">
+    <objects>
+      <object Chance="326" Number="1" Blueprint="@Junk 1C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 1R">
+    <objects>
+      <object Chance="181" Number="1" Blueprint="@Junk 1R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 2">
+    <objects>
+      <object Chance="105" Number="1" Blueprint="@Junk 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 2C">
+    <objects>
+      <object Chance="327" Number="1" Blueprint="@Junk 2C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 2R">
+    <objects>
+      <object Chance="182" Number="1" Blueprint="@Junk 2R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 3">
+    <objects>
+      <object Chance="105" Number="1" Blueprint="@Junk 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 3C">
+    <objects>
+      <object Chance="367" Number="1" Blueprint="@Junk 3C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 3R">
+    <objects>
+      <object Chance="202" Number="1" Blueprint="@Junk 3R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 4">
+    <objects>
+      <object Chance="105" Number="1" Blueprint="@Junk 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 4C">
+    <objects>
+      <object Chance="367" Number="1" Blueprint="@Junk 4C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 4R">
+    <objects>
+      <object Chance="242" Number="1" Blueprint="@Junk 4R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 5">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Junk 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 5C">
+    <objects>
+      <object Chance="367" Number="1" Blueprint="@Junk 5C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 5R">
+    <objects>
+      <object Chance="202" Number="1" Blueprint="@Junk 5R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 6">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Junk 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 6C">
+    <objects>
+      <object Chance="367" Number="1" Blueprint="@Junk 6C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 6R">
+    <objects>
+      <object Chance="202" Number="1" Blueprint="@Junk 6R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 7">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Junk 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 7C">
+    <objects>
+      <object Chance="367" Number="1" Blueprint="@Junk 7C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 7R">
+    <objects>
+      <object Chance="202" Number="1" Blueprint="@Junk 7R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 8">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Junk 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 8C">
+    <objects>
+      <object Chance="366" Number="1" Blueprint="@Junk 8C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Junk 8R">
+    <objects>
+      <object Chance="201" Number="1" Blueprint="@Junk 8R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 1">
+    <objects>
+      <object Chance="97" Number="1" Blueprint="@Meds 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 2">
+    <objects>
+      <object Chance="82" Number="1" Blueprint="@Meds 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 3">
+    <objects>
+      <object Chance="77" Number="1" Blueprint="@Meds 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 4">
+    <objects>
+      <object Chance="562" Number="1" Blueprint="@Meds 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 5">
+    <objects>
+      <object Chance="562" Number="1" Blueprint="@Meds 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 6">
+    <objects>
+      <object Chance="562" Number="1" Blueprint="@Meds 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 7">
+    <objects>
+      <object Chance="572" Number="1" Blueprint="@Meds 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Meds 8">
+    <objects>
+      <object Chance="571" Number="1" Blueprint="@Meds 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="MedScrap">
+    <objects>
+      <object Chance="238" Number="1" Blueprint="@MedScrap" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="MegaMeds">
+    <objects>
+      <object Chance="11" Number="1" Blueprint="@MegaMeds" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 1">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 1C">
+    <objects>
+      <object Chance="231" Number="1" Blueprint="@Melee Weapons 1C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 1R">
+    <objects>
+      <object Chance="161" Number="1" Blueprint="@Melee Weapons 1R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 2">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 2C">
+    <objects>
+      <object Chance="121" Number="1" Blueprint="@Melee Weapons 2C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 2R">
+    <objects>
+      <object Chance="181" Number="1" Blueprint="@Melee Weapons 2R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 3">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 3C">
+    <objects>
+      <object Chance="101" Number="1" Blueprint="@Melee Weapons 3C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 3R">
+    <objects>
+      <object Chance="151" Number="1" Blueprint="@Melee Weapons 3R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 4">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 4C">
+    <objects>
+      <object Chance="101" Number="1" Blueprint="@Melee Weapons 4C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 4R">
+    <objects>
+      <object Chance="246" Number="1" Blueprint="@Melee Weapons 4R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 5">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 5C">
+    <objects>
+      <object Chance="101" Number="1" Blueprint="@Melee Weapons 5C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 5R">
+    <objects>
+      <object Chance="236" Number="1" Blueprint="@Melee Weapons 5R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 6">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 6C">
+    <objects>
+      <object Chance="81" Number="1" Blueprint="@Melee Weapons 6C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 6R">
+    <objects>
+      <object Chance="151" Number="1" Blueprint="@Melee Weapons 6R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 7">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 7C">
+    <objects>
+      <object Chance="101" Number="1" Blueprint="@Melee Weapons 7C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 7R">
+    <objects>
+      <object Chance="166" Number="1" Blueprint="@Melee Weapons 7R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 8">
+    <objects>
+      <object Chance="96" Number="1" Blueprint="@Melee Weapons 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 8C">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="@Melee Weapons 8C" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Melee Weapons 8R">
+    <objects>
+      <object Chance="160" Number="1" Blueprint="@Melee Weapons 8R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 1">
+    <objects>
+      <object Chance="20" Number="1" Blueprint="@Missile 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 2">
+    <objects>
+      <object Chance="34" Number="1" Blueprint="@Missile 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 3">
+    <objects>
+      <object Chance="130" Number="1" Blueprint="@Missile 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 4">
+    <objects>
+      <object Chance="107" Number="1" Blueprint="@Missile 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 5">
+    <objects>
+      <object Chance="45" Number="1" Blueprint="@Missile 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 6">
+    <objects>
+      <object Chance="27" Number="1" Blueprint="@Missile 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 7">
+    <objects>
+      <object Chance="16" Number="1" Blueprint="@Missile 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Missile 8">
+    <objects>
+      <object Chance="15" Number="1" Blueprint="@Missile 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 1">
+    <objects>
+      <object Chance="221" Number="1" Blueprint="@Scrap 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 1R">
+    <objects>
+      <object Chance="6" Number="1" Blueprint="@Scrap 1R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 2">
+    <objects>
+      <object Chance="251" Number="1" Blueprint="@Scrap 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 2R">
+    <objects>
+      <object Chance="11" Number="1" Blueprint="@Scrap 2R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 3">
+    <objects>
+      <object Chance="251" Number="1" Blueprint="@Scrap 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 3R">
+    <objects>
+      <object Chance="16" Number="1" Blueprint="@Scrap 3R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 4">
+    <objects>
+      <object Chance="251" Number="1" Blueprint="@Scrap 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 4R">
+    <objects>
+      <object Chance="22" Number="1" Blueprint="@Scrap 4R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 5">
+    <objects>
+      <object Chance="251" Number="1" Blueprint="@Scrap 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 5R">
+    <objects>
+      <object Chance="22" Number="1" Blueprint="@Scrap 5R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 6">
+    <objects>
+      <object Chance="251" Number="1" Blueprint="@Scrap 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 6R">
+    <objects>
+      <object Chance="22" Number="1" Blueprint="@Scrap 6R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 7">
+    <objects>
+      <object Chance="251" Number="1" Blueprint="@Scrap 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 7R">
+    <objects>
+      <object Chance="22" Number="1" Blueprint="@Scrap 7R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 8">
+    <objects>
+      <object Chance="245" Number="1" Blueprint="@Scrap 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Scrap 8R">
+    <objects>
+      <object Chance="21" Number="1" Blueprint="@Scrap 8R" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="SpecialChestShoes">
+    <objects>
+      <object Chance="245" Number="1" Blueprint="@SpecialChestShoes" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 1">
+    <objects>
+      <object Chance="142" Number="1" Blueprint="@Trinkets 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 2">
+    <objects>
+      <object Chance="143" Number="1" Blueprint="@Trinkets 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 3">
+    <objects>
+      <object Chance="143" Number="1" Blueprint="@Trinkets 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 4">
+    <objects>
+      <object Chance="143" Number="1" Blueprint="@Trinkets 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 5">
+    <objects>
+      <object Chance="143" Number="1" Blueprint="@Trinkets 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 6">
+    <objects>
+      <object Chance="143" Number="1" Blueprint="@Trinkets 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 7">
+    <objects>
+      <object Chance="142" Number="1" Blueprint="@Trinkets 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Trinkets 8">
+    <objects>
+      <object Chance="142" Number="1" Blueprint="@Trinkets 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 1">
+    <objects>
+      <object Chance="46" Number="1" Blueprint="@Utility 1" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 2">
+    <objects>
+      <object Chance="67" Number="1" Blueprint="@Utility 2" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 3">
+    <objects>
+      <object Chance="104" Number="1" Blueprint="@Utility 3" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 4">
+    <objects>
+      <object Chance="24" Number="1" Blueprint="@Utility 4" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 5">
+    <objects>
+      <object Chance="23" Number="1" Blueprint="@Utility 5" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 6">
+    <objects>
+      <object Chance="23" Number="1" Blueprint="@Utility 6" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 7">
+    <objects>
+      <object Chance="23" Number="1" Blueprint="@Utility 7" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Utility 8">
+    <objects>
+      <object Chance="23" Number="1" Blueprint="@Utility 8" />
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 1" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest1"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 2" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest2"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 3" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest3"></object>
+    </objects>
+  </encountertable>
+  
+  <encountertable Name="Chest 4" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest4"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 5" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest5"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 6" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest6"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 7" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest7"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Chest 8" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Chest8"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 1" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest1"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 2" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest2"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 3" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest3"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 4" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest4"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 5" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest5"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 6" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest6"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 7" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest7"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rare Chest 8" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rare Chest8"></object>
+    </objects>
+  </encountertable>
+
+  <!-- Terrain Tables -->
+
+  <encountertable Name="Pilgrims">
+    <objects>
+      <object Chance="75" Number="1" Blueprint="Mechanimist Pilgrim"></object>
+      <object Chance="25" Number="1" Blueprint="Mechanimist Convert Pilgrim"></object>
+      <object Chance="10" Number="1" Blueprint="Slynth Wanderer"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="JoppaOutskirtsEncounters" Density="minimum">
+    <objects>
+      <object Chance="2" Number="1d1" Blueprint="Croc"></object>
+      <object Chance="25" Number="1d2" Blueprint="Glowpad" Aquatic="true"></object>
+      <object Chance="25" Number="1d2" Blueprint="Glowfish" Aquatic="true"></object>
+      <object Chance="25" Number="1d2" Blueprint="GiantDragonfly"></object>
+      <object Chance="35" Number="1d2" Blueprint="WatervineFarmerJoppa"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+  </encountertable>
+
+
+  <encountertable Name="Watervine" Density="minimum">
+
+    <objects>
+      <tableobject Chance="90" Table="PlainsVegitation"></tableobject>
+      <tableobject Chance="90" Table="WatervineEncounters"></tableobject>
+      <tableobject Chance="5" Table="Junk 1"></tableobject>
+      <builderobject Chance="5" Builder="StairsDown"></builderobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="WatervineVegitation" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="WatervineEncounters" Density="medium">
+    <objects>
+      <object Chance="50" Number="1d1" Blueprint="Croc"></object>
+      <object Chance="75" Number="2d6" Blueprint="Glowpad" Aquatic="true"></object>
+      <object Chance="75" Number="2d4" Blueprint="Glowfish" Aquatic="true"></object>
+      <object Chance="50" Number="2d6" Blueprint="GiantDragonfly"></object>
+      <tableobject Chance="5" Table="Snapjaws1"></tableobject>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="WatervineVegitation" Density="minimum">
+
+    <objects>
+      <object Chance="0" Number="2d6" Blueprint="BrackishWaterPuddle"></object>
+      <object Chance="0" Number="1d4" Blueprint="FreshWaterPuddle"></object>
+      <object Chance="100" Number="8d6" Blueprint="Watervine"></object>
+      <object Chance="100" Number="5d6" Blueprint="Brinestalk"></object>
+    </objects>
+
+    <mergetables>
+
+    </mergetables>
+
+  </encountertable>
+
+
+
+  <encountertable Name="Water" Density="minimum">
+
+    <objects>
+      <tableobject Chance="90" Table="WaterVegitation"></tableobject>
+      <tableobject Chance="90" Table="WaterEncounters"></tableobject>
+      <builderobject Chance="1" Builder="StairsDown"></builderobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="WaterVegitation" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="WaterEncounters" Density="medium">
+    <objects>
+      <object Chance="50" Number="1d1" Blueprint="Croc"></object>
+      <object Chance="75" Number="2d6" Blueprint="Madpole" Aquatic="true"></object>
+      <object Chance="75" Number="2d6" Blueprint="Glowpad" Aquatic="true"></object>
+      <object Chance="75" Number="2d4" Blueprint="Glowfish" Aquatic="true"></object>
+      <object Chance="50" Number="2d6" Blueprint="GiantDragonfly"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="WaterVegitation" Density="minimum">
+
+    <objects>
+      <object Chance="95" Number="4d6" Blueprint="Swarmshade Tree"></object>
+      <object Chance="95" Number="4d6" Blueprint="Tanglewood Tree"></object>
+      <object Chance="95" Number="4d6" Blueprint="Shimscale Mangrove Tree"></object>
+      <object Chance="15" Number="1d3" Blueprint="Starapple Tree"></object>
+      <object Chance="0" Number="2d6" Blueprint="BrackishWaterPuddle"></object>
+      <object Chance="0" Number="1d4" Blueprint="FreshWaterPuddle"></object>
+      <object Chance="100" Number="4d6" Blueprint="Watervine"></object>
+      <object Chance="100" Number="5d6" Blueprint="Brinestalk"></object>
+    </objects>
+
+    <mergetables>
+
+    </mergetables>
+
+  </encountertable>
+
+  <!-- .Salt Desert -->
+  <encountertable Name="SaltDesert" Density="minimum">
+    <objects>
+      <object Chance="1" Number="1" Blueprint="Saltwurm"></object>
+      <object Chance="10" Number="1d4" Blueprint="Dawnglider"></object>
+      <tableobject Chance="10" Table="DesertRaiders"></tableobject>
+      <tableobject Chance="5" Table="Overland Encounters"></tableobject>
+      <tableobject Chance="3" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="DesertRaiders" Density="minimum">
+    <objects>
+      <object Chance="90" Number="2d4" Blueprint="Desert Raider"></object>
+      <object Chance="50" Number="1d2" Blueprint="Desert Raider Rifleman"></object>
+      <object Chance="5" Number="1d4" Blueprint="Desert Raider Rifleman"></object>
+    </objects>
+  </encountertable>
+
+
+  <!-- .Wastes -->
+  <encountertable Name="Wastes" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <tableobject Chance="25" Table="Overland Encounters"></tableobject>
+      <tableobject Chance="95" Table="WastesAnimals"></tableobject>
+      <tableobject Chance="10" Table="Snapjaws1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="WastesAnimals" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="WastesAnimals" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d4" Blueprint="Qudzu" LivesOnWalls="true"></object>
+      <object Chance="5" Number="1d4" Blueprint="Jilted Lover" LivesOnWalls="true"></object>
+      <object Chance="15" Number="1d1" Blueprint="Young Ivory"></object>
+      <object Chance="5" Number="1d4" Blueprint="Seed-Spitting Vine" LivesOnWalls="true"></object>
+      <object Chance="10" Number="1d4" Blueprint="Dog"></object>
+      <object Chance="10" Number="1d2" Blueprint="Boar"></object>
+      <object Chance="10" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="10" Number="2d4" Blueprint="Salamander"></object>
+      <object Chance="10" Number="1d3" Blueprint="IrritableTortoise"></object>
+      <object Chance="10" Number="1d1" Blueprint="Salthopper"></object>
+      <object Chance="10" Number="2d6" Blueprint="Equimax"></object>
+      <object Chance="10" Number="2d6" Blueprint="Glowcrow"></object>
+      <object Chance="25" Number="2d6" Blueprint="GiantDragonfly"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="WastesAnimals" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+ 
+
+  <!-- .Plains -->
+  <encountertable Name="Plains" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <tableobject Chance="25" Table="Overland Encounters"></tableobject>
+      <tableobject Chance="95" Table="PlainsVegitation"></tableobject>
+      <tableobject Chance="95" Table="PlainsAnimals"></tableobject>
+      <tableobject Chance="10" Table="Snapjaws1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="PlainsVegitation" Weight="high"></mergetable>
+      <mergetable Table="PlainsAnimals" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="PlainsAnimals" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d4" Blueprint="Qudzu" LivesOnWalls="true"></object>
+      <object Chance="5" Number="1d4" Blueprint="Jilted Lover" LivesOnWalls="true"></object>
+      <object Chance="15" Number="1d1" Blueprint="Young Ivory"></object>
+      <object Chance="5" Number="1d4" Blueprint="Seed-Spitting Vine" LivesOnWalls="true"></object>
+      <object Chance="10" Number="1d4" Blueprint="Dog"></object>
+      <object Chance="10" Number="1d2" Blueprint="Boar"></object>
+      <object Chance="10" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="5" Number="1" Blueprint="Two-Headed Boar"></object>
+      <object Chance="10" Number="1d3" Blueprint="IrritableTortoise"></object>
+      <object Chance="10" Number="2d4" Blueprint="Salamander"></object>
+      <object Chance="10" Number="1d1" Blueprint="Salthopper"></object>
+      <object Chance="10" Number="2d6" Blueprint="Equimax"></object>
+      <object Chance="10" Number="2d6" Blueprint="Glowcrow"></object>
+      <object Chance="25" Number="2d6" Blueprint="GiantDragonfly"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="PlainsVegitation" Weight="high"></mergetable>
+      <mergetable Table="PlainsAnimals" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <!-- Vault Robots -->
+
+  <encountertable Name="Vault Robots" Density="minimum">
+    <objects>
+      <object Chance="15" Number="1d1" Blueprint="RifleTurret"></object>
+      <object Chance="15" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="15" Number="1d1" Blueprint="SecurityTurret"></object>
+    </objects>
+  </encountertable> 
+
+  <encountertable Name="Bones" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="3d6" Blueprint="Bones"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Torchposts" Density="minimum">
+
+    <objects>
+      <builderobject Chance="100" Builder="Torchposts"></builderobject>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="FreshPools" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="FreshWaterPool"></object>
+    </objects>
+
+  </encountertable>
+
+  <!-- Ruins -->
+
+
+    <encountertable Name="Ruin Creatures 1" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d2" Blueprint="Boar"></object>
+      <object Chance="5" Number="1d4" Blueprint="Salamander"></object>
+      <object Chance="10" Number="1d6" Blueprint="GiantDragonfly"></object>
+      <object Chance="5" Number="1d1" Blueprint="Albino ape"></object>
+      <object Chance="5" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="5" Number="1d1" Blueprint="Electrofuge"></object>
+      <object Chance="3" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="15" Number="1d2" Blueprint="Bloated Leech"></object>
+      <object Chance="15" Number="1d1" Blueprint="Honey Skunk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Novice of the Sightless Way 2"></object>
+      <object Chance="5" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="15" Number="1d2" Blueprint="RifleTurret"></object>
+      <tableobject Chance="1" Table="Snapjaws1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+    <encountertable Name="Ruin Creatures 2" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d2" Blueprint="Two-Headed Boar"></object>
+      <object Chance="5" Number="1d4" Blueprint="Salamander"></object>
+      <object Chance="10" Number="1d6" Blueprint="GiantDragonfly"></object>
+      <object Chance="5" Number="1d1" Blueprint="Albino ape"></object>
+      <object Chance="5" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="15" Number="1d1" Blueprint="Electrofuge"></object>
+      <object Chance="8" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="5" Number="1d2" Blueprint="Bloated Leech"></object>
+      <object Chance="5" Number="1d1" Blueprint="Honey Skunk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Novice of the Sightless Way 2"></object>
+      <object Chance="5" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="15" Number="1d2" Blueprint="RifleTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <tableobject Chance="5" Table="Goatfolk 1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+
+    <encountertable Name="Ruin Creatures 3" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d1" Blueprint="Two-Headed Slugsnout"></object>
+      <object Chance="5" Number="1d3" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d3" Blueprint="Worker ant"></object>
+      <object Chance="1" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="5" Number="1d2" Blueprint="GiantDragonfly"></object>
+      <object Chance="5" Number="1d1" Blueprint="Albino ape"></object>
+      <object Chance="5" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="10" Number="1d2" Blueprint="Leech"></object>
+      <object Chance="15" Number="1d2" Blueprint="Electrofuge"></object>
+      <object Chance="10" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="1" Number="1d1" Blueprint="Honey Skunk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Novice of the Sightless Way 2"></object>
+      <object Chance="5" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="10" Number="1d1" Blueprint="Traipsing Mortar"></object>
+      <object Chance="1" Number="1d1" Blueprint="Normality Bot"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="25" Number="1d6" Blueprint="Giant Beetle"></object>
+      <object Chance="15" Number="1d2" Blueprint="RifleTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="1" Number="1d1" Blueprint="LaserTurret"></object>
+      <tableobject Chance="5" Table="Goatfolk 1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+
+    <encountertable Name="Ruin Creatures 4" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d1" Blueprint="Two-Headed Slugsnout"></object>
+      <object Chance="5" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d3" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d3" Blueprint="Worker ant"></object>
+      <object Chance="1" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="15" Number="1d1" Blueprint="Drillbot"></object>
+      <object Chance="15" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="1" Number="1d1" Blueprint="Novice of the Sightless Way 3"></object>
+      <object Chance="5" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="15" Number="1d6" Blueprint="Glow Wight"></object>
+      <object Chance="20" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="5" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="15" Number="1d1" Blueprint="Electrofuge"></object>
+      <object Chance="10" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="10" Number="1d1" Blueprint="Traipsing Mortar"></object>
+      <object Chance="1" Number="1d1" Blueprint="Normality Bot"></object>
+      <object Chance="15" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="15" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="15" Number="1d2" Blueprint="RifleTurret"></object>
+      <object Chance="25" Number="1d6" Blueprint="Giant Beetle"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="1" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="1" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+      <object Chance="10" Number="1d1" Blueprint="Mercurial"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+  </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="Ruin Creatures 5" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d1" Blueprint="Two-Headed Slugsnout"></object>
+      <object Chance="5" Number="1d3" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d3" Blueprint="Worker ant"></object>
+      <object Chance="1" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="15" Number="1d1" Blueprint="Worm of the Earth"></object>
+      <object Chance="15" Number="1d2" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="15" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="10" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d2" Blueprint="WidgetRobot"></object>
+      <object Chance="10" Number="1d1" Blueprint="Traipsing Mortar"></object>
+      <object Chance="1" Number="1d1" Blueprint="Normality Bot"></object>
+      <object Chance="15" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="10" Number="1d2" Blueprint="Sawhander"></object>
+      <object Chance="15" Number="1d2" Blueprint="ChaingunTurret"></object>
+      <object Chance="25" Number="1d6" Blueprint="Giant Beetle"></object>
+      <object Chance="10" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="1" Number="1d1" Blueprint="Leering Stalker"></object>
+      <object Chance="5" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+      <object Chance="10" Number="1d1" Blueprint="Mercurial"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Ruin Creatures 6" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d1" Blueprint="Two-Headed Slugsnout"></object>
+      <object Chance="5" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d3" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d3" Blueprint="Worker ant"></object>
+      <object Chance="1" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="15" Number="1d1" Blueprint="Worm of the Earth"></object>
+      <object Chance="15" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="10" Number="1d1" Blueprint="Ogre Ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="10" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="10" Number="1d1" Blueprint="Traipsing Mortar"></object>
+      <object Chance="1" Number="1d1" Blueprint="Normality Bot"></object>
+      <object Chance="10" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="15" Number="1d4" Blueprint="Sawhander"></object>
+      <object Chance="15" Number="1d2" Blueprint="ChaingunTurret"></object>
+      <object Chance="25" Number="1d6" Blueprint="Giant Beetle"></object>
+      <object Chance="10" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="1" Number="1d1" Blueprint="Leering Stalker"></object>
+      <object Chance="15" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+      <object Chance="10" Number="1d1" Blueprint="Mercurial"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="Ruin Creatures 7" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d3" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d3" Blueprint="Worker ant"></object>
+      <object Chance="1" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="25" Number="1d1" Blueprint="Worm of the Earth"></object>
+      <object Chance="20" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d1" Blueprint="Ogre Ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="20" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="10" Number="1d1" Blueprint="Traipsing Mortar"></object>
+      <object Chance="1" Number="1d1" Blueprint="Normality Bot"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="15" Number="1d4" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="10" Number="1d1" Blueprint="Leering Stalker"></object>
+      <object Chance="15" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+      <object Chance="10" Number="1d4" Blueprint="Mercurial"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Ruin Creatures 8" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d3" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d3" Blueprint="Worker ant"></object>
+      <object Chance="1" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="35" Number="1d1" Blueprint="Worm of the Earth"></object>
+      <object Chance="20" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d1" Blueprint="Ogre Ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="20" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="10" Number="1d1" Blueprint="Traipsing Mortar"></object>
+      <object Chance="2" Number="1d3" Blueprint="Normality Bot"></object>
+      <object Chance="20" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="15" Number="1d4" Blueprint="Sawhander"></object>
+      <object Chance="15" Number="1d2" Blueprint="ChaingunTurret"></object>
+      <object Chance="10" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="20" Number="1d1" Blueprint="Leering Stalker"></object>
+      <object Chance="15" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+      <object Chance="10" Number="1d4" Blueprint="Mercurial"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+  </encountertable>
+
+  <!-- .FungalJungle -->
+  <encountertable Name="FungalJungle" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <tableobject Chance="100" Table="FungalAnimals"></tableobject>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="FungalAnimals" Weight="high"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="FungalAnimals" Density="minimum">
+    <objects>
+      <object Chance="75" Number="1d2" Blueprint="FungusPuffer1"></object>
+      <object Chance="75" Number="1d2" Blueprint="FungusPuffer2"></object>
+      <object Chance="75" Number="1d2" Blueprint="FungusPuffer3"></object>
+      <object Chance="75" Number="1d2" Blueprint="FungusPuffer4"></object>
+    </objects>
+  </encountertable>
+
+  <!-- .Jungle -->
+  <encountertable Name="Jungle" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <tableobject Chance="25" Table="Overland Encounters"></tableobject>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <builderobject Chance="5" Builder="JungleRuins"></builderobject>
+      <tableobject Chance="100" Table="JungleVegitation"></tableobject>
+      <tableobject Chance="95" Table="JungleAnimals1"></tableobject>
+      <tableobject Chance="25" Table="Naphtaali1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>      
+    </objects>
+
+    <mergetables>
+      <mergetable Table="Naphtaali1" Weight="medium"></mergetable>
+      <mergetable Table="Goatfolk 1" Weight="medium"></mergetable>
+      <mergetable Table="JungleVegitation" Weight="high"></mergetable>
+      <mergetable Table="JungleAnimals1" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Junk 2" Weight="low"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="JungleAnimals1" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d2" Blueprint="Boar"></object>
+      <object Chance="5" Number="1d4" Blueprint="Salamander"></object>
+      <object Chance="10" Number="1d6" Blueprint="GiantDragonfly"></object>
+      <object Chance="10" Number="1d4" Blueprint="Ice frog"></object>
+      <object Chance="15" Number="1d4" Blueprint="Albino ape"></object>
+      <object Chance="5" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="10" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d6" Blueprint="Leech"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="15" Number="1d2" Blueprint="Bloated Leech"></object>
+      <object Chance="15" Number="1d2" Blueprint="Honey Skunk"></object>
+      <object Chance="1" Number="1d3" Blueprint="Novice of the Sightless Way 2"></object>
+      <object Chance="1" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="5" Number="1d3" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="JungleAnimals2" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d2" Blueprint="Boar"></object>
+      <object Chance="5" Number="1d4" Blueprint="Salamander"></object>
+      <object Chance="10" Number="1d6" Blueprint="GiantDragonfly"></object>
+      <object Chance="10" Number="1d4" Blueprint="Ice frog"></object>
+      <object Chance="15" Number="1d4" Blueprint="Albino ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d6" Blueprint="Leech"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="5" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="20" Number="1d2" Blueprint="Honey Skunk"></object>
+      <object Chance="10" Number="1d2" Blueprint="Bloated Leech"></object>
+      <object Chance="1" Number="1d3" Blueprint="Novice of the Sightless Way 2"></object>
+      <object Chance="2" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="5" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="JungleAnimals3" Density="minimum">
+
+    <objects>
+      <object Chance="5" Number="1d2" Blueprint="Boar"></object>
+      <object Chance="5" Number="1d4" Blueprint="Salamander"></object>
+      <object Chance="15" Number="1d6" Blueprint="GiantDragonfly"></object>
+      <object Chance="15" Number="1d4" Blueprint="Ice frog"></object>
+      <object Chance="15" Number="1d4" Blueprint="Albino ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="15" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d6" Blueprint="Leech"></object>
+      <object Chance="15" Number="1d2" Blueprint="Bloated Leech"></object>
+      <object Chance="1" Number="1d3" Blueprint="Novice of the Sightless Way 2"></object>
+      <object Chance="5" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="20" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="JungleAnimals4" Density="minimum">
+
+    <objects>
+      <object Chance="15" Number="1d2" Blueprint="Barkbiter"></object>
+      <object Chance="25" Number="1d4" Blueprint="Giant Beetle"></object>
+      <object Chance="15" Number="1d2" Blueprint="Quillipede"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="15" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="10" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="15" Number="1d2" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="15" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+  </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="JungleAnimals5" Density="minimum">
+
+    <objects>
+      <object Chance="15" Number="1d2" Blueprint="Barkbiter"></object>
+      <object Chance="15" Number="1d2" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="10" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="10" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d2" Blueprint="WidgetRobot"></object>
+      <object Chance="15" Number="1d4" Blueprint="Giant Beetle"></object>
+      <object Chance="15" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="JungleAnimals6" Density="minimum">
+
+    <objects>
+      <object Chance="35" Number="1d3" Blueprint="Barkbiter"></object>
+      <object Chance="15" Number="1d3" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d3" Blueprint="Albino ape"></object>
+      <object Chance="5" Number="1d1" Blueprint="Ogre Ape"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="10" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="15" Number="1d4" Blueprint="Giant Beetle"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="JungleAnimals7" Density="minimum">
+
+    <objects>
+      <object Chance="15" Number="1d4" Blueprint="Barkbiter"></object>
+      <object Chance="15" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d4" Blueprint="Albino ape"></object>
+      <object Chance="15" Number="1d2" Blueprint="Ogre Ape"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="10" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="10" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="15" Number="1d4" Blueprint="Giant Beetle"></object>
+      <object Chance="10" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+
+  <encountertable Name="JungleAnimals8" Density="minimum">
+
+    <objects>
+      <object Chance="45" Number="1d4" Blueprint="Barkbiter"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="25" Number="1d3" Blueprint="Ogre Ape"></object>
+      <object Chance="20" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="20" Number="1d4" Blueprint="WidgetRobot"></object>
+      <object Chance="20" Number="1d1" Blueprint="Chitinous Puma"></object>
+      <object Chance="5" Number="1d3" Blueprint="Yonderbrush"></object>
+      <tableobject Chance="20" Table="Goatfolk 1"></tableobject>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="JungleVegitation" Density="minimum">
+
+    <objects>
+      <object Chance="95" Number="25d6" Blueprint="Swarmshade Tree"></object>
+      <object Chance="95" Number="25d6" Blueprint="Tanglewood Tree"></object>
+      <object Chance="95" Number="10d6" Blueprint="Shimscale Mangrove Tree"></object>
+      <object Chance="15" Number="1d3" Blueprint="Starapple Tree"></object>
+    </objects>
+
+  </encountertable>
+
+  <!-- .Desert Canyon -->
+  <encountertable Name="DesertCanyon" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <tableobject Chance="25" Table="Overland Encounters"></tableobject>
+      <tableobject Chance="95" Table="PlainsVegitation"></tableobject>
+      <tableobject Chance="95" Table="PlainsAnimals"></tableobject>
+      <builderobject Chance="5" Builder="StairsDown"></builderobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="PlainsVegitation" Weight="high"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="PlainsVegitation" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="3d6" Blueprint="Dogthorn Tree"></object>
+      <object Chance="25" Number="1d4" Blueprint="Witchwood Tree"></object>
+      <object Chance="5" Number="1d4" Blueprint="Starapple Tree"></object>
+    </objects>
+
+    <mergetables>
+
+    </mergetables>
+
+  </encountertable>
+  <!-- End TerrainDesertCanyon -->
+
+  <!-- .Hills -->
+  <encountertable Name="Hills" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <tableobject Chance="95" Table="PlainsVegitation"></tableobject>
+      <tableobject Chance="25" Table="Overland Encounters"></tableobject>
+      <tableobject Chance="95" Table="HillsAnimals"></tableobject>
+      <builderobject Chance="5" Builder="StairsDown"></builderobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="PlainsVegitation" Weight="high"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="HillsAnimals" Density="minimum">
+
+    <objects>
+      <object Chance="50" Number="2d6" Blueprint="Goat"></object>
+      <object Chance="35" Number="1d3" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="50" Number="1d2" Blueprint="Honey Skunk"></object>
+      <object Chance="25" Number="1d4" Blueprint="Dog"></object>
+      <object Chance="25" Number="1d4" Blueprint="Boar"></object>
+      <object Chance="15" Number="1" Blueprint="Two-Headed Boar"></object>
+      <object Chance="25" Number="1d3" Blueprint="IrritableTortoise"></object>
+      <object Chance="25" Number="1d4" Blueprint="Salamander"></object>
+      <object Chance="25" Number="1d4" Blueprint="Cannibal"></object>
+      <object Chance="10" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="25" Number="2d4" Blueprint="Leech"></object>
+      <object Chance="25" Number="1d2" Blueprint="Bloated Leech"></object>
+      <object Chance="15" Number="1d2" Blueprint="Novice of the Sightless Way 2"></object>
+      <tableobject Chance="5" Table="Snapjaws1"></tableobject>
+      <tableobject Chance="35" Table="Baboons1"></tableobject>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+
+  <!-- .Mountains -->
+  <encountertable Name="Mountains" Density="minimum">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <tableobject Chance="95" Table="PlainsVegitation"></tableobject>
+      <tableobject Chance="25" Table="Overland Encounters"></tableobject>
+      <tableobject Chance="95" Table="MountainAnimals"></tableobject>
+      <builderobject Chance="5" Builder="StairsDown"></builderobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="PlainsVegitation" Weight="high"></mergetable>
+      <mergetable Table="Snapjaws2" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="MountainAnimals" Density="minimum">
+
+    <objects>
+      <object Chance="50" Number="3d6" Blueprint="Goat"></object>
+      <object Chance="25" Number="1d4" Blueprint="Cannibal"></object>
+      <object Chance="25" Number="1d4" Blueprint="Dog"></object>
+      <object Chance="3" Number="1d3" Blueprint="Novice of the Sightless Way 2"></object>
+      <tableobject Chance="5" Table="Snapjaws2"></tableobject>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+
+  <!-- .Tremble -->
+  <encountertable Name="TrembleSurface" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="TrembleEarthquakes"></object>
+      <object Chance="5" Number="1" Blueprint="GiantAmoeba"></object>
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <tableobject Chance="25" Table="Cave Critters 1"></tableobject>
+      <object Chance="25" Number="1d2" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="medium"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="TrembleDungeon" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="TrembleEarthquakes"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="1d1" Blueprint="Graftek"></object>
+      <object Chance="50" Number="1d1" Blueprint="Graftek"></object>
+      <object Chance="100" Number="2d4+1" Blueprint="Mindrone"></object>
+      <object Chance="90" Number="1d3" Blueprint="Bat"></object>
+      <object Chance="90" Number="1d3" Blueprint="Dog"></object>
+      <object Chance="45" Number="1" Blueprint="GiantAmoeba"></object>
+      <object Chance="95" Number="1" Blueprint="Bear"></object>
+      <object Chance="100" Number="1d2+1" Blueprint="Skittering Sentry"></object>
+      <object Chance="100" Number="1d1" Blueprint="RifleTurret"></object>
+      <object Chance="60" Number="1d1" Blueprint="RifleTurret"></object>
+      <object Chance="30" Number="1d1" Blueprint="RifleTurret"></object>
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="45" Number="1d2" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="100" Table="Cave Critters 1"></tableobject>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="medium"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Redrock -->
+
+  <encountertable Name="Redrock Surface" Density="medium">
+    <objects>
+      <object Chance="100" Number="1" Blueprint="Dirty"></object>
+      <tableobject Chance="100" Table="PlainsVegitation"></tableobject>
+      <object Chance="100" Number="1" Blueprint="Finish_ExploringRedrock_TravelToRedrock"></object>
+      <object Chance="100" Number="1d3" Blueprint="Goat"></object>
+    <!-- <object Chance="50" Number="1d2" Blueprint="Ray Cat"></object>-->
+      <tableobject Chance="35" Table="Baboons1"></tableobject>
+      <tableobject Chance="3" Table="Pilgrims"></tableobject>
+      <object Chance="5" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Redrock 1" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="80" Number="1d4" Blueprint="Bat"></object>
+      <object Chance="15" Number="1" Blueprint="Bear"></object>
+      <object Chance="5" Number="1" Blueprint="GiantAmoeba"></object>
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <!-- <object Chance="50" Number="1d2" Blueprint="Ray Cat"></object>-->
+      <tableobject Chance="25" Table="Snapjaws0"></tableobject>
+      <tableobject Chance="25" Table="Cave Critters 1"></tableobject>
+      <object Chance="25" Number="1d2" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+      <tableobject Chance="2" Table="Pilgrims"></tableobject>
+      <object Chance="5" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="medium"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Redrock 2" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="50" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="5" Number="1" Blueprint="Albino ape"></object>
+      <object Chance="25" Number="1" Blueprint="GiantAmoeba"></object>
+      <!-- <object Chance="50" Number="1d2" Blueprint="Ray Cat"></object>-->
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <tableobject Chance="75" Table="Snapjaws0"></tableobject>
+      <object Chance="100" Number="2d4" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="high"></mergetable>
+      <mergetable Table="Cave Critters 2" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Junk 2" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Redrock 3" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="50" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="100" Number="1d3" Blueprint="Knollworm"></object>
+      <object Chance="50" Number="1" Blueprint="Albino ape"></object>
+      <!-- <object Chance="50" Number="1d2" Blueprint="Ray Cat"></object>-->
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="25" Number="1" Blueprint="GiantAmoeba"></object>
+      <object Chance="100" Number="2d4" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="high"></mergetable>
+      <mergetable Table="Cave Critters 2" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Junk 2" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Redrock 4" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="2d3" Blueprint="Knollworm"></object>
+      <object Chance="100" Number="1d2" Blueprint="Plated Knollworm"></object>
+      <!-- <object Chance="50" Number="1d2" Blueprint="Ray Cat"></object>-->
+      <object Chance="100" Number="2d2" Blueprint="Eyeless Crab"></object>
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="50" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="25" Number="1" Blueprint="Albino ape"></object>
+      <object Chance="25" Number="1" Blueprint="Quillipede"></object>
+      <object Chance="25" Number="1" Blueprint="GiantAmoeba"></object>
+      <object Chance="100" Number="2d4" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="high"></mergetable>
+      <mergetable Table="Cave Critters 2" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Junk 2" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Redrock 5" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="2d3" Blueprint="Knollworm"></object>
+      <object Chance="100" Number="1d2" Blueprint="Plated Knollworm"></object>
+      <object Chance="100" Number="2d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="100" Number="1d1" Blueprint="CaverCorpse"></object>
+      <object Chance="50" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="25" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="25" Number="1" Blueprint="Albino ape"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="25" Number="1" Blueprint="GiantAmoeba"></object>
+      <object Chance="100" Number="2d4" Blueprint="Giant Centipede"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="high"></mergetable>
+      <mergetable Table="Cave Critters 2" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Junk 2" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Redrock 6" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="2d4" Blueprint="RedrockGirshling"></object>
+      <object Chance="100" Number="1d1" Blueprint="RedrockZealot"></object>
+      <object Chance="100" Number="3d6" Blueprint="Gnawed Watervine"></object>
+      <tableobject Chance="100" Table="Junk 2"></tableobject>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+
+  <!-- End Redrock -->
+
+  <!-- Omonporch -->
+
+  <encountertable Name="Banana Grove" Density="minimum">
+     <objects>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <object Chance="75" Number="2-8" Blueprint="Adiyy"></object>
+      <object Chance="75" Number="3-12" Blueprint="Yonderbrush"></object>
+      <object Chance="75" Number="12d8" Blueprint="Banana Tree"></object>
+      <object Chance="75" Number="12-20" Blueprint="Irritable Palm"></object>
+      <object Chance="75" Number="2-6" Blueprint="Cyclopean Gibbon"></object>
+       <tableobject Chance="1" Table="Pilgrims"></tableobject>
+       <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+
+  <encountertable Name="Omonporch, Surface" Density="minimum">
+     <objects>
+      <object Chance="100" Number="1d1" Blueprint="Finish_Ripe_TravelToOmonporch"></object>
+      <object Chance="100" Number="1d1" Blueprint="OmonporchGrove"></object>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <object Chance="75" Number="2-8" Blueprint="Adiyy"></object>
+      <object Chance="75" Number="3-12" Blueprint="Yonderbrush"></object>
+       <object Chance="100" Number="4d6" Blueprint="Red Death Dacca"></object>
+      <object Chance="100" Number="36d8" Blueprint="Banana Tree"></object>
+      <object Chance="100" Number="12d6" Blueprint="Irritable Palm"></object>
+      <object Chance="75" Number="2-6" Blueprint="Cyclopean Gibbon"></object>
+       <tableobject Chance="1" Table="Pilgrims"></tableobject>
+       <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <!-- End Omonporch -->  
+
+  <!-- .Rusted Archway -->
+
+  <encountertable Name="Rusted Archway Encounters 1" Density="minimum">
+    <objects>
+      <object Chance="75" Number="1d4" Blueprint="Boar"></object>
+      <object Chance="50" Number="1d3" Blueprint="Giant Centipede"></object>
+      <object Chance="50" Number="1d1" Blueprint="Two-Headed Boar"></object>
+      <object Chance="50" Number="1d1" Blueprint="Honey Skunk"></object>
+      <object Chance="35" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="50" Number="1d1" Blueprint="Scrap-clad Hermit"></object>
+      <object Chance="100" Number="1d6" Blueprint="Prickler"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rusted Archway Encounters 2" Density="minimum">
+    <objects>
+      <object Chance="25" Number="2d4" Blueprint="Boar"></object>
+      <object Chance="50" Number="1d6" Blueprint="Giant Centipede"></object>
+      <object Chance="50" Number="1d2" Blueprint="Two-Headed Boar"></object>
+      <object Chance="50" Number="1d2" Blueprint="Fire Snout"></object>
+      <object Chance="50" Number="1d2" Blueprint="Honey Skunk"></object>
+      <object Chance="75" Number="1d3" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="100" Number="1d6" Blueprint="Prickler"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rusted Archway Surface" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1d4" Blueprint="IrritableTortoise"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="Rusted Archway Encounters 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Rusted Archway 1" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <tableobject Chance="5" Table="Grit Gate 1"></tableobject>
+      <tableobject Chance="50" Table="Chest 2"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="low"></mergetable>
+      <mergetable Table="Rusted Archway Encounters 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Rusted Archway 2" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <tableobject Chance="100" Table="Rare Chest 3"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Rusted Archway Encounters 2" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Grit Gate -->
+
+  <encountertable Name="Grit Gate" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="AmbientLight"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Grit Gate Surface" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1d1" Blueprint="Finish_TravelToGritgate"></object>
+      <object Chance="100" Number="1d1" Blueprint="Finish_TravelToGritgate3"></object>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <tableobject Chance="95" Table="JungleVegitation"></tableobject>
+      <object Chance="15" Number="1" Blueprint="Bear"></object>
+      <object Chance="25" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="25" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="25" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="25" Number="1d2" Blueprint="Quillipede"></object>
+      <object Chance="25" Number="1" Blueprint="Electrofuge"></object>
+      <object Chance="3" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1" Blueprint="Slugsnout"></object>
+      <object Chance="25" Number="1d4" Blueprint="GiantAmoeba"></object>
+      <object Chance="25" Number="1d4" Blueprint="Segmented Mirthworm"></object>
+      <object Chance="50" Number="1" Blueprint="Eyeless Crab"></object>
+      <object Chance="100" Number="2d2" Blueprint="Waydroid"></object>
+      <object Chance="75" Number="1d8" Blueprint="Spark Tick"></object>
+      <object Chance="10" Number="1d1" Blueprint="Novice of the Sightless Way 2"></object>
+      <tableobject Chance="2" Table="Pilgrims"></tableobject>
+      <object Chance="2" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="Grit Gate 1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Features" Weight="very low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Grit Gate 1" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="15" Number="1" Blueprint="Bear"></object>
+      <object Chance="100" Number="1d4" Blueprint="Giant Centipede"></object>
+      <object Chance="10" Number="1d1" Blueprint="Albino ape"></object>
+      <object Chance="3" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="25" Number="1d1" Blueprint="Hide-Sheathed Hermit"></object>
+      <object Chance="25" Number="1" Blueprint="Electrofuge"></object>
+      <object Chance="3" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="25" Number="1" Blueprint="Slugsnout"></object>
+      <object Chance="25" Number="1d1" Blueprint="GiantAmoeba"></object>
+      <object Chance="25" Number="1d2" Blueprint="Segmented Mirthworm"></object>
+      <object Chance="35" Number="1d1" Blueprint="Eyeless Crab"></object>
+      <object Chance="100" Number="1d2" Blueprint="Waydroid"></object>
+      <object Chance="50" Number="1d4" Blueprint="Spark Tick"></object>
+      <object Chance="10" Number="1d1" Blueprint="Novice of the Sightless Way 2"></object>
+      <tableobject Chance="35" Table="Chest 2"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Grit Gate 1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Features" Weight="very low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Bethesda Susa  -->
+
+  <encountertable Name="Bethesda Susa Surface" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1d6" Blueprint="Dogthorn Tree"></object>
+      <object Chance="15" Number="1d3" Blueprint="Starapple Tree"></object>
+      <object Chance="100" Number="1d6" Blueprint="Witchwood Tree"></object>
+      <tableobject Chance="95" Table="JungleVegitation"></tableobject>
+
+      <object Chance="100" Number="1d4+1" Blueprint="Cragmensch Brainer"></object>
+      <object Chance="50" Number="1d1" Blueprint="Cragmensch Luminary"></object>
+      <object Chance="100" Number="1d2+1" Blueprint="Cragmensch Boulderer"></object>
+
+      <object Chance="35" Number="1d1" Blueprint="Psyberneticist"></object>
+      <object Chance="25" Number="1d3" Blueprint="Glow-Wight Cultist of Bethsaida"></object>
+      <object Chance="10" Number="1d3" Blueprint="Voider"></object>
+      <object Chance="10" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Juicing Cannibal"></object>
+      <object Chance="5" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="25" Number="1d1" Blueprint="Mechnamist rummager"></object>
+      <object Chance="25" Number="1d1" Blueprint="Disciple of the Sightless Way"></object>
+      <object Chance="25" Number="1d1" Blueprint="Two-Headed Slugsnout"></object>
+      <object Chance="25" Number="1d1" Blueprint="Barkbiter"></object>
+      <object Chance="25" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="5" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Rimewyk"></object>
+      <tableobject Chance="2" Table="Pilgrims"></tableobject>
+      <object Chance="2" Number="1d1" Blueprint="SultanShrine"></object>
+      <tableobject Chance="35" Table="Chest 3"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Wharf" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="4d4" Blueprint="Garbage"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+
+      <object Chance="100" Number="1d4+1" Blueprint="Cragmensch Brainer"></object>
+      <object Chance="50" Number="1d1" Blueprint="Cragmensch Luminary"></object>
+      <object Chance="100" Number="1d2+1" Blueprint="Cragmensch Boulderer"></object>
+
+      <object Chance="80" Number="1d2" Blueprint="Cloneling"></object>
+      <object Chance="5" Number="1d2" Blueprint="Eyeless King Crab"></object>
+      <object Chance="5" Number="1d1" Blueprint="Twinning Lamprey"></object>
+      <object Chance="80" Number="1d1" Blueprint="Psyberneticist"></object>
+      <object Chance="80" Number="1d4" Blueprint="Glow-Wight Cultist of Bethsaida"></object>
+      <object Chance="25" Number="1d4" Blueprint="Voider"></object>
+      <object Chance="80" Number="1d2" Blueprint="Blue Jel"></object>
+      <object Chance="25" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Juicing Cannibal"></object>
+      <object Chance="5" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="55" Number="1d3" Blueprint="Lurking Beth"></object>
+      <object Chance="25" Number="1d1" Blueprint="Drowsing Urchin"></object>
+      <object Chance="25" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d1" Blueprint="Snailmother"></object>
+      <object Chance="5" Number="1d1" Blueprint="PlastronoidSwarm"></object>
+      <object Chance="1" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="80" Number="1d4" Blueprint="Mechnamist rummager"></object>
+      <object Chance="80" Number="1d1" Blueprint="Disciple of the Sightless Way"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="5" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Rimewyk"></object>
+
+      <tableobject Chance="35" Table="Chest 3"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Wharf Light" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="4d4" Blueprint="Garbage"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+
+      <object Chance="5" Number="1d1" Blueprint="Cragmensch Brainer"></object>
+      <object Chance="1" Number="1d1" Blueprint="Cragmensch Luminary"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cragmensch Boulderer"></object>
+
+      <object Chance="10" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="2" Number="1d2" Blueprint="Eyeless King Crab"></object>
+      <object Chance="2" Number="1d1" Blueprint="Twinning Lamprey"></object>
+      <object Chance="10" Number="1d1" Blueprint="Psyberneticist"></object>
+      <object Chance="10" Number="1d1" Blueprint="Glow-Wight Cultist of Bethsaida"></object>
+      <object Chance="15" Number="1d1" Blueprint="Voider"></object>
+      <object Chance="20" Number="1d1" Blueprint="Blue Jel"></object>
+      <object Chance="15" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Juicing Cannibal"></object>
+      <object Chance="5" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="15" Number="1d1" Blueprint="Lurking Beth"></object>
+      <object Chance="15" Number="1d1" Blueprint="Drowsing Urchin"></object>
+      <object Chance="15" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d1" Blueprint="Snailmother"></object>
+      <object Chance="5" Number="1d1" Blueprint="PlastronoidSwarm"></object>
+      <object Chance="1" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="10" Number="1d1" Blueprint="Mechnamist rummager"></object>
+      <object Chance="10" Number="1d1" Blueprint="Disciple of the Sightless Way"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="5" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Rimewyk"></object>
+
+      <tableobject Chance="35" Table="Chest 3"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Wards" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="4d4" Blueprint="Garbage"></object>
+      <object Chance="25" Number="1d1" Blueprint="SparkingBaetyl"></object>
+      <object Chance="25" Number="1d1" Blueprint="SparkingBaetyl"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+
+      <object Chance="100" Number="1d4+1" Blueprint="Cragmensch Brainer"></object>
+      <object Chance="50" Number="1d1" Blueprint="Cragmensch Luminary"></object>
+      <object Chance="100" Number="1d2+1" Blueprint="Cragmensch Boulderer"></object>
+
+      <object Chance="80" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="80" Number="1d2" Blueprint="Eyeless King Crab"></object>
+      <object Chance="25" Number="1d1" Blueprint="Twinning Lamprey"></object>
+      <object Chance="80" Number="1d1" Blueprint="Psyberneticist"></object>
+      <object Chance="80" Number="1d4" Blueprint="Glow-Wight Cultist of Bethsaida"></object>
+      <object Chance="25" Number="1d4" Blueprint="Voider"></object>
+      <object Chance="80" Number="1d2" Blueprint="Blue Jel"></object>
+      <object Chance="25" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="25" Number="1d1" Blueprint="Juicing Cannibal"></object>
+      <object Chance="25" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="25" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="55" Number="1d3" Blueprint="Lurking Beth"></object>
+      <object Chance="80" Number="3d4" Blueprint="Drowsing Urchin"></object>
+      <object Chance="25" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="25" Number="1d1" Blueprint="Snailmother"></object>
+      <object Chance="80" Number="1d1" Blueprint="PlastronoidSwarm"></object>
+      <object Chance="1" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="80" Number="1d4" Blueprint="Mechnamist rummager"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="5" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Rimewyk"></object>
+
+      <tableobject Chance="35" Table="Chest 3"></tableobject>
+
+      <population Chance="100" Number="1d8" Table="DynamicSemanticTable:Medical:{zonetier}:{zonetier}" />
+      <population Chance="80" Number="1d4" Table="DynamicSemanticTable:Professional:{zonetier}:3" />
+      <population Chance="10" Number="1d3" Table="DynamicSemanticTable:Torture:{zonetier}:{zonetier}" />
+      <population Chance="10" Number="1d2" Table="DynamicSemanticTable:Child:{zonetier}:{zonetier}" />
+      <population Chance="10" Number="1d3" Table="DynamicSemanticTable:Normality:{zonetier}:{zonetier}" />
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Ruined Wards" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="4d4" Blueprint="Garbage"></object>
+      <object Chance="25" Number="1d1" Blueprint="SparkingBaetyl"></object>
+      <object Chance="25" Number="1d1" Blueprint="SparkingBaetyl"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+
+      <object Chance="95" Number="1d2" Blueprint="Cloneling"></object>
+      <object Chance="80" Number="1d2" Blueprint="Eyeless King Crab"></object>
+      <object Chance="50" Number="1d1" Blueprint="Twinning Lamprey"></object>
+      <object Chance="25" Number="1d4" Blueprint="Voider"></object>
+      <object Chance="80" Number="1d2" Blueprint="Blue Jel"></object>
+      <object Chance="25" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="25" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="25" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="100" Number="3d4" Blueprint="Lurking Beth"></object>
+      <object Chance="80" Number="3d4" Blueprint="Drowsing Urchin"></object>
+      <object Chance="25" Number="1d1" Blueprint="Snailmother"></object>
+      <object Chance="80" Number="1d1" Blueprint="PlastronoidSwarm"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="25" Number="1d2" Blueprint="ChaingunTurret"></object>
+      <object Chance="25" Number="1d2" Blueprint="LaserTurret"></object>
+      <object Chance="30" Number="1d2" Blueprint="Gyrohumor"></object>
+      <object Chance="30" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="30" Number="1d2" Blueprint="Rimewyk"></object>
+      <object Chance="75" Number="1d3" Blueprint="Boosterbot"></object>
+
+      <tableobject Chance="35" Table="Chest 3"></tableobject>
+
+      <population Chance="80" Number="1d8" Table="DynamicSemanticTable:Medical:{zonetier}:{zonetier}" />
+      <population Chance="60" Number="1d4" Table="DynamicSemanticTable:Professional:{zonetier}:3" />
+      <population Chance="5" Number="1d3" Table="DynamicSemanticTable:Torture:{zonetier}:{zonetier}" />
+      <population Chance="5" Number="1d2" Table="DynamicSemanticTable:Child:{zonetier}:{zonetier}" />
+      <population Chance="5" Number="1d3" Table="DynamicSemanticTable:Normality:{zonetier}:{zonetier}" />
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Ward 18" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="100" Number="1d3+1" Blueprint="Gyrohumor"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Cryobarrio1" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="4d4" Blueprint="Garbage"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="5" Number="1d1" Blueprint="Eyeless King Crab"></object>
+      <object Chance="5" Number="1d1" Blueprint="Twinning Lamprey"></object>
+      <object Chance="5" Number="1d1" Blueprint="Psyberneticist"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glow-Wight Cultist of Bethsaida"></object>
+      <object Chance="5" Number="1d1" Blueprint="Voider"></object>
+      <object Chance="5" Number="1d1" Blueprint="Blue Jel"></object>
+      <object Chance="5" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Juicing Cannibal"></object>
+      <object Chance="5" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="5" Number="1d1" Blueprint="Lurking Beth"></object>
+      <object Chance="5" Number="1d1" Blueprint="Drowsing Urchin"></object>
+      <object Chance="5" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d1" Blueprint="Snailmother"></object>
+      <object Chance="5" Number="1d1" Blueprint="PlastronoidSwarm"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="Mechnamist rummager"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+
+      <tableobject Chance="15" Table="Rare Chest 4"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Cryobarrio2" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="4d4" Blueprint="Garbage"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+      <object Chance="100" Number="1d1" Blueprint="Missile Cannibal"></object>
+
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="5" Number="1d1" Blueprint="Eyeless King Crab"></object>
+      <object Chance="5" Number="1d1" Blueprint="Twinning Lamprey"></object>
+      <object Chance="5" Number="1d1" Blueprint="Psyberneticist"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glow-Wight Cultist of Bethsaida"></object>
+      <object Chance="5" Number="1d1" Blueprint="Voider"></object>
+      <object Chance="5" Number="1d1" Blueprint="Blue Jel"></object>
+      <object Chance="5" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Juicing Cannibal"></object>
+      <object Chance="5" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="5" Number="1d1" Blueprint="Sawhander"></object>
+      <object Chance="5" Number="1d1" Blueprint="Lurking Beth"></object>
+      <object Chance="5" Number="1d1" Blueprint="Drowsing Urchin"></object>
+      <object Chance="5" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+      <object Chance="5" Number="1d1" Blueprint="Snailmother"></object>
+      <object Chance="5" Number="1d1" Blueprint="PlastronoidSwarm"></object>
+      <object Chance="5" Number="1d1" Blueprint="RocketTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="Mechnamist rummager"></object>
+      <object Chance="1" Number="1d1" Blueprint="Molting Basilisk"></object>
+      <object Chance="1" Number="1d1" Blueprint="Gyrohumor"></object>
+      <object Chance="1" Number="1d1" Blueprint="Rimewyk"></object>
+
+      <tableobject Chance="15" Table="Rare Chest 4"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+
+
+  <encountertable Name="Bethesda Susa Pools 1" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="1d1" Blueprint="Troll King 1" Aquatic="true"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Pools 2" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="1d1" Blueprint="Troll King 2" Aquatic="true"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Bethesda Susa Pools 3" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="BlueTile"></object>
+      <object Chance="100" Number="1d1" Blueprint="Troll King 3" Aquatic="true"></object>
+      <object Chance="100" Number="1d1" Blueprint="BethesdaColdZone"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Asphalt Mines -->
+
+  <encountertable Name="Asphalt Mines 1" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="4d4" Blueprint="TarBones" Aquatic="true"></object>
+      <object Chance="100" Number="2d3" Blueprint="OilPuddle"></object>
+      <object Chance="100" Number="4d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="75" Number="2d4" Blueprint="Fire Snout"></object>
+      <object Chance="25" Number="1d4" Blueprint="Drillbot"></object>
+      <object Chance="50" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="25" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Eyeless King Crab"></object>
+      <object Chance="35" Number="1d1" Blueprint="Humor"></object>
+      <tableobject Chance="2" Table="Trolls1"></tableobject>
+      <tableobject Chance="20" Table="Junk 4"></tableobject>
+      <tableobject Chance="40" Table="Junk 3"></tableobject>
+      <tableobject Chance="80" Table="Junk 2"></tableobject>
+      <tableobject Chance="80" Table="Scrap 1"></tableobject>
+      <tableobject Chance="80" Table="Scrap 2"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Asphalt Mines 1b" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="1d1" Blueprint="CaverCorpse2"></object>
+      <object Chance="100" Number="2d3" Blueprint="OilPuddle"></object>
+      <object Chance="100" Number="4d4" Blueprint="TarBones" Aquatic="true"></object>
+      <object Chance="100" Number="4d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="75" Number="2d4" Blueprint="Fire Snout"></object>
+      <object Chance="25" Number="1d4" Blueprint="Drillbot"></object>
+      <object Chance="50" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="25" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d1" Blueprint="Eyeless King Crab"></object>
+      <object Chance="25" Number="1d1" Blueprint="Humor"></object>
+      <tableobject Chance="2" Table="Trolls1"></tableobject>
+      <tableobject Chance="20" Table="Junk 4"></tableobject>
+      <tableobject Chance="40" Table="Junk 3"></tableobject>
+      <tableobject Chance="80" Table="Junk 2"></tableobject>
+      <tableobject Chance="80" Table="Scrap 1"></tableobject>
+      <tableobject Chance="80" Table="Scrap 2"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Asphalt Mines 8" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="6d6" Blueprint="OilPuddle"></object>
+      <object Chance="100" Number="2d2" Blueprint="Fire ant"></object>
+      <object Chance="100" Number="2d2" Blueprint="Worker ant"></object>
+      <object Chance="100" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="100" Number="2d4" Blueprint="Great Magma Crab"></object>
+      <tableobject Chance="20" Table="Junk 7"></tableobject>
+      <tableobject Chance="40" Table="Junk 6"></tableobject>
+      <tableobject Chance="80" Table="Junk 5"></tableobject>
+      <tableobject Chance="80" Table="Scrap 1"></tableobject>
+      <tableobject Chance="80" Table="Scrap 2"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Golgotha -->
+
+
+  <encountertable Name="Golgotha Surface" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <tableobject Chance="95" Table="JungleVegitation"></tableobject>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1" Blueprint="Finish_MoreThanAWillingSpirit_TravelToGolgotha"></object>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="JungleAnimals1" Weight="medium"></mergetable>
+      <mergetable Table="Jungle" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Garbage Bots 1" Density="minimum">
+    <objects>
+      <object Chance="95" Number="1d2" Blueprint="Scrapbot"></object>
+      <object Chance="25" Number="1d2" Blueprint="Drillbot"></object>
+      <object Chance="95" Number="2d4" Blueprint="Garbage"></object>
+      <object Chance="15" Number="1d1" Blueprint="SecurityTurret"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Golgotha Creatures 1" Density="medium">
+    <objects>
+      <object Chance="75" Number="1d3" Blueprint="Brown Sludge"></object>
+      <object Chance="75" Number="1d3" Blueprint="Green Goo"></object>
+      <object Chance="75" Number="1d3" Blueprint="Black Jel"></object>
+      <object Chance="50" Number="1d3" Blueprint="Spark Tick"></object>
+      <object Chance="50" Number="1d3" Blueprint="Giant Beetle"></object>
+      <object Chance="50" Number="1d3" Blueprint="Agolmaggot"></object>
+      <object Chance="50" Number="1d1" Blueprint="Eyeless Crab"></object>
+      <object Chance="50" Number="1d1" Blueprint="Voider"></object>
+      <object Chance="25" Number="1d1" Blueprint="Girshling"></object>
+      <object Chance="25" Number="1d1" Blueprint="Agolfly"></object>
+      <object Chance="15" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="15" Number="1d1" Blueprint="Rustacean"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="1" Number="1d1" Blueprint="Agolzvuv"></object>
+      <object Chance="90" Number="1d6" Blueprint="AcidPool"></object>
+      <object Chance="90" Number="1d6" Blueprint="Dreadroot"></object>
+    </objects>
+  </encountertable>  
+
+  <encountertable Name="Golgotha 1" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Trashy"></object>
+      <object Chance="100" Number="1" Blueprint="Finish_MoreThanAWillingSpirit_TravelToGolgotha"></object>
+      <tableobject Chance="35" Table="Chest 2"></tableobject>
+      <tableobject Chance="1" Table="Grit Gate 1"></tableobject>
+      <tableobject Chance="75" Table="Agolgut Cultists 1"></tableobject>
+      <tableobject Chance="100" Table="Scrap 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Golgotha Creatures 1" Weight="medium"></mergetable>
+      <mergetable Table="Garbage Bots 1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Features" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Golgotha Scrapyard" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Trashy"></object>
+      <object Chance="100" Number="1" Blueprint="GolgothaSlog"></object>
+      <object Chance="100" Number="3" Blueprint="Scrapped Waydroid"></object>
+      <object Chance="100" Number="1" Blueprint="Finish_MoreThanAWillingSpirit_TravelToGolgotha"></object>
+      <tableobject Chance="100" Table="Golgotha Creatures 1"></tableobject>
+      <tableobject Chance="75" Table="Agolgut Cultists 1"></tableobject>
+      <tableobject Chance="100" Table="Rare Chest 3"></tableobject>
+      <tableobject Chance="100" Table="Scrap 1"></tableobject>
+      <tableobject Chance="100" Table="Scrap 2"></tableobject>
+      <tableobject Chance="100" Table="Scrap 3"></tableobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Rustwell -->
+
+  <encountertable Name="Rustwell Surface" Density="minimum">
+    <objects>
+      <object Chance="100" Number="1d4" Blueprint="Goat"></object>
+      <tableobject Chance="35" Table="Baboons1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Rustwell 1" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="4d4" Blueprint="Qudzu" LivesOnWalls="true"></object>
+      <object Chance="25" Number="1d4" Blueprint="Leech"></object>
+      <object Chance="5" Number="1d1" Blueprint="Bloated Leech"></object>
+      <object Chance="100" Number="1" Blueprint="Wire Strand 50"></object>
+      <object Chance="50" Number="1d2" Blueprint="Scrap-clad Hermit"></object>
+      <object Chance="25" Number="1" Blueprint="Wire Strand 20"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 10"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 3"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 1"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Rustwell 2" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="4d4" Blueprint="Qudzu" LivesOnWalls="true"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="15" Number="1" Blueprint="Bear"></object>
+      <object Chance="25" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="50" Number="1d2" Blueprint="Scrap-clad Hermit"></object>
+      <object Chance="25" Number="1" Blueprint="Electrofuge"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="15" Number="1" Blueprint="Slugsnout"></object>
+      <object Chance="25" Number="1d4" Blueprint="GiantAmoeba"></object>
+      <object Chance="25" Number="1d4" Blueprint="Segmented Mirthworm"></object>
+      <object Chance="50" Number="1" Blueprint="Eyeless Crab"></object>
+      <object Chance="75" Number="1d8" Blueprint="Spark Tick"></object>
+      <object Chance="100" Number="1" Blueprint="Wire Strand 50"></object>
+      <object Chance="25" Number="1" Blueprint="Wire Strand 20"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 10"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 3"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 1"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Rustwell 3" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="4d4" Blueprint="Qudzu" LivesOnWalls="true"></object>
+      <object Chance="75" Number="1d8" Blueprint="Spark Tick"></object>
+      <object Chance="50" Number="1d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="25" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="25" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="50" Number="1d2" Blueprint="Scrap-clad Hermit"></object>
+      <object Chance="25" Number="1d2" Blueprint="Rustacean"></object>
+      <object Chance="100" Number="1" Blueprint="Wire Strand 50"></object>
+      <object Chance="25" Number="1" Blueprint="Wire Strand 20"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 10"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 3"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 1"></object>
+      <tableobject Chance="35" Table="Chest 2"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Rustwell 4" Density="minimum">
+    <objects>
+      <object Chance="50" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="100" Number="4d4" Blueprint="Qudzu" LivesOnWalls="true"></object>
+      <object Chance="75" Number="1d8" Blueprint="Spark Tick"></object>
+      <object Chance="50" Number="1d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="50" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="50" Number="1d2" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="50" Number="1d2" Blueprint="Scrap-clad Hermit"></object>
+      <object Chance="50" Number="1d2" Blueprint="Rustacean"></object>
+      <object Chance="100" Number="1" Blueprint="Wire Strand 50"></object>
+      <object Chance="25" Number="1" Blueprint="Wire Strand 20"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 10"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 3"></object>
+      <object Chance="25" Number="1d4" Blueprint="Wire Strand 1"></object>
+      <object Chance="100" Number="1" Blueprint="Chest2"></object>
+      <tableobject Chance="75" Table="Chest 3"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Critters 1" Weight="high"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Trolls1" Weight="very low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Surface Ruins -->
+
+  <encountertable Name="Deathlands Creatures 1">
+    <objects>
+      <object Chance="15" Number="1d3" Blueprint="Glowmoth"></object>
+      <object Chance="15" Number="1d1" Blueprint="Agolzvuv"></object>
+      <object Chance="5" Number="1d1" Blueprint="Chrome Pyramid"></object>
+      <object Chance="15" Number="1d1" Blueprint="Leering Stalker"></object>
+      <object Chance="25" Number="1d4" Blueprint="Quillipede"></object>
+      <object Chance="5" Number="1d3" Blueprint="Scrapbot"></object>
+      <object Chance="5" Number="1d3" Blueprint="Waydroid"></object>
+      <object Chance="5" Number="1d4" Blueprint="Spitting Slug"></object>
+      <object Chance="5" Number="1d4" Blueprint="Electric Snail"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="15" Number="1d4" Blueprint="Sawhander"></object>
+      <object Chance="15" Number="1d2" Blueprint="ChaingunTurret"></object>
+      <object Chance="5" Number="1d1" Blueprint="LaserTurret"></object>
+      <object Chance="1" Number="1d1" Blueprint="Normality Bot"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Rubble">
+    <objects>
+      <object Chance="90" Number="3d6" Blueprint="Rubble"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Surface Ruins">
+    <objects>
+      <tableobject Chance="95" Table="JungleVegitation"></tableobject>
+      <tableobject Chance="95" Table="Rubble"></tableobject>
+      <object Chance="100" Number="1d1" Blueprint="Dirty"></object>
+      <tableobject Chance="98" Table="Ruin Creatures _"></tableobject>
+      <object Chance="25" Number="1d3" Blueprint="Table"></object>
+      <object Chance="25" Number="1d3" Blueprint="Metal Desk"></object>
+      <builderobject Chance="75" Builder="StairsDown"></builderobject>
+      <builderobject Chance="50" Builder="StairsDown"></builderobject>
+      <builderobject Chance="25" Builder="StairsDown"></builderobject>
+      <builderobject Chance="5" Builder="StairsDown"></builderobject>
+      <tableobject Chance="65" Table="Chest 1"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="Ruin Creatures 1" Weight="medium"></mergetable>
+      <mergetable Table="Junk 1" Weight="low"></mergetable>
+      <mergetable Table="Junk 2" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Surface Deathlands">
+    <objects>
+      <tableobject Chance="95" Table="Rubble"></tableobject>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <tableobject Chance="98" Table="Deathlands Creatures 1"></tableobject>
+      <object Chance="25" Number="1d3" Blueprint="Table"></object>
+      <object Chance="25" Number="1d3" Blueprint="Metal Desk"></object>
+      <builderobject Chance="75" Builder="StairsDown"></builderobject>
+      <builderobject Chance="50" Builder="StairsDown"></builderobject>
+      <builderobject Chance="25" Builder="StairsDown"></builderobject>
+      <builderobject Chance="5" Builder="StairsDown"></builderobject>
+      <tableobject Chance="65" Table="Chest 4"></tableobject>
+      <tableobject Chance="1" Table="Pilgrims"></tableobject>
+      <object Chance="1" Number="1d1" Blueprint="SultanShrine"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="Deathlands Creatures 1" Weight="medium"></mergetable>
+      <mergetable Table="Junk 4" Weight="low"></mergetable>
+      <mergetable Table="Junk 5" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+
+  <!-- .Cave -->
+
+
+  <encountertable Name="Cave Critters 1">
+    <objects>
+      <object Chance="95" Number="1d3" Blueprint="Bat"></object>
+      <object Chance="85" Number="1d3" Blueprint="Dog"></object>
+      <object Chance="5" Number="1d1" Blueprint="Bear"></object>
+      <object Chance="4" Number="1d1" Blueprint="Horned Chameleon"></object>
+      <object Chance="3" Number="1d1" Blueprint="Electrofuge"></object>
+      <object Chance="2" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="5" Number="1d4" Blueprint="GiantDragonfly"></object>
+      <object Chance="2" Number="1" Blueprint="Scrap-clad Hermit"></object>
+      <tableobject Chance="1" Table="Cave Critters 2"></tableobject>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cave Critters 2">
+    <objects>
+      <object Chance="45" Number="1d2" Blueprint="Cave Spider"></object>
+      <object Chance="90" Number="1d4" Blueprint="Bat"></object>
+      <object Chance="25" Number="1d4" Blueprint="Giant Centipede"></object>
+      <object Chance="25" Number="1d4" Blueprint="Cannibal"></object>
+      <object Chance="15" Number="1" Blueprint="Slugsnout"></object>
+      <object Chance="5" Number="1d1" Blueprint="Bear"></object>
+      <object Chance="5" Number="1d1" Blueprint="Electrofuge"></object>
+      <object Chance="5" Number="1" Blueprint="Slumberling"></object>
+      <object Chance="5" Number="1d2" Blueprint="Honey Skunk"></object>
+      <object Chance="5" Number="2d6" Blueprint="GiantDragonfly"></object>
+      <object Chance="5" Number="1d3" Blueprint="Glowmoth"></object>
+      <object Chance="5" Number="1d1" Blueprint="Salthopper"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="5" Number="1" Blueprint="Scrap-clad Hermit"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cave Critters 3">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+      <object Chance="10" Number="1d3" Blueprint="Drillbot"></object>
+      <object Chance="5" Number="1d3" Blueprint="Sawhander"></object>
+      <object Chance="1" Number="1d1" Blueprint="Cloneling"></object>
+      <object Chance="50" Number="1d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="25" Number="1d4" Blueprint="Eyeless Crab"></object>
+      <object Chance="15" Number="1d1" Blueprint="Eyeless King Crab"></object>
+      <object Chance="25" Number="1d1" Blueprint="Humor"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <object Chance="3" Number="1d1" Blueprint="Eyeless King Crab Hero"></object>
+      <object Chance="25" Number="1d2" Blueprint="Rustacean"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Cave Features">
+    <objects>
+      <object Chance="75" Number="2d3" Blueprint="Jilted Lover" LivesOnWalls="true"></object>
+      <object Chance="55" Number="1d3" Blueprint="Young Ivory"></object>
+      <object Chance="55" Number="1d3" Blueprint="Seed-Spitting Vine" LivesOnWalls="true"></object>
+      <object Chance="5" Number="1d1" Blueprint="Prickler"></object>
+      <object Chance="75" Number="2d4" Blueprint="Dreadroot"></object>
+      <object Chance="100" Number="1d2" Blueprint="SmallBoulder"></object>
+      <object Chance="25" Number="1d4" Blueprint="SaltyWaterPuddle"></object>
+      <object Chance="25" Number="1d2" Blueprint="BrackishWaterPuddle"></object>
+      <object Chance="5" Number="1d1" Blueprint="FreshWaterPuddle"></object>
+      <object Chance="10" Number="1d4" Blueprint="LargeBoulder"></object>
+      <object Chance="25" Number="1d1" Blueprint="Beetlebum"></object>
+      <object Chance="1" Number="1d6" Blueprint="Bones"></object>
+      <builderobject Chance="1" Builder="Waterlogged"></builderobject>
+      <builderobject Chance="1" Builder="SlimePools"></builderobject>
+    </objects>
+  </encountertable>
+
+  <!-- End Cave -->
+
+  <!-- .Slimes -->
+  <encountertable Name="Slimes 1">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="GiantAmoeba"></object>
+    </objects>
+    <mergetables>
+      <mergetable Table="Slimes 1" Weight="medium"></mergetable>
+      <mergetable Table="Slimy Features" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Slimepit 1" Density="high">
+    <objects>
+      <object Chance="100" Number="6d6" Blueprint="GiantAmoeba"></object>
+      <builderobject Chance="100" Builder="SlimePools"></builderobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Slimes 1" Weight="medium"></mergetable>
+      <mergetable Table="Slimy Features" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Slimy Features">
+    <objects>
+      <object Chance="100" Number="2d4" Blueprint="GiantAmoeba"></object>
+      <builderobject Chance="100" Builder="SlimePools"></builderobject>
+      <tableobject Chance="98" Table="Chest 2"></tableobject>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="Slimes 1" Weight="medium"></mergetable>
+      <mergetable Table="Slimepit 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Ooze Lair 1">
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="GiantAmoeba"></object>
+      <object Chance="70" Number="2d4" Blueprint="Giant Centipede"></object>
+      <object Chance="10" Number="1d2" Blueprint="Humor"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+      <builderobject Chance="100" Builder="SlimePools"></builderobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+      <mergetable Table="Slimes 1" Weight="medium"></mergetable>
+      <mergetable Table="Slimy Features" Weight="low"></mergetable>
+    </mergetables>
+  </encountertable>
+  <!-- End Slimes -->
+
+  <!--- Insects -->
+
+  <encountertable Name="Insect Lair 1">
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="Giant Centipede"></object>
+      <object Chance="70" Number="2d4" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="65" Number="1d1" Blueprint="Glowmoth"></object>
+      <object Chance="55" Number="1d2" Blueprint="Salthopper"></object>
+      <object Chance="30" Number="1d2" Blueprint="Electrofuge"></object>
+      <object Chance="10" Number="1d1" Blueprint="Quillipede"></object>
+      <object Chance="10" Number="1d4" Blueprint="Spark Tick"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!--- Insects -->
+
+  <encountertable Name="Plant Lair 1">
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="Giant Centipede"></object>
+      <object Chance="75" Number="2d4" Blueprint="Fire ant"></object>
+      <object Chance="5" Number="1d1" Blueprint="Fire Ant Queen"></object>
+      <object Chance="75" Number="2d4" Blueprint="Young Ivory"></object>
+      <object Chance="75" Number="2d4" Blueprint="Qudzu"></object>
+      <object Chance="75" Number="2d4" Blueprint="Jilted Lover"></object>
+      <object Chance="75" Number="2d4" Blueprint="Prickler"></object>
+      <object Chance="3" Number="1d3" Blueprint="Irritable Palm"></object>
+      <object Chance="3" Number="1d3" Blueprint="Red Death Dacca"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+      <builderobject Chance="100" Builder="Waterlogged"></builderobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!--- Insects -->
+
+  <encountertable Name="Worm Lair 1">
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="Knollworm"></object>
+      <object Chance="70" Number="1d2" Blueprint="Plated Knollworm"></object>
+      <object Chance="35" Number="1d6" Blueprint="Leech"></object>
+      <object Chance="25" Number="1d6" Blueprint="Bloated Leech"></object>
+      <object Chance="60" Number="2d6" Blueprint="Segmented Mirthworm"></object>
+      <object Chance="10" Number="1d1" Blueprint="Agolmaggot"></object>
+      <object Chance="15" Number="1" Blueprint="Slugsnout"></object>
+      <object Chance="10" Number="1d1" Blueprint="Spitting Slug"></object>
+      <object Chance="10" Number="1d1" Blueprint="Electric Snail"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!--- Reptiles -->
+
+  <encountertable Name="Reptile Lair 1">
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="Croc"></object>
+      <object Chance="70" Number="1d6" Blueprint="Salamander"></object>
+      <object Chance="5" Number="1d1" Blueprint="Dawnglider"></object>
+      <object Chance="65" Number="1d4" Blueprint="Horned Chameleon"></object>
+      <object Chance="55" Number="1d3" Blueprint="IrritableTortoise"></object>
+      <object Chance="30" Number="1d2" Blueprint="Ice frog"></object>
+      <object Chance="10" Number="1d4" Blueprint="Spark Tick"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+      <builderobject Chance="85" Builder="Waterlogged"></builderobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+
+  <!--- Crabs -->
+
+  <encountertable Name="Crab Lair 1">
+    <objects>
+      <object Chance="100" Number="1d6" Blueprint="Eyeless Crab"></object>
+      <object Chance="100" Number="1d6" Blueprint="Giant Centipede"></object>
+      <object Chance="65" Number="1d1" Blueprint="Rustacean"></object>
+      <object Chance="55" Number="1d2" Blueprint="Salthopper"></object>
+      <object Chance="5" Number="1d4" Blueprint="Eyeless King Crab"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+    </objects>
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+    </mergetables>
+  </encountertable>
+
+  <!-- .Naphtaalis -->
+
+  <encountertable Name="Naphtaali1" Density="high">
+
+    <objects>
+      <object Chance="75" Number="1d3" Blueprint="Naphtaali Forager"></object>
+      <object Chance="25" Number="1d3" Blueprint="Naphtaali Runt"></object>
+      <object Chance="25" Number="1d3" Blueprint="Naphtaali Blowgunner"></object>
+      <object Chance="25" Number="1d3" Blueprint="Naphtaali Stalker"></object>
+      <object Chance="15" Number="1d3" Blueprint="Chrome Idol"></object>
+      <object Chance="3" Number="1d1" Blueprint="Chrome Idol Hero 1"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="Naphtaali1" Weight="low"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <!-- .Baboons -->
+  <encountertable Name="Baboons1" Density="high">
+
+    <objects>
+      <object Chance="90" Number="4d6" Blueprint="Baboon"></object>
+      <object Chance="90" Number="1d3" Blueprint="Hulking Baboon"></object>
+      <object Chance="50" Number="1d1" Blueprint="Shrewd Baboon"></object>
+      <object Chance="5" Number="1d1" Blueprint="Baboon Hero 1"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Ape Lair 1" Density="high">
+
+    <objects>
+      <object Chance="100" Number="2d4" Blueprint="Baboon"></object>
+      <object Chance="90" Number="1d2" Blueprint="Hulking Baboon"></object>
+      <object Chance="50" Number="1d1" Blueprint="Shrewd Baboon"></object>
+      <object Chance="5" Number="1d1" Blueprint="Baboon Hero 1"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="Caves 1" Weight="medium"></mergetable>
+      <mergetable Table="Cave Features" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Ape God Lair 1">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <object Chance="95" Number="2d4" Blueprint="FreshWaterPuddle"></object>
+      <object Chance="100" Number="2d4" Blueprint="Baboon"></object>
+      <object Chance="100" Number="1d2" Blueprint="Hulking Baboon"></object>
+      <object Chance="50" Number="1d1" Blueprint="Shrewd Baboon"></object>
+      <object Chance="5" Number="1d1" Blueprint="Baboon Hero 1"></object>
+      <object Chance="5" Number="1d1" Blueprint="Ogre Ape"></object>
+      <object Chance="5" Number="1d1" Blueprint="Cyclopean Gibbon"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+      <builderobject Chance="100" Builder="ApegodCave"></builderobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Ape God Lair 2">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <object Chance="95" Number="2d4" Blueprint="FreshWaterPuddle"></object>
+      <object Chance="100" Number="2d4" Blueprint="Albino ape"></object>
+      <object Chance="100" Number="1d2" Blueprint="Hulking Baboon"></object>
+      <object Chance="50" Number="1d1" Blueprint="Shrewd Baboon"></object>
+      <object Chance="15" Number="1d1" Blueprint="Ogre Ape"></object>
+      <object Chance="15" Number="1d1" Blueprint="Cyclopean Gibbon"></object>
+      <object Chance="5" Number="1d1" Blueprint="Baboon Hero 1"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+      <builderobject Chance="100" Builder="ApegodCave"></builderobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Ape God Lair 3">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Grassy"></object>
+      <object Chance="95" Number="2d4" Blueprint="FreshWaterPuddle"></object>
+      <object Chance="100" Number="2d4" Blueprint="Ogre Ape"></object>
+      <object Chance="90" Number="1d2" Blueprint="Albino ape"></object>
+      <object Chance="50" Number="1d1" Blueprint="Cyclopean Gibbon"></object>
+      <object Chance="5" Number="1d1" Blueprint="Baboon Hero 1"></object>
+      <tableobject Chance="50" Table="Cave Features"></tableobject>
+      <builderobject Chance="100" Builder="ApegodCave"></builderobject>
+    </objects>
+    <mergetables>
+    </mergetables>
+  </encountertable>
+
+  <!-- Dromad Traders -->
+
+  <encountertable Name="Dromad Caravan 1" Density="highy">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DromadTrader1"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Dromad Caravan 2" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DromadTrader1"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Dromad Caravan 3" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DromadTrader1"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <!-- Agolgut Culists-->
+
+  <encountertable Name="Agolgut Cultists 1" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d3" Blueprint="Glow-Wight Cultist of Agolgut"></object>
+      <object Chance="75" Number="1d1" Blueprint="Glow-Wight Cultist of Agolgut"></object>
+      <object Chance="25" Number="1d1" Blueprint="Glow-Wight Cultist of Agolgut"></object>
+      <object Chance="15" Number="1d1" Blueprint="Glow-Wight Cultist of Agolgut"></object>
+      <object Chance="10" Number="1d1" Blueprint="Glow-Wight Shepherd of Agolgut"></object>
+      <object Chance="5" Number="1d1" Blueprint="Glow-Wight Hero of Agolgut 1"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <!-- .Trolls -->
+  <encountertable Name="Trolls1" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d4+1" Blueprint="Cragmensch Brainer"></object>
+      <object Chance="50" Number="1d1" Blueprint="Cragmensch Luminary"></object>
+      <object Chance="100" Number="1d2+1" Blueprint="Cragmensch Boulderer"></object>
+      <object Chance="75" Number="1d3" Blueprint="Garbage"></object>
+      <object Chance="75" Number="1d3" Blueprint="Campfire Remains"></object>
+      <object Chance="75" Number="1d1" Blueprint="Campfire"></object>
+      <tableobject Chance="15" Table="Chest 3"></tableobject>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Troll Features" Density="minimum">
+    <objects>
+    </objects>
+    <mergetables></mergetables>
+  </encountertable>  <!-- End Snapjaws-->
+
+  <!-- Farms -->
+    <encountertable Name="Starapple Yurt" Density="high">
+
+    <objects>
+      <object Chance="25" Number="1d1" Blueprint="JoppaChest"></object>
+      <object Chance="75" Number="1d1" Blueprint="Table"></object>
+    </objects>
+
+  </encountertable>
+
+    <encountertable Name="Starapple Farm" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d2" Blueprint="AppleFarmer"></object>
+      <object Chance="20" Number="1" Blueprint="AppleFarmerDaughter"></object>
+      <object Chance="100" Number="2" Blueprint="Guard Dog"></object>
+    </objects>
+
+  </encountertable>
+
+      <encountertable Name="Pig Yurt" Density="high">
+
+    <objects>
+      <object Chance="25" Number="1d1" Blueprint="JoppaChest"></object>
+      <object Chance="75" Number="1d1" Blueprint="Table"></object>
+      <object Chance="25" Number="1d1" Blueprint="Bloodsplatter"></object>
+      <object Chance="25" Number="1d1" Blueprint="Pig Corpse"></object>
+    </objects>
+
+  </encountertable>
+
+    <encountertable Name="Pig Farm" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d2" Blueprint="PigFarmer"></object>
+      <object Chance="100" Number="1d2+1" Blueprint="Herding Dog"></object>
+    </objects>
+
+  </encountertable>
+
+  <!-- .Goatfolk -->
+  <encountertable Name="Goatfolk Yurt" Density="high">
+
+    <objects>
+      <object Chance="50" Number="1d1" Blueprint="Goatfolk Bully"></object>
+      <object Chance="25" Number="1d1" Blueprint="Goatfolk Sower"></object>
+      <object Chance="50" Number="1d1" Blueprint="Goatfolk Yurtwarden"></object>
+      <object Chance="25" Number="1d1" Blueprint="Chest2"></object>
+      <object Chance="25" Number="1d1" Blueprint="Chest3"></object>
+      <object Chance="75" Number="1d1" Blueprint="Table"></object>
+      <object Chance="5" Number="1d1" Blueprint="Chest4"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Razed Goatfolk Yurt" Density="high">
+
+    <objects>
+      <object Chance="75" Number="1d3" Blueprint="Goatfolk Corpse"></object>
+      <object Chance="75" Number="1d3" Blueprint="Charred Goatfolk Corpse"></object>
+      <object Chance="90" Number="1d6" Blueprint="Bloodsplatter"></object>
+      <object Chance="25" Number="1d1" Blueprint="Chest2"></object>
+      <object Chance="25" Number="1d1" Blueprint="Chest3"></object>
+      <object Chance="75" Number="1d1" Blueprint="Table"></object>
+      <object Chance="5" Number="1d1" Blueprint="Chest4"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Minor Razed Goatfolk Yurt" Density="high">
+
+    <objects>
+      <object Chance="75" Number="1d3" Blueprint="Charred Goatfolk Corpse"></object>
+      <object Chance="75" Number="1d3" Blueprint="Flayed Goatfolk Corpse"></object>
+      <object Chance="90" Number="1d6" Blueprint="Bloodsplatter"></object>
+      <object Chance="100" Number="1d1" Blueprint="ChestMinorRazed"></object>
+    </objects>
+
+  </encountertable>
+
+  <encountertable Name="Chest Minor Razed" Density="low">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="ChestMinorRazed"></object>
+    </objects>
+  </encountertable>
+
+  <encountertable Name="Goatfolk 1" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d2" Blueprint="Goatfolk Bully"></object>
+      <object Chance="75" Number="1d1" Blueprint="Goatfolk Sower"></object>
+      <object Chance="25" Number="1d1" Blueprint="Goatfolk Yurtwarden"></object>
+      <object Chance="10" Number="1d1" Blueprint="Goatfolk Shaman"></object>
+      <object Chance="3" Number="1d1" Blueprint="Goatfolk Hero 1"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="Goatfolk 1" Weight="medium"></mergetable>
+      <mergetable Table="Goatfolk Features" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+
+  <encountertable Name="Goatfolk Features" Density="minimum">
+    <objects>
+      <object Chance="75" Number="1d3" Blueprint="Garbage"></object>
+      <object Chance="75" Number="1d3" Blueprint="Campfire Remains"></object>
+      <object Chance="75" Number="1d1" Blueprint="Campfire"></object>
+      <tableobject Chance="35" Table="Chest 3"></tableobject>
+    </objects>
+    <mergetables></mergetables>
+  </encountertable>
+
+
+  <encountertable Name="Minor Razed Goatfolk Village" Density="medium">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="3d6" Blueprint="Bloodsplatter"></object>
+      <object Chance="100" Number="2d4" Blueprint="Flayed Goatfolk Corpse"></object>
+      <object Chance="100" Number="2d4" Blueprint="Charred Goatfolk Corpse"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Razed Goatfolk Village" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="DaylightWidget"></object>
+      <object Chance="100" Number="1" Blueprint="Mamon"></object>
+      <object Chance="100" Number="2d4" Blueprint="Naphtaali Corpse"></object>
+      <object Chance="100" Number="1d4" Blueprint="Naphtaali"></object>
+      <object Chance="100" Number="1d4" Blueprint="Naphtaali Blowgunner"></object>
+      <object Chance="100" Number="3d3" Blueprint="Firestarter"></object>
+      <object Chance="100" Number="2d4" Blueprint="Flayed Goatfolk Corpse"></object>
+      <object Chance="100" Number="2d4" Blueprint="Charred Goatfolk Corpse"></object>
+      <object Chance="100" Number="2d4" Blueprint="Bloodsplatter"></object>
+      <object Chance="100" Number="2" Blueprint="Goatfolk Thrall"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+
+  <!-- End Goatfolk-->
+
+
+  <!-- .Snapjaws -->
+  <encountertable Name="Snapjaws0" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d3" Blueprint="Snapjaw Scavenger 0"></object>
+      <object Chance="75" Number="1d3" Blueprint="Snapjaw Scavenger 0"></object>
+      <object Chance="25" Number="1d3" Blueprint="Snapjaw Hunter 0"></object>
+      <object Chance="2" Number="1d1" Blueprint="Snapjaw Shotgunner 0"></object>
+      <object Chance="15" Number="1d1" Blueprint="Snapjaw Brute 0"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warrior 0"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warlord 0"></object>
+      <object Chance="3" Number="1d1" Blueprint="Snapjaw Hero 0"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="SpecialSnapjaws0" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws0" Weight="medium"></mergetable>
+      <mergetable Table="Snapjaw Features" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Snapjaws1" Density="high">
+
+    <objects>
+      <object Chance="100" Number="1d3" Blueprint="Snapjaw Scavenger 1"></object>
+      <object Chance="75" Number="1d3" Blueprint="Snapjaw Scavenger 1"></object>
+      <object Chance="25" Number="1d3" Blueprint="Snapjaw Hunter 1"></object>
+      <object Chance="2" Number="1d1" Blueprint="Snapjaw Shotgunner 1"></object>
+      <object Chance="15" Number="1d1" Blueprint="Snapjaw Brute 1"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warrior 1"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warlord 1"></object>
+      <object Chance="3" Number="1d1" Blueprint="Snapjaw Hero 0"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="SpecialSnapjaws1" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Snapjaw Features" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="Snapjaws2" Density="high">
+
+    <objects>
+      <object Chance="25" Number="1d3" Blueprint="Snapjaw Scavenger 2"></object>
+      <object Chance="75" Number="1d2" Blueprint="Snapjaw Scavenger 2"></object>
+      <object Chance="25" Number="1d1" Blueprint="Snapjaw Scavenger 2"></object>
+      <object Chance="50" Number="2d3" Blueprint="Snapjaw Hunter 2"></object>
+      <object Chance="2" Number="1d1" Blueprint="Snapjaw Shotgunner 1"></object>
+      <object Chance="50" Number="1d1" Blueprint="Snapjaw Brute 2"></object>
+      <object Chance="25" Number="1d1" Blueprint="Snapjaw Warrior 2"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warlord 2"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warlord 1"></object>
+      <object Chance="3" Number="1d1" Blueprint="Snapjaw Hero 1"></object>
+    </objects>
+
+    <mergetables>
+      <mergetable Table="SpecialSnapjaws2" Weight="low"></mergetable>
+      <mergetable Table="Snapjaws1" Weight="medium"></mergetable>
+      <mergetable Table="Snapjaw Features" Weight="medium"></mergetable>
+    </mergetables>
+
+  </encountertable>
+
+  <encountertable Name="SpecialSnapjaws0" Density="medium">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Snapjaw Warrior 0"></object>
+      <object Chance="15" Number="1d1" Blueprint="Snapjaw Warlord 0"></object>
+    </objects>
+    <mergetables>
+
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="SpecialSnapjaws1" Density="medium">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Snapjaw Warrior 1"></object>
+      <object Chance="15" Number="1d1" Blueprint="Snapjaw Warlord 1"></object>
+    </objects>
+    <mergetables>
+
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="SpecialSnapjaws2" Density="medium">
+    <objects>
+      <object Chance="100" Number="1d1" Blueprint="Snapjaw Warrior 2"></object>
+      <object Chance="15" Number="1d1" Blueprint="Snapjaw Warlord 2"></object>
+    </objects>
+    <mergetables>
+
+    </mergetables>
+  </encountertable>
+
+  <encountertable Name="Snapjaw Features" Density="minimum">
+    <objects>
+      <object Chance="75" Number="1d3" Blueprint="Garbage"></object>
+      <object Chance="75" Number="1d3" Blueprint="Campfire Remains"></object>
+      <object Chance="75" Number="1d1" Blueprint="Campfire"></object>
+      <tableobject Chance="35" Table="Chest 1"></tableobject>
+    </objects>
+    <mergetables></mergetables>
+  </encountertable>
+
+
+
+  <encountertable Name="SnapjawFort" Density="high">
+
+    <objects>
+      <object Chance="25" Number="1d3" Blueprint="Snapjaw Scavenger 2"></object>
+      <object Chance="75" Number="1d2" Blueprint="Snapjaw Scavenger 2"></object>
+      <object Chance="25" Number="1d1" Blueprint="Snapjaw Scavenger 2"></object>
+      <object Chance="50" Number="2d3" Blueprint="Snapjaw Hunter 2"></object>
+      <object Chance="2" Number="1d1" Blueprint="Snapjaw Shotgunner 1"></object>
+      <object Chance="50" Number="1d1" Blueprint="Snapjaw Brute 2"></object>
+      <object Chance="25" Number="1d1" Blueprint="Snapjaw Warrior 2"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warlord 2"></object>
+      <object Chance="10" Number="1d1" Blueprint="Snapjaw Warlord 1"></object>
+      <object Chance="3" Number="1d1" Blueprint="Snapjaw Hero 1"></object>
+    </objects>
+
+    <mergetables>
+    </mergetables>
+
+  </encountertable>
+  <!-- End Snapjaws-->
+
+  <!-- Overland Encounters -->
+
+  <encountertable Name="Overland Encounters" Density="minimum">
+    <objects>
+      <tableobject Chance="5" Table="Agolgut Cultists 1"></tableobject>
+      <tableobject Chance="5" Table="Dromad Caravan 1"></tableobject>
+      <tableobject Chance="5" Table="Dromad Caravan 2"></tableobject>
+      <tableobject Chance="1" Table="Dromad Caravan 3"></tableobject>
+    </objects>
+    <mergetables></mergetables>
+  </encountertable>
+
+  <!-- Pax Klanq -->
+
+  <encountertable Name="PaxKlanqHut" Density="minimum">
+    <objects>
+      <object Chance="100" Number="8d3" Blueprint="Klanq Table"></object>
+      <object Chance="100" Number="2d3" Blueprint="Klanq Alchemist Table"></object>
+      <object Chance="100" Number="2d4" Blueprint="Klanq Garbage"></object>
+    </objects>
+    <mergetables></mergetables>
+  </encountertable>
+
+
+</encountertables>

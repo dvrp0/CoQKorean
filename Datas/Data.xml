@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <!--    
+    1 Cooking ingredient mappings
+    2 Villager templates
+    3 Faction hero templates
+    4 Faction data buckets    
+  -->
+
+  <!-- DataBuckets are just data stores; don't instantiate these objects -->
+  <object Name="DataBucket" Inherits="Object">
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <!--
+
+    *********************************
+       Cooking ingredient mappings
+    *********************************
+
+  -->
+
+  <object Name="IngredientMapping" Inherits="DataBucket" />
+
+  <object Name="ProceduralCookingIngredient_artifacts" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainArtifact_UnitPsychometry" />
+    <tag Name="Triggers" Value="CookingDomainArtifact_OnIdentify" />
+    <tag Name="Actions" Value="CookingDomainArtifact_IdentifyAllInZone_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="artifact-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_thirst" Inherits="IngredientMapping">
+    <tag Name="Units" Value="ProceduralCookingEffectUnit_LessThirst" />
+    <tag Name="Triggers" Value="OnDrinkWaterProceduralCookingTrigger" />
+    <tag Name="Actions" Value="NoThirst_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="water and thirst-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_secrets" Inherits="IngredientMapping">
+    <tag Name="Description" Value="secret-based" />
+    <tag Name="Units" Value="CookingDomainSecrets_RevealSecrets" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_darkness" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainDarkness_UnitDV" />
+    <tag Name="Description" Value="darkness-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_armor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainArmor_UnitAV" />
+    <tag Name="Triggers" Value="CookingDomainArmor_OnPenetration" />
+    <tag Name="Actions" Value="CookingDomainArmor_LargeAVBuff_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="armor-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_plantMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationLowTier,CookingDomainPlant_UnitBurgeoningLowTier" />
+    <tag Name="Description" Value="simple plant-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+  
+  <object Name="ProceduralCookingIngredient_plantHighTier" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationHighTier,CookingDomainPlant_UnitBurgeoningHighTier" />
+    <tag Name="Triggers" Value="CookingDomainPlant_OnDamageByPlant" />
+    <tag Name="Actions" Value="CookingDomainPlant_BurgeoningHighTier_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="powerful plant-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_electric" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainElectric_ElectricalGenerationUnit,CookingDomainElectric_EMPUnit,CookingDomainElectric_ResistUnit" />
+    <tag Name="Triggers" Value="CookingDomainElectric_OnDealingElectricDamage" />
+    <tag Name="Actions" Value="CookingDomainElectric_EMP_ProceduralCookingTriggeredAction,CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction,CookingDomainElectric_SmallElectricResist_ProceduralCookingTriggeredAction,CookingDomainElectric_LargeElectricResist_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="electric-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_cold" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitResist" />
+    <tag Name="Triggers" Value="CookingDomainCold_OnSlowedByCold,CookingDomainCold_OnDealingColdDamage" />
+    <tag Name="Actions" Value="CookingDomainCold_FreezingHandsCharge_ProceduralCookingTriggeredAction,CookingDomainCold_CryokinesisCharge_ProceduralCookingTriggeredAction,CookingDomainCold_ColdResist_ProceduralCookingTriggeredAction,CookingDomainCold_LargeColdResist_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="cold-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_heat" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitResist" />
+    <tag Name="Triggers" Value="CookingDomainHeat_OnEnflamed,CookingDomainHeat_OnDealingHeatDamage" />
+    <tag Name="Actions" Value="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction,CookingDomainHeat_PyrokinesisCharge_ProceduralCookingTriggeredAction,CookingDomainHeat_HeatResist_ProceduralCookingTriggeredAction,CookingDomainHeat_LargeHeatResist_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="heat and fire-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_love" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainLove_UnitEgo,CookingDomainLove_UnitBeguiling" />
+    <tag Name="Triggers" Value="CookingDomainLove_OnGainFollower" />
+    <tag Name="Actions" Value="CookingDomainLove_BeguilingCharge_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="love and loyalty-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_teleport" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainTeleport_UnitBlink,CookingDomainTeleport_UnitTeleportOther" />
+    <tag Name="Triggers" Value="CookingDomainTeleport_OnTeleport" />
+    <tag Name="Actions" Value="CookingDomainTeleport_Teleport_ProceduralCookingTriggeredAction,CookingDomainTeleport_MassTeleportOther_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="teleport-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_regenLowtier" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit" />
+    <tag Name="Triggers" Value="CookingDomainRegenLowtier_OnDamaged,CookingDomainRegenLowtier_OnSalve" />
+    <tag Name="Actions" Value="CookingDomainLowtierRegen_HealToFull_ProceduralCookingTriggeredAction,CookingDomainLowtierRegen_StopBleeding_ProceduralCookingTriggeredAction,CookingDomainLowtierRegen_RemoveDebuff_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="regeneration and healing-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_regenHightier" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainRegenHightier_RegenerationUnit" />
+    <tag Name="Triggers" Value="CookingDomainRegenHightier_OnDamaged,CookingDomainRegenLowtier_OnSalve" />
+    <tag Name="Actions" Value="CookingDomainHightierRegen_Heal40to50_ProceduralCookingTriggeredAction,CookingDomainHightierRegen_RemoveDebuff_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="powerful regeneration and healing-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_medicinal" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit" />
+    <tag Name="Triggers" Value="CookingDomainMedicinal_OnEatYuckwheat,CookingDomainMedicinal_OnDrinkHoney" />
+    <tag Name="Actions" Value="CookingDomainMedicinal_RemoveIll_ProceduralCookingTriggeredAction,CookingDomainMedicinal_RemoveDiseaseOnset_ProceduralCookingTriggeredAction,CookingDomainMedicinal_DiseaseImmunity_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="disease prevention and curing-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_acid" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas" />
+    <tag Name="Description" Value="acid-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_fungus" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainFungus_FungusReputationUnit,CookingDomainFungus_FungusResistUnit" />
+    <tag Name="Triggers" Value="CookingDomainFungus_OnItchy,CookingDomainFungus_OnEatFungus" />
+    <tag Name="Actions" Value="CookingDomainFungus_SporeImmunity_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="fungus-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_phase" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainPhase_UnitPhasing,CookingDomainPhase_UnitPhaseOnDamage,CookingDomainPhase_UnitDoublePhaseDuration" />
+    <tag Name="Triggers" Value="CookingDomainPhase_OnPhaseIn,CookingDomainPhase_OnPhaseOut" />
+    <tag Name="Actions" Value="CookingDomainPhase_Phase_ProceduralCookingTriggeredAction,CookingDomainPhase_NoPhase_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="phasing-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_HP" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainHP_UnitHP" />
+    <tag Name="Triggers" Value="CookingDomainHP_OnDamaged,CookingDomainHP_OnLowHealth" />
+    <tag Name="Actions" Value="CookingDomainHP_HealToFull_ProceduralCookingTriggeredAction,CookingDomainHP_IncreaseHP_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="HP-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_reflectHighTier" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainReflect_UnitReflectDamageHighTier" />
+    <tag Name="Triggers" Value="CookingDomainReflect_OnReflectedDamageHighTier,CookingDomainReflect_OnDamagedHighTier" />
+    <tag Name="Actions" Value="CookingDomainReflect_Reflect100HighTier_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="powerful damage reflection-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_reflect" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainReflect_UnitQuills,CookingDomainReflect_UnitReflectDamage" />
+    <tag Name="Triggers" Value="CookingDomainReflect_OnReflectedDamage,CookingDomainReflect_OnDamaged" />
+    <tag Name="Actions" Value="CookingDomainReflect_QuillBurst_ProceduralCookingTriggeredAction,CookingDomainReflect_Reflect100_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="damage reflection-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_willpower" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainWillpower_UnitWillpower" />
+    <tag Name="Description" Value="simple Willpower-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_strength" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainStrength_UnitStrength,CookingDomainFear_UnitIntimidate" />
+    <tag Name="Triggers" Value="CookingDomainHP_OnDamagedMidTier,CookingDomainHP_OnLowHealthMidTier" />
+    <tag Name="Actions" Value="CookingDomainStrength_LargeStrengthBuff_ProceduralCookingTriggeredAction,CookingDomainStrength_DismemberOrSlam_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="Strength-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_burrowing" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBurrowing_UnitBurrowingClaws" />
+    <tag Name="Description" Value="burrowing-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_agility" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainAgility_UnitAgility" />
+    <tag Name="Triggers" Value="CookingDomainAgility_OnPerformCriticalHit" />
+    <tag Name="Actions" Value="CookingDomainAgility_LargeAgilityBuff_ProceduralCookingTriggeredAction,CookingDomainAgility_Shank_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="Agility-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_fear" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainFear_UnitBonusMA,CookingDomainFear_UnitIntimidate" />
+    <tag Name="Actions" Value="CookingDomainFear_Intimidate_ProceduralCookingTriggeredAction,CookingDomainFear_FearImmunity_ProceduralCookingTriggeredAction" />
+    <tag Name="Triggers" Value="CookingDomainFear_OnFeared,CookingDomainFear_OnEatLah" />
+    <tag Name="Description" Value="fear-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_fireBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheFire5" />
+    <tag Name="Description" Value="fire-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderFireBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheFire10" />
+    <tag Name="Description" Value="powerful fire-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_iceBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheIce5" />
+    <tag Name="Description" Value="ice-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderIceBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheIce10" />
+    <tag Name="Description" Value="powerful ice-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_corrosiveGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheCorrosiveGas5" />
+    <tag Name="Description" Value="corrosive gas-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderCorrosiveGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheCorrosiveGas10" />
+    <tag Name="Description" Value="powerful corrosive gas-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_sleepGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheSleepGas5" />
+    <tag Name="Description" Value="sleep gas-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderSleepGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheSleepGas10" />
+    <tag Name="Description" Value="powerful sleep gas-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_normalityGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheNormalityGas5" />
+    <tag Name="Description" Value="normality gas-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderNormalityGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheNormalityGas10" />
+    <tag Name="Description" Value="powerful normality gas-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_poisonGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreathePoisonGas5" />
+    <tag Name="Description" Value="poison gas-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderPoisonGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreathePoisonGas10" />
+    <tag Name="Description" Value="powerful poison gas-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_stunGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheStunGas5" />
+    <tag Name="Description" Value="stun gas-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderStunGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheStunGas10" />
+    <tag Name="Description" Value="powerful stun gas-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_confusionGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheConfusionGas5" />
+    <tag Name="Description" Value="confusion gas-breathing" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+  <object Name="ProceduralCookingIngredient_elderConfusionGasBreath" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheConfusionGas10" />
+    <tag Name="Description" Value="powerful confusion gas-breathing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_starch" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainPhotosyntheticSkin_UnitQuickness" />
+    <tag Name="Description" Value="special Quickness-based" />
+    <tag Name="RandomWeight" Value="4" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_lignin" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainPhotosyntheticSkin_RegenerationUnit" />
+    <tag Name="Description" Value="special regeneration-based" />
+    <tag Name="RandomWeight" Value="4" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_quicknessMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainQuickness_UnitQuickness" />
+    <tag Name="Description" Value="simple Quickness-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_density" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainDensity_UnitPermanentAV" />
+    <tag Name="Description" Value="volatile density-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_attributes" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainAttributes_UnitPermanentAllStats_25Percent" />
+    <tag Name="Description" Value="uncertain attribute-based" />
+    <tag Name="RandomWeight" Value="5" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_slimeSpitting" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainLiquidSpitting_UnitSlimeGlands" />
+    <tag Name="Description" Value="slime-spitting" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_regenLowtierMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit" />
+    <tag Name="Description" Value="simple regeneration and healing-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_coldMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitResist" />
+    <tag Name="Description" Value="simple cold-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_heatMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitResist" />
+    <tag Name="Description" Value="simple heat and fire-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_medicinalMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit" />
+    <tag Name="Description" Value="simple disease prevention-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_acidMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas" />
+    <tag Name="Description" Value="simple acid-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_tastyMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainTaste_UnitDoNothing" />
+    <tag Name="Description" Value="simple taste-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_cloningMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainCloning_UnitMultipleClones" />
+    <tag Name="Description" Value="simple cloning" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_stabilityMinor" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainStability_MoveResistUnit" />
+    <tag Name="Description" Value="simple stability-based" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_selfPoison" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfPoison" />
+    <tag Name="Description" Value="self-poisoning" />
+    <tag Name="RandomWeight" Value="2" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_selfGlotrot" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfGlotrot" />
+    <tag Name="Description" Value="self-diseasing" />
+    <tag Name="RandomWeight" Value="1" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_rubberLowTier" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainRubber_ExtraJump,CookingDomainElectric_ResistUnit,CookingDomainRubber_ReducedFallDamage" />
+    <tag Name="Triggers" Value="CookingDomainRubber_OnProne,CookingDomainRubber_OnJump" />
+    <tag Name="Actions" Value="CookingDomainRubber_JumpTwice_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="rubber-based" />
+    <tag Name="RandomWeight" Value="5" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_rubberHighTier" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainElectric_ExtraResistUnit,CookingDomainRubber_Extra2Jumps,CookingDomainRubber_ExtraReducedFallDamage" />
+    <tag Name="Triggers" Value="CookingDomainRubber_OnProne,CookingDomainRubber_OnJump" />
+    <tag Name="Actions" Value="CookingDomainRubber_JumpThrice_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="powerful rubber-based" />
+    <tag Name="RandomWeight" Value="5" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_tongue" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainTongue_UnitStickyTongue" />
+    <tag Name="Triggers" Value="CookingDomainTongue_OnStuck" />
+    <tag Name="Actions" Value="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction" />
+    <tag Name="Description" Value="tongue-based" />
+    <tag Name="RandomWeight" Value="10" />
+  </object>
+
+  <object Name="ProceduralCookingIngredient_random" Inherits="IngredientMapping">
+    <tag Name="Description" Value="random" />
+    <tag Name="RandomWeight" Value="0" />
+  </object>
+
+  <!-- End cooking ingredient mappings -->
+  
+  <!--
+
+    ************************
+       Villager templates
+    ************************
+
+  -->
+  <object Name="SpecialVillagerHeroTemplate" Inherits="DataBucket" />
+
+  <object Name="SpecialVillagerHeroTemplate_Mayor" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="3" />
+    <tag Name="HeroWilBoost" Value="3" />
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroSelfPreservationThreshold" Value="40" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_King" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="3" />
+    <tag Name="HeroWilBoost" Value="3" />
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;M" />
+    <tag Name="HeroTileColor" Value="&amp;M" />
+    <tag Name="HeroSelfPreservationThreshold" Value="30" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Queen" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="3" />
+    <tag Name="HeroWilBoost" Value="3" />
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;M" />
+    <tag Name="HeroTileColor" Value="&amp;M" />
+    <tag Name="HeroSelfPreservationThreshold" Value="30" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Councilor" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="1" />
+    <tag Name="HeroWilBoost" Value="1" />
+    <tag Name="HeroEgoBoost" Value="1" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroSelfPreservationThreshold" Value="50" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Senator" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="1" />
+    <tag Name="HeroWilBoost" Value="1" />
+    <tag Name="HeroEgoBoost" Value="1" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroSelfPreservationThreshold" Value="60" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Parliamentarian" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="1" />
+    <tag Name="HeroWilBoost" Value="1" />
+    <tag Name="HeroEgoBoost" Value="1" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroSelfPreservationThreshold" Value="70" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Viceroy" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="3" />
+    <tag Name="HeroWilBoost" Value="3" />
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroSelfPreservationThreshold" Value="20" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Governor" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="3" />
+    <tag Name="HeroWilBoost" Value="3" />
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroSelfPreservationThreshold" Value="60" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Warden" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroStrBoost" Value="3" />
+    <tag Name="HeroTouBoost" Value="3" />
+    <tag Name="HeroAgiBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;B" />
+    <tag Name="HeroTileColor" Value="&amp;B" />
+    <tag Name="HeroMinLevel" Value="20" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Merchant" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;W" />
+    <tag Name="HeroTileColor" Value="&amp;W" />
+    <tag Name="HeroMentalMutations" Value="0" />
+    <tag Name="HeroPhysicalMutations" Value="0" />
+    <tag Name="HeroNoWaterRitual" Value="true" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_DromadMerchant" Inherits="SpecialVillagerHeroTemplate_Merchant">
+    <tag Name="HeroSelfPreservationThreshold" Value="40" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Tinker" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="2" />
+    <tag Name="HeroStrBoost" Value="0" />
+    <tag Name="HeroTouBoost" Value="0" />
+    <tag Name="HeroAgiBoost" Value="0" />
+    <tag Name="HeroHPBoost" Value="1" />
+    <tag Name="HeroLevelMultiplier" Value="1" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;c" />
+    <tag Name="HeroTileColor" Value="&amp;c" />
+    <tag Name="HeroNoWaterRitual" Value="true" />
+    <tag Name="HeroSelfPreservationThreshold" Value="50" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Apothecary" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroIntBoost" Value="1" />
+    <tag Name="HeroStrBoost" Value="0" />
+    <tag Name="HeroTouBoost" Value="1" />
+    <tag Name="HeroAgiBoost" Value="0" />
+    <tag Name="HeroHPBoost" Value="1" />
+    <tag Name="HeroLevelMultiplier" Value="1" />
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;g" />
+    <tag Name="HeroTileColor" Value="&amp;g" />
+    <tag Name="HeroNoWaterRitual" Value="true" />
+    <tag Name="HeroSelfPreservationThreshold" Value="40" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_Villager" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;W" />
+    <tag Name="HeroTileColor" Value="&amp;W" />
+    <tag Name="HeroDetailColor" Value="same" />
+    <tag Name="HeroNoWaterRitual" Value="true" />
+    <tag Name="HeroSelfPreservationThreshold" Value="55" />
+  </object>
+  <object Name="SpecialVillagerHeroTemplate_VillagerMayor" Inherits="SpecialVillagerHeroTemplate">
+    <tag Name="HeroNameColor" Value="&amp;Y" />
+    <tag Name="HeroColorString" Value="&amp;r" />
+    <tag Name="HeroTileColor" Value="&amp;r" />
+    <tag Name="HeroDetailColor" Value="same" />
+    <tag Name="HeroSelfPreservationThreshold" Value="35" />
+  </object>
+  
+  <!-- End villager templates -->
+
+  <!--
+
+    ****************************
+       Faction hero templates
+    ****************************
+
+  -->
+  <object Name="BaseFactionHeroTemplate" Inherits="DataBucket">
+  </object>
+  <object Name="SpecialFactionHeroTemplate" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="BaseFactionHeroTemplate_Bears" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Bears" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+    <tag Name="SimpleConversation" Value="Have you honey to share, little one?" />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Arachnids" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Arachnids" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+    <tag Name="SimpleConversation" Value="Tssssssss. Tsss." />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Tortoises" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Tortoises" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+    <tag Name="SimpleConversation" Value="Get out of my way. Not that it matters." />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Pariahs" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Pariahs" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Antelopes" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Antelopes" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+    <tag Name="SimpleConversation" Value="Shh! Did you hear that? Is it a puma? Oh, nevermind." />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Apes" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Apes" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+    <tag Name="SimpleConversation" Value="Ooo! Eeee! My friend, you could learn a thing about dressing =player.reflexive=." />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Barathrumites" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Barathrumites" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="1" />
+    <tag Name="SimpleConversation" Value="Live and drink, shortfinger." />
+    <tag Name="HeroSelfPreservationThreshold" Value="2d6x5" />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Birds" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Birds" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroIntBoost" Value="6" />
+    <tag Name="SimpleConversation" Value="Come sit by the fire and sip burnydrink." />
+    <tag Name="HeroSelfPreservationThreshold" Value="1d10x5" />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Mechanimists" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Mechanimists" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="SimpleConversation" Value="May the ground shake but the Six Day Stilt never tumble." />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Seekers" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Seekers" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="SimpleConversation" Value="Go East. The Voice in the Void calls us all." />
+  </object>
+  <object Name="BaseFactionHeroTemplate_Templar" Inherits="BaseFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_Templar" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="SimpleConversation" Value="One day, you shall bathe in the pureblood of our dead. Then you will know
+immaculacy. Then will you know truth." />
+  </object>
+  <object Name="SpecialFactionHeroTemplate_TemplarKnightCommander" Inherits="SpecialFactionHeroTemplate">
+  </object>
+  <object Name="SpecialFactionHeroTemplate_TemplarWraith" Inherits="SpecialFactionHeroTemplate">
+    <tag Name="HeroEgoBoost" Value="3" />
+    <tag Name="HeroNoWaterRitual" Value="true" />
+  </object>
+  
+  <!-- End faction hero templates -->
+
+  <!--
+
+    ***************************
+       Faction data buckets
+    ***************************
+
+  -->
+  <object Name="Antelopes_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="grazed" />
+  </object>
+  <object Name="Apes_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="picked" />
+  </object>
+  <object Name="Arachnids_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="insects" />
+  </object>
+  <object Name="Baboons_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="picked,insects,smallmeat" />
+  </object>
+  <object Name="Baetyls_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="metal" />
+  </object>
+  <object Name="Barathrumites_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="smallmeat,picked,sweet,fish" />
+  </object>
+  <object Name="Bears_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="smallmeat,picked,sweet,fish" />
+  </object>
+  <object Name="Birds_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="insects,picked" />
+  </object>
+  <object Name="Cannibals_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="meat,meat,bones" />
+  </object>
+  <object Name="Cats_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="meat,smallmeat" />
+  </object>
+  <object Name="Mamon_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="meat,meat,bones" />
+  </object>
+  <object Name="Consortium_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="generic" />
+  </object>
+  <object Name="Crabs_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="smallsea" />
+  </object>
+  <object Name="Cragmensch_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="rocks" />
+  </object>
+  <object Name="Dogs_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="smallmeat,meat" />
+  </object>
+  <object Name="Dromad_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="grazed" />
+  </object>
+  <object Name="Equines_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="grazed" />
+  </object>
+  <object Name="Wardens_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="generic" />
+  </object>
+  <object Name="Fish_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="smallsea" />
+  </object>
+  <object Name="Flowers_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="generic" />
+  </object>
+  <object Name="Frogs_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="insects" />
+  </object>
+  <object Name="Fungi_Data" Inherits="DataBucket">
+    <tag Name="DishNames" Value="rotted" />
+  </object>  
+
+</objects>

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+  
+  <quest Name="What's Eating the Watervine?" Factions="Joppa" Reputation="200" Level="1" Achievement="ACH_COMPLETE_WATERVINE"
+         Accomplishment="You solved the mystery of the chewed-up watervine and warned the villagers of Joppa of the Girsh." 
+         Hagiograph="In the month of =month= of =year=, =name= walked below the chrome arches, beat back the throng of girshlings, and healed the wilting crops."
+         HagiographCategory="DoesSomethingRad">
+
+    <step Name="Travel to Redrock" XP="50">
+      <text>Journey north of Joppa to Redrock.</text>
+    </step>
+
+    <step Name="Find the critters" XP="100">
+      <text>Find the creatures that are eating Joppa's watervine.</text>
+    </step>
+
+    <step Name="Get a critter corpse" XP="100">
+      <text>Collect a corpse of one of the creatures.</text>
+    </step>
+
+    <step Name="Return with a critter corpse" XP="750">
+      <text>Return to Joppa with the corpse of a watervine eating creature
+from Redrock.</text>
+    </step>
+
+  </quest>
+ 
+  <quest Name="Raising Indrix" Level="20" 
+         Factions="Kyakukya,Wardens" Reputation="100"
+         Hagiograph="O grace! =name= recovered a shard of black glass from a teeming jungle and returned it to the mechanical goat whose circuitry it powers."
+         HagiographCategory="FindsObject">
+    
+    <step Name="Find Mamon Souldrinker" XP="1000">
+      <text>Travel to the goatfolk village and find Mamon Souldrinker.</text>
+    </step>
+
+    <step Name="Recover the Amaranthine Prism" XP="3250">
+      <text>Return the amaranthine prism to Warden Indrix.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Fetch Argyve a Knickknack" Level="3" Manager="BringArgyveAKnicknack" 
+         Accomplishment="You fetched a trinket for an old man."
+         Hagiograph="Inside a temple of water and vine, =name= taught an old man the value of chrome."
+         HagiographCategory="Trysts">
+    
+    <step Name="Find a Knickknack" XP="0">
+      <text>Search Qud for an artifact.</text>
+    </step>
+
+    <step Name="Return to Argyve" XP="75">
+      <text>Return to Argyve with the artifact.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Fetch Argyve Another Knickknack" Level="5" Manager="BringArgyveAnotherKnicknack" 
+         Accomplishment="You fetched another trinket for an old man."
+         Hagiograph="In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome."
+         HagiographCategory="Trysts">
+
+    <step Name="Find Another Knickknack" XP="0">
+      <text>Search Qud for another artifact.</text>
+    </step>
+
+    <step Name="Return to Argyve" XP="150">
+      <text>Return to Argyve with the artifact.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Weirdwire Conduit... Eureka!" Level="7" Manager="BringArgyveWire" 
+         Accomplishment="With your help, Argyve detected a strange signal."
+         Hagiograph="By the auspices of the marsh, =name= invented the Weirdwire Conduit and detected a hidden signal."
+         HagiographCategory="CreatesSomething">
+    
+    <step Name="Find 200 feet of copper wire" XP="0">
+      <text>Search the Rustwells, east of Joppa, for 200 total feet
+of &amp;rCopper Wire&amp;Y</text>
+    </step>
+
+    <step Name="Return to Argyve" XP="500">
+      <text>Deliver 200 feet of &amp;rCopper Wire&amp;Y to Argyve</text>
+    </step>
+  </quest>
+
+  <quest Name="A Canticle for Barathrum" Level="10" 
+         Accomplishment="You spoke with the Barathrumites at their enclave in Grit Gate."
+         Hagiograph="=name= penned and sang a canticle for the irenic quillbears who live beneath the earth."
+         HagiographCategory="CreatesSomething">
+
+    <step Name="Travel to Grit Gate" XP="500">
+      <text>Travel to the ruined, subterranean gate northeast of Joppa.</text>
+    </step>
+
+    <step Name="Locate the Barathrumite Enclave" XP="250">
+      <text>Locate the Barathrumite enclave within Grit Gate</text>
+    </step>
+
+    <step Name="Speak with the Barathrumites" XP="500">
+      <text>Ask the Barathrumites about Argyve's strange signal.</text>
+    </step>
+  </quest>
+
+  <quest Name="A Signal in the Noise" Level="10" 
+         Accomplishment="You spoke with the Barathrumites at their enclave in Grit Gate."
+         Hagiograph="=name= penned and sang a canticle for the irenic quillbears who live beneath the earth."
+         HagiographCategory="CreatesSomething">
+
+    <step Name="Travel to Grit Gate" XP="500">
+      <text>Travel to the ruined, subterranean gate northeast of Joppa.</text>
+    </step>
+
+    <step Name="Locate the Barathrumite Enclave" XP="250">
+      <text>Locate the Barathrumite enclave within Grit Gate</text>
+    </step>
+
+    <step Name="Speak with the Barathrumites" XP="500">
+      <text>Ask the Barathrumites about the strange signal.</text>
+    </step>
+  </quest>
+
+  <quest Name="More Than a Willing Spirit" Level="10" BonusAtLevel="12,18" Manager="MoreThanAWillingSpirit" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You braved Golgotha and displayed your prowess to the Barathrumites."
+         Hagiograph="In the month of =month= of =year=, =name= emerged from the trash chutes of Golgotha, victorious and bathed in slime."
+         HagiographCategory="DoesSomethingRad">
+         
+    <step Name="Travel to Golgotha" XP="250">
+      <text>Travel to the great cave Golgotha north of Grit Gate.</text>
+    </step>
+
+    <step Name="Find a Dysfunctional Waydroid" XP="250">
+      <text>Find a dysfunctional waydroid among the ruins of Golgotha.</text>
+    </step>
+
+    <step Name="Repair the Waydroid" XP="250">
+      <text>Repair the waydroid.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="1250">
+      <text>Return to Grit Gate with the waydroid and speak with
+the Barathrumites.</text>
+    </step>
+  </quest>
+
+  <quest Name="Decoding the Signal" Level="15" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You spoke with the baetyl at the Temple of the Rock and decoded the mysterious signal."
+         Hagiograph="Bravery! =name= plunged into the mouth of an open ice shelf and conversed with a baetyl in the sacred tongue."
+         HagiographCategory="AppeasesBaetyl">
+         
+    <step Name="Get Q Girl's Instructions onto the Data Disk" XP="250">
+      <text>Speak to Q Girl in the workshop and ask her to encode her instructions
+for the baetyl onto the disk.</text>
+    </step>
+    <step Name="Locate the Mechanimist Compound at Bethesda Susa" XP="2500">
+      <text>Travel north to the great cavern Bethesda Susa and locate the
+Mechanimist temple.</text>
+    </step>
+
+    <step Name="Decode the Signal" XP="4000">
+      <text>Infiltrate the Mechanimist compound, engage the baetyl, and
+decode the signal.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="6000">
+      <text>Return to Grit Gate and speak with Otho.</text>
+    </step>
+  </quest>
+
+  <quest Name="O Glorious Shekhinah!" Level="3" Manager="TravelToStilt" 
+         Accomplishment="On the recommendation of a proselyte, you visited the merchant bazaar and grand cathedral at the Six Day Stilt."
+         Hagiograph="=name= trekked through the salt pans, north and west, to the merchant bazaar and grand cathedral of the Six Day Stilt. There, the stiltfolk sang hymns in the sultan's honor."
+         HagiographCategory="VisitsLocation">
+
+    <step Name="Make a Pilgrimage to the Six Day Stilt" XP="1500">
+      <text>머나먼 북서쪽으로 떠나고 장대한 소금 사막을 지나
+기계신앙자들의 대성당과 상인들의 시장을 방문하십시오.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="The Earl of Omonporch" Level="20" Manager="TheEarlofOmonporch" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You dealt with Asphodel and secured the grounds at the base of the Spindle."
+         Hagiograph="In the month of =month= of =year=, =name= appointed Asphodel the Lovely earl of Omonporch and Protector of the Spindle Gjaus."
+         HagiographCategory="Treats">
+
+    <step Name="Travel to Omonporch" XP="1000">
+      <text>Travel north to the Spindle at Omonporch.</text>
+    </step>
+
+    <step Name="Secure the Spindle" XP="1000">
+      <text>Take control of the grounds beneath the Spindle.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="5000">
+      <text>Return to Grit Gate to report your success.</text>
+    </step>
+  </quest>
+
+  <quest Name="Grave Thoughts" Level="20">
+    <step Name="Investigate the Rumbling">
+      <text>Access the mainframe and scan the shale surrounding the enclave.</text>
+    </step>
+   
+    <step Name="Speak to Otho">
+      <text>Speak to Otho to via the mainframe room intercom or in person.</text>
+    </step>
+  </quest>
+
+  <quest Name="A Call to Arms" Level="20" 
+         Accomplishment="You valiantly defended Grit Gate from an attack by the Putus Templar."
+         Hagiograph="=name= smashed a battalion of Sons and Daughters through a giant mainframe, showering the surrounding temple in glass and gallium."
+         HagiographCategory="Slays">
+
+    <step Name="Optional: Prepare Defenses">
+      <text>Power laser emplacements, power force projectors, overclock chromelings, and activate Rodanis Y in preparation for the Putus Templar attack.</text>
+    </step>
+    
+    <step Name="Defend Grit Gate">
+      <text>Defend Grit Gate from its assailants.</text>
+    </step>
+  </quest>
+
+  <quest Name="The Assessment" Level="20">
+    <step Name="Speak to Otho" XP="10000">
+      <text>Speak to Otho to assess the losses suffered in the attack.</text>
+    </step>    
+  </quest>
+
+  <quest Name="Pax Klanq, I Presume?" Level="25" Manager="PaxKlanqIPresume"  Factions="Barathrumites" Reputation="100"
+         Accomplishment="You walked the Coral Path and convinced Pax Klanq, mushroom prodigy, to fabricate a battery of Q Girl's design."
+         Hagiograph="In the void of space, =name= the Mason constructed a Coral Path out of starbrick and conversed with a mushroom in the sacred tongue."
+         HagiographCategory="CreatesSomething">
+
+    <step Name="Get Q Girl's Blueprints for the Climber" XP="250">
+      <text>Get the blueprints for the climber to deliver to Pax Klanq.</text>
+    </step>
+
+    <step Name="Seek the Heart of the Rainbow" XP="1500">
+      <text>Decipher the first part of the enigma.</text>
+    </step>
+
+    <step Name="Eat the God's Flesh" XP="1500">
+      <text>Decipher the second part of the enigma.</text>
+    </step>
+
+    <step Name="Follow the Coral Path" XP="1500">
+      <text>Decipher the third part of the enigma.</text>
+    </step>
+
+    <step Name="Convince Pax Klanq to Construct the Climber" XP="1500">
+      <text>Get Pax Klanq to agree to fabricate the climber from Q Girl's design.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="4000">
+      <text>Return to Grit Gate and speak to Barathrum.</text>
+    </step>
+  </quest>
+
+  <quest Name="Petals on the Wind" Manager="PetalsOnTheWind" 
+         Accomplishment="At the behest of a hindren pariah, you traveled to the hidden village of Bey Lah to investigate a mystery."
+         Hagiograph="Benevolent =name= agreed to meddle in the affairs of the meadow at the behest of a deerfolk pariah. The sultan reigns with kindheartedness!"
+         HagiographCategory="MeetsWithCounselors">
+
+    <step Name="Investigate Bey Lah" XP="250">
+      <text>Travel to the hidden village of Bey Lah and investigate the problems there.</text>
+    </step>    
+
+  </quest>
+
+  <quest Name="Find Eskhind" 
+         Accomplishment="You found the hindren pariah Eskhind and her sisters inside a hollowed out tree."
+         Hagiograph="Remember! =name= admonished the pariah Eskhind for fleeing her destiny. Thenceforth she was known as Eskhind the Meek."
+         HagiographCategory="Slays">
+
+    <step Name="Find Eskhind" XP="250">
+      <text>Find Eskhind and retrieve Kindrish.</text>
+    </step>
+
+    <step Name="Optional: Speak to Warden Neelahind" XP="0">
+      <text>Speak to Warden Neelahind, who was close friends with Eskhind.</text>
+    </step>
+
+    <step Name="Deliver News of Eskhind" XP="250">
+      <text>Speak to Keh with news of Eskhind.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Love and Fear"
+         Accomplishment="You found and returned a discarded love poem."
+         Hagiograph="How inspiring is the presence of =name=, who so redeemed Eskhind the Meek that she sought the hand of Bey Lah's greatest champion!"
+         HagiographCategory="Trysts">
+		 
+	<step Name="Optional: Rescue an Imperiled Love" XP="250">
+	  <text>Intervene before the fate of the lovers is sealed.</text>
+	</step>
+    
+    <step Name="Return the Love Sonnet" XP="50">
+      <text>Give the crumpled sheet of paper to its author or intended recipient.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Kith and Kin" 
+         Accomplishment="For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice."
+         Hagiograph="Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow."
+         HagiographCategory="BecomesLoved">
+
+    <step Name="Brief Warden Neelahind" XP="250">
+      <text>Tell Bey Lah's Warden about the disputed nature of Kindrish's theft.</text>
+    </step>
+
+    <step Name="Optional: Discover all the evidence" XP="250">
+      <text>Discover all evidence that might lead to the thief.</text>
+    </step>
+
+    <step Name="Accuse the thief" XP="1000">
+      <text>Speak to Warden Neelahind with evidence of the event and accuse the thief that took Kindrish.</text>
+    </step>
+  </quest>
+
+  <quest Name="The Buried Watchers" 
+         Accomplishment="You visited a coterie of Tomb-dwelling mopango."
+         Hagiograph="Deep in the Tomb of the Eaters at Omonporch, =name= stumbled upon a clan of mopango performing a secret ritual. Ey accepted the sultan into eir fold and taught =them= eir secrets."
+         HagiographCategory="Treats">
+
+    <step Name="Visit the Mopango Settlement in the Tomb of the Eaters" XP="2000">
+      <text>Find Vivira, a friendly turret in the Northwest catacombs, and tell em that Zothom sent you.</text>
+    </step>
+  </quest>
+  
+  <quest Name="Fraying Favorites" Manager="FrayingFavorites"
+         Accomplishment="You restored functionality to one of the four strange entities in the Tomb."
+         Hagiograph="Remember the kindness of =name=, who absolved =their= treacherous brother of sin and steered him to salvation!"
+         HagiographCategory="DoesSomethingHumble">
+
+    <step Name="Talk to Lebah" XP="500">
+      <text>Ask Lebah about eir encounter with the repulsive device.</text>
+    </step>
+    
+    <step Name="Recover the Repulsive Device" XP="4000">
+      <text>Locate k-Goninon in the Folk Catacombs and recover the repulsive device.</text>
+    </step>
+    
+    <step Name="Optional: Speak with the Watchers" XP="0">
+      <text>Ask the mopango watchers Dadogom, Doyoba, Gyamyo, and Yona about the repulsive device.</text>
+    </step>
+
+    <step Name="Use the Repulsive Device" XP="4000">
+      <text>Choose how to best apply the repulsive device.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Tomb of the Eaters" Level="30" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You returned from the Tomb of the Eaters after successfully disabling the Spindle's magnetic field." >
+    
+    <step Name="Recover the Mark of Death" XP="2500">
+      <text>Recover the lost sigil used by the Eaters to mark their dead.</text>
+    </step>
+
+    <step Name="Inscribe the Mark" XP="2500">
+      <text>Tattoo the mark on your body.</text>
+    </step>
+
+    <step Name="Enter the Tomb of the Eaters" XP="2500">
+      <text>Gain entrance to the sealed Tomb.</text>
+    </step>
+
+    <step Name="Ascend the Tomb and Cross into Brightsheol" XP="2500">
+      <text>Ascend the Tomb and find Resheph's burial chamber. From there, discover a way to travel to Brightsheol.</text>
+    </step>
+
+    <step Name="Disable the Spindle's Magnetic Field" XP="2500">
+      <text>Access the Spindle's control unit and turn off the field.</text>
+    </step>
+    
+    <step Name="Return to Grit Gate" XP="7500">
+      <text>Return to Grit Gate and speak to Barathrum.</text>
+    </step>
+  </quest>
+
+  <quest Name="Landing Pads" Level="35" Factions="Newly Sentient Beings" Reputation="300" System="XRL.SlynthQuestSystem"
+         Accomplishment="You found a new home for a young people." Achievement="ACH_SLYNTH_HOME"
+         Hagiograph="Inwith Maqqom Yd, =name= created a new people from lilypads and coral-stuff, and sent them to live throughout wider Qud."
+         HagiographCategory="BecomesLoved">
+    <step Name="Consult Settlements">
+      <text>Convince the leaders of at least three settlements to provide sanctuary for the slynth.</text>
+    </step>
+    <step Name="Sanctuary Candidates">
+      <text>These factions have agreed to host the slynth.</text>
+    </step>
+    <step Name="Bid the Slynth to Choose">
+      <text>Tell Thah to convene the slynth and make a decision.</text>
+    </step>
+  </quest>
+
+  <quest Name="Return to the Hydropon" Level="35"
+         Accomplishment="Thah gifted you a miraculous sculpture for helping the slynth."
+         Hagiograph="In a chivalric rite of thanks to their creator, the first slynth transformed into a star and gifted itself to =name=."
+         HagiographCategory="CreatesSomething">
+    <step Name="Return to the Hydropon">
+      <text>Once the slynth have arrived at their new home, speak to Thah at the hydropon.</text>
+    </step>
+  </quest>
+  
+</quests>

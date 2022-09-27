@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<animals>
+  <animal Name="Alligator" BaseBlueprint="Animal" Strength="12" Agility="4" Toughness="10">
+    <stat Name="AV" Modifier="1"></stat>
+    <naturalweapon Name="Bite" Slot="Face" Damage="10"></naturalweapon>
+  </animal>
+
+  <animal Name="Armadillo" BaseBlueprint="Animal" Strength="6" Agility="6" Toughness="6">
+    <mutation Name="Carapace" DisplayName="Full Carapace" ACmodifier="5"></mutation>
+  </animal>
+
+  <animal Name="Badger" BaseBlueprint="Animal" Strength="8" Agility="8" Toughness="6">
+    <mutation Name="BurrowingClaws" DisplayName="Burrowing Claws"></mutation>
+  </animal>
+
+  <animal Name="Bat" BaseBlueprint="Humanoid" Strength="2" Agility="10" Toughness="4">
+    <mutation Name="Wings" DisplayName="Wings"></mutation>
+    <mutation Name="Sonar" DisplayName="Sonar"></mutation>
+    <mutation Name="HeightenedHearing" DisplayName="Heightened Hearing"></mutation>
+    <mutation Name="TerribleVision" DisplayName="TerribleVision"></mutation>
+  </animal>
+
+  <animal Name="Bear" BaseBlueprint="Animal" Strength="10" Agility="4" Toughness="12">
+    <naturalweapon Name="Bite" Slot="Face" Damage="7"></naturalweapon>
+    <naturalweapon Name="Claw" Slot="Hand" Damage="5"></naturalweapon>
+    <naturalweapon Name="Claw" Slot="Paw" Damage="5"></naturalweapon>
+    <mutation Name="HeightenedSmell" DisplayName="Heightened Smell"></mutation>
+  </animal>
+
+</animals>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mods>
+  <mod Part="ModLacquered" Tables="CommonMods" Rarity="C" TinkerDisplayName="lacquered" Value="1.1" Description="Lacquered: This item cannot rust." />
+  <mod Part="ModSturdy" Tables="CommonMods" Rarity="C" TinkerDisplayName="sturdy" Value="1.1" Description="Sturdy: This item cannot break." />
+  <mod Part="ModLight" Tables="CommonMods" Rarity="C" TinkerDisplayName="slender" Value="1.1" Description="Slender: This item weighs less than normal." />
+  <mod Part="ModFeatherweight" Tables="CommonMods" Rarity="R" TinkerTier="2" TinkerDisplayName="willowy" Value="1.3" Description="Willowy: This item weighs much less than normal." />
+  <mod Part="ModSuspensor" Tables="CommonMods" Rarity="R" NativeTier="5" TinkerTier="7" CanAutoTinker="false" TinkerDisplayName="fitted with suspensors" Value="1.3" />
+  <mod Part="ModJewelEncrusted" Tables="CommonMods,JeweledMods" Rarity="R" Value="5" TinkerAllowed="false" TinkerDisplayName="jewel-encrusted" Description="Jewel-Encrusted: This item is much more valuable than usual and grants the wearer +100 reputation with water barons." />
+
+  <mod Part="ModDrumLoaded" Tables="MagazineMods" Rarity="U" MinTier="3" TinkerTier="2" TinkerDisplayName="drum-loaded" Value="1.2" Description="Drum-loaded: This weapon may hold 20% additional ammo." />
+
+  <mod Part="ModScoped" Tables="FirearmMods" Rarity="C" MinTier="2" TinkerDisplayName="scoped" Value="1.1" Description="Scoped: This weapon has increased accuracy." />
+  <mod Part="ModLiquidCooled" Tables="FirearmMods" Rarity="U" NativeTier="3" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="liquid-cooled" Value="1.2" />
+
+  <mod Part="ModBeamsplitter" Tables="BeamWeaponMods" Rarity="R" NativeTier="4" TinkerTier="6" TinkerDisplayName="fitted with a beamsplitter" Value="1.3" />
+  <mod Part="ModNanon" Tables="BeamWeaponMods" Rarity="R" NativeTier="4" TinkerTier="7" TinkerDisplayName="nanon" NoSparkingQuest="true" Value="1.3" />
+
+  <mod Part="ModSharp" Tables="BladeMods" Rarity="C" TinkerDisplayName="sharp" Value="1.1" NoSparkingQuest="true" Description="Sharp: +1 to penetration rolls" />
+  <mod Part="ModMasterwork" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="U" TinkerDisplayName="masterwork" Value="1.2" Description="Masterwork: This weapon scores critical hits twice as often." />
+  <mod Part="ModDisplacer" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="R" NativeTier="6" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="displacer" Value="1.5" />
+  <mod Part="ModMorphogenetic" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="R" NativeTier="6" TinkerTier="7" CanAutoTinker="false" TinkerDisplayName="morphogenetic" Value="1.5" />
+
+  <mod Part="ModRazored" Tables="LongBladeMods,AxeMods" Rarity="R" TinkerTier="3" TinkerDisplayName="serrated" Value="1.3" Description="Serrated: This weapon has a 3% chance to dismember opponents." />
+
+  <mod Part="ModColossal" Tables="CudgelMods" Rarity="R" TinkerDisplayName="gigantic" TinkerAllowed="false" Value="1.3" />
+
+  <mod Part="ModElectrified" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="electrified" Value="1.2" />
+  <mod Part="ModFreezing" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" NoSparkingQuest="true" TinkerDisplayName="freezing" Value="1.2" />
+  <mod Part="ModFlaming" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" NoSparkingQuest="true" TinkerDisplayName="flaming" Value="1.2" />
+  <mod Part="ModCounterweighted" Tables="WeaponMods" Rarity="C" TinkerTier="2" TinkerDisplayName="counterweighted" Value="1.1" />
+
+  <mod Part="ModReinforced" Tables="BodyMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="reinforced" Value="1.2" Description="Reinforced: +1 AV" />
+  <mod Part="ModFlexiweaved" Tables="BodyMods,CloakMods,ExoskeletonMods" Rarity="U" MinTier="2" TinkerTier="2" TinkerDisplayName="flexiweaved" Value="1.2" />
+  <mod Part="ModRecycling" Tables="BodyMods,ExoskeletonMods" Rarity="R" MinTier="2" NativeTier="0" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="recycling" Value="1.3" Description="Recycling: This item collects, purifies, and stores up to 8 drams of the wearer's wastewater." />
+  <mod Part="ModDisguise" Tables="BodyMods,CloakMods,ExoskeletonMods" Rarity="R" TinkerTier="2" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="disguise" Value="1.3" />
+
+  <mod Part="ModVisored" Tables="HelmetMods,ExoskeletonMods" Rarity="C" MinTier="2" TinkerDisplayName="visored" Value="1.1" Description="Visored: +1 DV" />
+  <mod Part="ModPadded" Tables="HelmetMods" Rarity="C" TinkerDisplayName="padded" Value="1.1" />
+  <mod Part="ModLanterned" Tables="HelmetMods,ExoskeletonMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="lanterned" Value="1.2" Description="Lanterned: This item provides light." />
+  <mod Part="ModFilters" Tables="HelmetMods,MaskMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="fitted with filters" Value="1.2" />
+  <mod Part="ModTwoFaced" Tables="HelmetMods" Rarity="R" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="two-faced" Value="1.3" Description="Two-faced: This item grants an additional face slot." />
+  <mod Part="ModHorrifying" Tables="HeadwearMods" Rarity="R" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="of terrifying visage" Value="1.3" Description="Terrifying visage: This item reduces the cooldowns of Berate, Intimidate, and Menacing Stare by 10 rounds. Additionally, it takes up both a head and face slot." />
+  <mod Part="ModSerene" Tables="HeadwearMods" Rarity="R" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="of serene visage" Value="1.3" Description="Serene visage: +1 Willpower and reduces the cooldown of Meditate by 40 rounds. Additionally, this item takes up both a head and face slot." />
+  <mod Part="ModCoProcessor" Tables="HeadwearMods" Rarity="R" TinkerTier="6" NativeTier="4" CanAutoTinker="false" TinkerDisplayName="co-processor" Value="1.3" />
+
+  <mod Part="ModSpiked" Tables="ShieldMods,GauntletMods" Rarity="R" TinkerTier="3" TinkerDisplayName="spiked" Value="1.3" />
+
+  <mod Part="ModRefractive" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,ShieldMods,BootMods,CloakMods,TreadAccessoryMods,ExoskeletonMods" Rarity="R" TinkerTier="5" NativeTier="4" TinkerDisplayName="refractive" Value="1.3" />
+
+  <mod Part="ModSixFingered" Tables="GloveMods,GauntletMods" Rarity="R" MinTier="3" TinkerTier="3" TinkerDisplayName="six-fingered" Value="1.3" Description="Six-Fingered: +1 Agility" />
+  
+  <mod Part="ModGesticulating" Tables="GloveMods,GauntletMods,ExoskeletonMods" Rarity="R" MinTier="3" TinkerTier="3" TinkerDisplayName="gesticulating" Value="1.3" Description="Gesticulating: +2 Strength but disallows the use of the Floating Nearby equipment slot" />
+  
+  <mod Part="ModFeathered" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="feathered" Value="1.2" Description="Feathered: This item grants the wearer +250 reputation with birds." />
+  
+  <mod Part="ModScaled" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="scaled" Value="1.2" Description="Scaled: This item grants the wearer +250 reputation with unshelled reptiles." />
+  
+  <mod Part="ModWooly" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,BootMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="wooly" Value="1.2" Description="Wooly: This item grants resistance to heat and cold." />
+  
+  <mod Part="ModSnailEncrusted" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods" Rarity="R" TinkerTier="2" TinkerDisplayName="snail-encrusted" TinkerAllowed="false" Value="1.2" Description="Scaled: This item grants the wearer +250 reputation with mollusks." />
+  
+  <mod Part="ModSpringLoaded" Tables="BootMods,ExoskeletonMods" Rarity="U" TinkerTier="2" TinkerDisplayName="spring-loaded" Value="1.2" Description="Spring-loaded: +5-10 movespeed" />
+  
+  <mod Part="ModCleated" Tables="BootMods,ExoskeletonMods" Rarity="C" TinkerTier="1" TinkerDisplayName="fitted with cleats" Value="1.1" />
+
+  <mod Part="ModPolarized" Tables="EyewearMods" Rarity="C" NativeTier="0" TinkerTier="2" TinkerDisplayName="polarized" Value="1.1" />
+  <mod Part="ModNav" Tables="EyewearMods,ExoskeletonMods" Rarity="R" NativeTier="0" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="nav" Value="1.5" />
+
+  <mod Part="ModNormalizing" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods,ShieldMods,BodyMods,CloakMods,HeadwearMods,EyewearMods,GloveMods,GauntletMods,BootMods,TreadAccessoryMods,ExoskeletonMods" Rarity="R" NativeTier="5" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="nulling" Value="1.3" />
+
+  <mod Part="ModHighCapacity" Tables="EnergyCellMods,ChargeStorageMods" Rarity="U" TinkerDisplayName="high-capacity" Value="1.2" />  
+  <mod Part="ModMetered" Tables="EnergyCellMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="metered" Value="1.2" />
+  <mod Part="ModRadioPowered" Tables="EnergyCellMods" Rarity="R" TinkerTier="4" CanAutoTinker="false" TinkerDisplayName="radio-powered" Value="1.3" />
+
+  <mod Part="ModIlluminated" Tables="BookMods" Rarity="U" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="illuminated" Value="1.3" Description="Illuminated: This book is adorned with decorative marginalia and illustrations. It's worth 30% more." />
+
+  <mod Part="ModExtradimensional" Tables="CommonMods,PotteryMods" Rarity="M" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="extradimensional" Value="3" Description="Extradimensional: This item has recently materialized, inheriting some properties from its home dimension." />
+
+  <mod Part="ModAirfoil" Tables="GrenadeMods,ThrownWeaponMods" Rarity="C" TinkerTier="1" TinkerDisplayName="airfoil" Value="1.1" />
+
+  <mod Part="ModPhaseConjugate" Tables="GrenadeMods" Rarity="R" NativeTier="0" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="phase-conjugate" Value="1.5" />
+
+  <mod Part="ModHardened" Tables="CommonMods" Rarity="R" NativeTier="4" TinkerTier="5" CanAutoTinker="false" TinkerDisplayName="electromagnetically-shielded" Value="1.3" />
+  <mod Part="ModJacked" Tables="CommonMods" Rarity="R" NativeTier="0" TinkerTier="4" CanAutoTinker="false" TinkerDisplayName="jacked" Value="1.3" />
+  <mod Part="ModOverloaded" Tables="CommonMods" Rarity="R" NativeTier="0" TinkerTier="4" CanAutoTinker="false" TinkerDisplayName="overloaded" Value="1.3" />
+  <mod Part="ModPhaseHarmonic" Tables="CommonMods,GrenadeMods" Rarity="R" NativeTier="6" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="phase-harmonic" Value="1.3" />
+
+  <mod Part="ModEngraved" Tables="CommonMods,PotteryMods" Rarity="C" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="engraved" Value="2" Description="Engraved: This item is engraved with a depiction of a historical event." />
+  <mod Part="ModPainted" Tables="CommonMods,PotteryMods" Rarity="C" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="painted" Value="2" Description="Painted: This item is painted with a depiction of a historical event." />
+
+</mods>

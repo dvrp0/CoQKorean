@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<commands>
+
+  <command ID="CmdUse" DisplayText="Use" Category="Actions"></command>
+  <command ID="CmdCancel" DisplayText="Cancel" Category="Actions"></command>
+  
+  <command ID="CmdTalk" DisplayText="Talk" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdLook" DisplayText="Look" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdGet" DisplayText="Get" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdGetFrom" DisplayText="Interact nearby" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdOpen" DisplayText="Open" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdAbilities" DisplayText="Use ability" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdFire" DisplayText="Fire missile weapon" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdReload" DisplayText="Reload missile weapons" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdThrow" DisplayText="Throw Thrown Weapon" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdTarget" DisplayText="Select target" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdAttackNearest" DisplayText="Melee attack nearest enemy" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWait" DisplayText="Wait / Pat at flames" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWait20" DisplayText="Wait 20" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWait100" DisplayText="Wait 100" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWaitN" DisplayText="Wait a number of turns" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWaitUntilHealed" DisplayText="Rest until healed" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWaitUntilMorning" DisplayText="Rest until morning" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdWalk" DisplayText="Walk" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdAutoExplore" DisplayText="Auto-explore" Category="Adventure" Layer="Adventure"></command>
+  <command ID="CmdAutoAttack" DisplayText="Auto-attack in melee" Category="Adventure" Layer="Adventure"></command>
+
+  <command ID="CmdInventory" DisplayText="Open Inventory" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdEquipment" DisplayText="Open Equipment" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdSkillsPowers" DisplayText="Open Skills" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdCharacter" DisplayText="Open Character Sheet" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdQuests" DisplayText="Open Quests" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdFactions" DisplayText="Open Factions" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdLastStatusPage" DisplayText="Open Recent Status Page" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdTinkering" DisplayText="Open Tinkering" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdJournal" DisplayText="Open Journal" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdMessageHistory" DisplayText="Show Message History" Category="Status" Layer="Adventure"></command>
+  <command ID="CmdActiveEffects" DisplayText="Open Active Effects" Category="Status" Layer="Adventure"></command>
+
+  <command ID="CmdMissileWeaponMenu" DisplayText="Missile Weapon Menu" Category="Targeting" Layer="Targeting"></command>
+  
+  <command ID="CmdMoveNW" DisplayText="Move northwest" Category="Movement"></command>
+  <command ID="CmdMoveN" DisplayText="Move north" Category="Movement"></command>
+  <command ID="CmdMoveNE" DisplayText="Move northeast" Category="Movement"></command>
+  <command ID="CmdMoveW" DisplayText="Move west" Category="Movement"></command>
+  <command ID="CmdMoveE" DisplayText="Move east" Category="Movement"></command>
+  <command ID="CmdMoveSW" DisplayText="Move southwest" Category="Movement"></command>
+  <command ID="CmdMoveS" DisplayText="Move south" Category="Movement"></command>
+  <command ID="CmdMoveSE" DisplayText="Move southeast" Category="Movement"></command>
+  <command ID="CmdMoveU" DisplayText="Move up" Category="Movement"></command>
+  <command ID="CmdMoveD" DisplayText="Move down" Category="Movement"></command>
+  <command ID="CmdMoveTo" DisplayText="Move to square" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdMoveToEdge" DisplayText="Move to zone edge" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdMoveToPointOfInterest" DisplayText="Move to point of interest" Category="Movement" Layer="Adventure"></command>
+
+  <command ID="CmdAttackNW" DisplayText="Force attack northwest" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackN" DisplayText="Force attack north" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackNE" DisplayText="Force attack northeast" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackW" DisplayText="Force attack west" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackE" DisplayText="Force attack east" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackSW" DisplayText="Force attack southwest" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackS" DisplayText="Force attack south" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackSE" DisplayText="Force attack southeast" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackU" DisplayText="Force attack up" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackD" DisplayText="Force attack down" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackDirection" DisplayText="Force attack direction" Category="Movement" Layer="Adventure"></command>
+  <command ID="CmdAttackCell" DisplayText="Force attack square" Category="Movement" Layer="Adventure"></command>
+
+  <command ID="CmdZoomIn" DisplayText="Zoom in" Category="Display" Layer="Adventure"></command>
+  <command ID="CmdZoomOut" DisplayText="Zoom out" Category="Display" Layer="Adventure"></command>
+  <command ID="CmdShowSidebar" DisplayText="Toggle sidebar" Category="Display" Layer="Adventure"></command>
+  <command ID="CmdShowSidebarMessages" DisplayText="Cycle sidebar mode" Category="Display" Layer="Adventure"></command>
+  <command ID="CmdToggleMessageVerbosity" DisplayText="Toggle terse messages" Category="Display" Layer="Adventure"></command>
+
+  <command ID="CmdChargenRandom" DisplayText="Make a random selection" Category="Character Generation" Layer="Chargen"></command>
+  <command ID="CmdChargenReset" DisplayText="Reset selections" Category="Character Generation" Layer="Chargen"></command>
+  <command ID="CmdChargenItemOptions" DisplayText="Options for selected item" Category="Character Generation" Layer="Chargen"></command>
+  <command ID="CmdChargenMutationVariant" DisplayText="Choose a mutation variant" Category="Character Generation" Layer="Chargen"></command>
+  
+  <command ID="CmdHelp" DisplayText="Help" Category="System"></command>
+  <command ID="CmdQuit" DisplayText="Quit" Category="System"></command>
+  <command ID="CmdLoad" DisplayText="Load game" Category="System"></command>
+  <command ID="CmdSave" DisplayText="Save game" Category="System"></command>
+  <command ID="CmdSystemMenu" DisplayText="System menu" Category="System"></command>
+  <command ID="CmdIgnore" DisplayText="Ignored keys" Category="System"></command>
+
+  <command ID="CmdShowReachability" DisplayText="Show reachability" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdShowFPS" DisplayText="Show FPS" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdToggleAnimation" DisplayText="Toggle animation" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdShowBrainlog" DisplayText="Show brainlog" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdWish" DisplayText="Wish" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdXP" DisplayText="Give 250000 XP" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdExplore" DisplayText="Explore zone" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdNoclipD" DisplayText="Noclip down" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdNoclipU" DisplayText="Noclip up" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdDismemberLimb" DisplayText="Dismember limb" Category="Debug" Layer="Adventure"></command>
+  <command ID="CmdRegenerateLimb" DisplayText="Regenerate limb" Category="Debug" Layer="Adventure"></command>
+
+</commands>

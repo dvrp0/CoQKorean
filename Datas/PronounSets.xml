@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pronounsets EnableSelection="false" EnableGeneration="false" EnableConversationalExchange="false" GenerateGeneric="0" ReplicateGenders="true">
+
+  <pronounset
+    Subjective="sie"
+    Objective="hir"
+    PossessiveAdjective="hir"
+    SubstantivePossessive="hirs"
+    Reflexive="hirself"
+  />
+
+  <pronounset
+    Subjective="xe"
+    Objective="xem"
+    PossessiveAdjective="xyr"
+    SubstantivePossessive="xyrs"
+    Reflexive="xemself"
+  />
+
+  <pronounset
+    Subjective="ze"
+    Objective="zir"
+    PossessiveAdjective="zir"
+    SubstantivePossessive="zirs"
+    Reflexive="zirself"
+  />
+
+</pronounsets>
