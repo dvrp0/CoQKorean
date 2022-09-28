@@ -170,32 +170,32 @@
   <conversation ID="JoppaElder" Inherits="BaseSlynthMayor">
     <start ID="Welcome">
       <text>
-        Live and drink, wayfarer. Welcome to the oasis of Joppa. Here you will find shade and vittle, along with other provisions to help you better scour the rust-caves for treasure. 
-        
-        Above all else, you may drink of our freshwater and quench your thirst.
+        그대 삶에 물이 있기를, 여행자여. Joppa의 오아시스에 온 것을 환영하네. 그늘과 양식이 있는 곳이지. 보물을 찾아 녹빛 동굴을 항행하는 데에 도움이 될 만한 것들 또한 있다네.
+
+        무엇보다도 우리의 담수로 그대의 갈증을 달래도 좋아.
       </text>
       <choice Target="FinishExploringRedrock1" IfHaveActiveQuest="What's Eating the Watervine?" IfHaveBlueprint="Girshling Corpse">I return from Red Rock with the corpse of a pale spiderling. Elder, would you examine it?</choice>
-      <choice Target="JoppaInfo1">What can you tell me about Joppa?</choice>
-      <choice Target="QudInfo1" IfHaveText="Qud">What can you tell me about Qud?</choice>
-      <choice Target="LookingForWork1" IfNotHaveQuest="What's Eating the Watervine?">Is there work to be found here?</choice>
+      <choice Target="JoppaInfo1">Joppa는 어떤 마을인가요?</choice>
+      <choice Target="QudInfo1" IfHaveText="Qud">쿼드는 어떤 곳인가요?</choice>
+      <choice Target="LookingForWork1" IfNotHaveQuest="What's Eating the Watervine?">제가 할 만한 일이 있을까요?</choice>
       <choice Target="GyreReminder" IfFinishedQuest="What's Eating the Watervine?">Would you kindly explain girshlings and the Gyre again?</choice>
-      <choice Target="End">My thanks, Elder. Live and drink.</choice>
+      <choice Target="End">감사합니다, 장로님. 그대 삶에 물이 있기를.</choice>
     </start>
 
     <!-- General topics, accessible from start and each other -->
     <!-- TODO: could introduce a categorized <topic> node + choice pair for this pattern, but inheritance does the job fairly well -->
     <node ID="JoppaInfo1" Inherits="Welcome">
-      Joppa is an oasis-hamlet nestled between the eastern reaches of the great salt pans and the jungles of Qud.
+      Joppa는 장대한 염전의 동쪽 지대와 쿼드의 정글 사이에 자리잡은 작은 오아시스 마을이네.
 
-      We are a community of watervine farmers; these groves lie along some of the few tracts of land tame enough to grow watervine.
+      우리 마을은 수분덩굴 농부들로 구성되어 있지. 수분덩굴이 자랄 만큼 고른 몇몇 땅에서 수풀이 자라고 있다네.
     </node>
     <node ID="LookingForWork1" Inherits="Welcome">
-      The moisture farmers are having trouble with cave vermin. Speak with Mehmet by the watervine patch.
+      수분 농부들이 동굴에서 나온 해충 때문에 곤혹을 겪고 있어. 수분덩굴밭에 있는 메멧과 얘기해 보게.
 
-      Or you can chat with ol' Argyve in the southwest corner of the village. He's always looking for some poor fool to help with his contraptions.
+      아니면 마을 남서쪽 구석에 있는 노장 아가브와 대화를 나눠 보게. 아가브는 자신의 기계장치에 도움을 줄 가엾은 바보를 항상 찾고 있으니 말이야.
     </node>
     <node ID="QudInfo1" Inherits="Welcome">
-      Qud is a strange and terrifying mesa to the northeast. Her tainted rivers breed life in &amp;Gall&amp;y its motley forms; her poisoned jungles shelter priceless relics of a forgotten past.
+      쿼드는 북동쪽에 위치한 기이하고도 섬뜩한 탁상지네. (Her tainted rivers breed life in &amp;Gall&amp;y its motley forms;)그의 오염된 강은 혼종 생명체들을 낳았으며, 유독한 정글은 값을 매길 수 없는 잊혀진 과거의 유물들을 숨기고 있지.
 
       But that is just the half of it, for Qud's most precious treasures -- and her most hideous children -- lie within the innumerable chrome caverns beneath the scarlet loam.
 
@@ -205,7 +205,7 @@
       <text>
         The Gyre was a series of seven plagues that spread through and out of Qud a thousand years ago. One of these plagues was a scourge of girshlings, and they heralded the coming of the seventh plague, the Girsh Nephilim. These were terrible demons who ate the young of kith and kin. Resheph slew them, but now that girshlings are back, we don't know what to make of the Nephilim.
       </text>
-      <choice Target="End">Live and drink.</choice>
+      <choice Target="End">그대 삶에 물이 있기를.</choice>
     </node>
 
     <!-- Specific sub-nodes, for quests, sub-topics etc -->
