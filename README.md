@@ -11,4 +11,4 @@ Caves of Qud 한국어화 시도해보기
   * 소스코드 번역
     * Harmony Transpiler로 소스코드 내의 문자열 번역
       * 처음에는 Prefix로 메서드를 재정의하는 방식으로 처리했으나 너무 비효율적이고 구조상의 한계가 있었음
-      * IL 코드를 통해 문자열만 갈아끼우는 Transpiler
+      * IL 코드를 통해 문자열만 갈아끼우는 Transpiler로 선회
