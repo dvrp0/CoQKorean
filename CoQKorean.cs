@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection.Emit;
 using System.Linq;
 using XRL;
@@ -14,39 +15,100 @@ namespace CoQKorean
     [HasModSensitiveStaticCache]
     public static class CoQKorean
     {
-        private static Font alternative;
+        private static Dictionary<char, exTextureInfo> koreanCharInfos = new Dictionary<char, exTextureInfo>();
+        private static readonly string modPath = Path.GetFullPath(Path.Combine(System.Reflection.Assembly.GetExecutingAssembly().Location, "..", "..", "Mods", "CoQKorean"));
 
         [ModSensitiveCacheInit]
         public static void Init()
         {
-            var bundle = AssetBundle.LoadFromFile("C:\\Users\\DaveRipper\\AppData\\LocalLow\\Freehold Games\\CavesOfQud\\Mods\\CoQKorean\\coqkorean");
-            if (bundle == null)
+            var bundle = AssetBundle.LoadFromFile(Path.Combine(modPath, "coqkorean"));
+            if (bundle != null)
             {
-                Debug.Log("CoQKorean :: Bundle loading failed!");
-                return;
+                var font = bundle.LoadAsset<TMP_FontAsset>("Assets/coqkorean/D2Coding SDF.asset");
+                TMP_Settings.fallbackFontAssets.Add(font);
+                Debug.Log($"CoQKorean :: FallbackFont added {font.name}");
             }
-            foreach (var asset in bundle.GetAllAssetNames())
-                Debug.Log($"CoQKorean :: {asset}");
 
-            var font = bundle.LoadAsset<TMP_FontAsset>("Assets/coqkorean/D2Coding SDF.asset");
-            TMP_Settings.fallbackFontAssets.Add(font);
-            Debug.Log($"CoQKorean :: FallbackFont added {font.name}");
+            var charSet = File.ReadAllText(Path.Combine(modPath, "Fonts", "charset.txt"));
+            for (int i = 0; i < charSet.Length; i++)
+            {
+                if (!koreanCharInfos.ContainsKey(charSet[i]))
+                {
+                    var raw = File.ReadAllBytes(Path.Combine(modPath, "Fonts", $"{i}.png"));
+                    var texture = new Texture2D(1, 1);
+                    texture.LoadImage(raw);
 
-            alternative = bundle.LoadAsset<Font>("Assets/coqkorean/D2CodingBold-Ver1.3.2-20180524.ttf");
+                    koreanCharInfos.Add(charSet[i], exTextureInfo.Create(texture));
+                }
+            }
 
             Debug.Log("CoQKorean :: Done!");
         }
 
-        [PlayerMutator]
-        public class CoQKoreanPlayerMutator : IPlayerMutator
+        [HarmonyPatch(typeof(GameManager))]
+        class GameManagerPatch
         {
-            public void mutate(XRL.World.GameObject player)
+            [HarmonyTranspiler]
+            [HarmonyPatch("OnUpdate")]
+            static IEnumerable<CodeInstruction> OnUpdateTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
             {
-                foreach (var temp in Component.FindObjectsOfType<Text>())
+                var codes = new List<CodeInstruction>(instructions);
+                var charInfos = AccessTools.Field(typeof(GameManager), nameof(GameManager.CharInfos));
+                var getCharInfo = SymbolExtensions.GetMethodInfo((char c) => GetCharInfo(c));
+                var isKoreanInfo = SymbolExtensions.GetMethodInfo((char c) => IsKorean(c));
+                var label = il.DefineLabel();
+                int insertionIndex = -1;
+                var insertionInstructions = new List<CodeInstruction>();
+                var insertionLdloc = new CodeInstruction(OpCodes.Ldloc_S, null);
+
+                for (int i = 0; i < codes.Count - 2; i++)
                 {
-                    Debug.Log($"CoQKorean :: mutate -> {temp.name}");
-                    temp.font = alternative;
+                    if (codes[i].LoadsField(charInfos))
+                    {
+                        Debug.Log($"CoQKorean :: CharInfos loads");
+                        codes[i + 2].opcode = OpCodes.Call;
+                        codes[i + 2].operand = getCharInfo;
+                    }
+                    else if (codes[i].opcode == OpCodes.Ldloc_S && codes[i + 1].opcode == OpCodes.Ldc_I4_0)
+                    {
+                        Debug.Log($"CoQKorean :: insertionIndex found");
+                        insertionIndex = i;
+                        insertionLdloc.operand = codes[i].operand;
+                    }
+                    else if (codes[i].opcode == OpCodes.Ldc_I4_S && (SByte)codes[i].operand == 0x20 && codes[i + 1].opcode == OpCodes.Stloc_S)
+                    {
+                        Debug.Log($"CoQKorean :: Label found");
+                        codes[i + 2].labels.Add(label);
+                    }
                 }
+
+                insertionInstructions.Add(new CodeInstruction(insertionLdloc));
+                insertionInstructions.Add(new CodeInstruction(OpCodes.Call, isKoreanInfo));
+                insertionInstructions.Add(new CodeInstruction(OpCodes.Brtrue_S, label));
+
+                if (insertionIndex != -1)
+                {
+                    Debug.Log($"CoQKorean :: insertionInstructions insert");
+                    codes.InsertRange(insertionIndex, insertionInstructions);
+                }
+
+                for (int i = insertionIndex; i < insertionIndex + 11; i++)
+                    Debug.Log(codes[i].opcode);
+
+                return codes.AsEnumerable();
+            }
+
+            static exTextureInfo GetCharInfo(char c)
+            {
+                if (c < 256)
+                    return GameManager.Instance.CharInfos[c];
+                else
+                    return koreanCharInfos[c];
+            }
+
+            static bool IsKorean(char c)
+            {
+                return (c >= 0xAC00 && c <= 0xD7A3) || (c >= 0x3131 && c <= 0x318E);
             }
         }
 
@@ -403,6 +465,28 @@ namespace CoQKorean
                     {
                         if (codes[i].operand as string == "You have received a new quest, ")
                             codes[i].operand = "새로운 퀘스트를 받았습니다 - ";
+                    }
+                }
+
+                return codes.AsEnumerable();
+            }
+        }
+
+        [HarmonyPatch(typeof(XRL.UI.JournalScreen))]
+        class JournalScreenPatch
+        {
+            [HarmonyTranspiler]
+            [HarmonyPatch("Show")]
+            static IEnumerable<CodeInstruction> ShowTranspiler(IEnumerable<CodeInstruction> instructions)
+            {
+                var codes = new List<CodeInstruction>(instructions);
+
+                for (int i = 0; i < codes.Count; i++)
+                {
+                    if (codes[i].opcode == OpCodes.Ldstr)
+                    {
+                        if (codes[i].operand as string == "[ {{W|Journal}} ]")
+                            codes[i].operand = "[ {{W|일지}} ]";
                     }
                 }
 

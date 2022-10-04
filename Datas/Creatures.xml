@@ -11239,7 +11239,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <xtagGrammar Proper="true" />
   </object>
   <object Name="ElderBob" Inherits="NPC">
-    <part Name="Render" DisplayName="Elder Irudad" Tile="creatures/caste_flipped_15.bmp" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" RenderString="f" />
+    <part Name="Render" DisplayName="이루다드 장로" Tile="creatures/caste_flipped_15.bmp" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" RenderString="f" />
     <part Name="ConversationScript" ConversationID="JoppaElder" />
     <part Name="Brain" Wanders="false" Factions="Joppa-100" />
     <part Name="Description" Short="A hunched-back ancient wrapped in a black robe. =pronouns.Possessive= smile is warm. Protruding from =pronouns.possessive= back is a stalk hidden under a veil. The stalk forks into two hands with eyes in their palms, and immediately you know why men follow Irudad." />
@@ -11301,7 +11301,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   <object Name="Mehmet" Inherits="NPC">
-    <part Name="Render" DisplayName="Mehmet" ColorString="&amp;W" RenderString="f" Tile="Creatures/sw_farmer2.bmp" />
+    <part Name="Render" DisplayName="메멧" ColorString="&amp;W" RenderString="f" Tile="Creatures/sw_farmer2.bmp" />
     <part Name="ConversationScript" ConversationID="JoppaMehmet" />
     <part Name="Brain" Wanders="false" Factions="Joppa-100" />
     <part Name="Description" Short="Years of the desert have taken their toll on =pronouns.possessive= body, but =pronouns.subjective= =verb:command:afterpronoun= your ear with =pronouns.possessive= voice like few other =pluralize==pronouns.personTerm=, and you wonder what sovereignty =pronouns.subjective= might've come to were =pronouns.subjective= not born a moisture farmer." />

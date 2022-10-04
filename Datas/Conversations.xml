@@ -4,7 +4,7 @@
   <conversation ID="BaseConversation" Inherits="">
     <!-- Conversation level choices are distributed to all start nodes by default -->
     <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" Target="WaterRitual" Ordinal="980">
-      <text>Your thirst is mine, my water is yours.</text>
+      <text>그대 갈증은 내 것이고, 나의 물은 그대 것입니다.</text>
       <text IfHavePart="SociallyRepugnant" Priority="1">
         Swap spittle?~
         Let's get to it.~
@@ -18,7 +18,7 @@
       <part Name="WaterRitualBegin" />
     </choice>
     <node ID="WaterRitual">
-      <text>Live and drink, =subject.waterRitualLiquid=-=player.siblingTerm=.</text>
+      <text>그대 삶에 물이 있기를를, =subject.waterRitualLiquid=-=player.siblingTerm=.</text>
       <part Name="WaterRitual" />
       <choice ID="ShareGossipChoice">
         <text>I have some gossip that may interest you.</text>
@@ -86,12 +86,12 @@
         <part Name="WaterRitualJoinParty" />
       </choice>
       <choice ID="EndChoice" Target="Start" Ordinal="1000">
-        <text>Live and drink, =subject.waterRitualLiquid=-=pronouns.siblingTerm=.</text>
-        <part Name="Tag">{{g|[end the water ritual]}}</part>
+        <text>그대 삶에 물이 있기를, =subject.waterRitualLiquid=-=pronouns.siblingTerm=.</text>
+        <part Name="Tag">{{g|[물의 의식 종료]}}</part>
       </choice>
     </node>
     <choice ID="Trade" Ordinal="990">
-      <text>Let's trade.</text>
+      <text>교환합시다.</text>
       <part Name="Trade" />
     </choice>
   </conversation>
@@ -172,7 +172,7 @@
       <text>
         그대 삶에 물이 있기를, 여행자여. Joppa의 오아시스에 온 것을 환영하네. 그늘과 양식이 있는 곳이지. 보물을 찾아 녹빛 동굴을 항행하는 데에 도움이 될 만한 것들 또한 있다네.
 
-        무엇보다도 우리의 담수로 그대의 갈증을 달래도 좋아.
+        무엇보다도 원한다면 우리의 담수로 그대의 갈증을 달래도 좋아.
       </text>
       <choice Target="FinishExploringRedrock1" IfHaveActiveQuest="What's Eating the Watervine?" IfHaveBlueprint="Girshling Corpse">I return from Red Rock with the corpse of a pale spiderling. Elder, would you examine it?</choice>
       <choice Target="JoppaInfo1">Joppa는 어떤 마을인가요?</choice>
@@ -195,15 +195,15 @@
       아니면 마을 남서쪽 구석에 있는 노장 아가브와 대화를 나눠 보게. 아가브는 자신의 기계장치에 도움을 줄 가엾은 바보를 항상 찾고 있으니 말이야.
     </node>
     <node ID="QudInfo1" Inherits="Welcome">
-      쿼드는 북동쪽에 위치한 기이하고도 섬뜩한 탁상지네. (Her tainted rivers breed life in &amp;Gall&amp;y its motley forms;)그의 오염된 강은 혼종 생명체들을 낳았으며, 유독한 정글은 값을 매길 수 없는 잊혀진 과거의 유물들을 숨기고 있지.
+      쿼드는 북동쪽에 위치한 기이하고도 섬뜩한 탁상지네. 그의 오염된 강은 그 모든 혼종 생명체들을 낳았으며, 유독한 정글 속에는 값을 매길 수 없는 잊혀진 과거의 유물들이 감춰져 있지.
 
-      But that is just the half of it, for Qud's most precious treasures -- and her most hideous children -- lie within the innumerable chrome caverns beneath the scarlet loam.
+      허나 가장 중요한 것은 그게 아니라네. 바로 진홍색 양토 아래에 가득한 금속 동굴 속에 잠들어 있는 쿼드의 가장 귀중한 보물들이지. 가장 끔찍한 자식들도 있고 말이야.
 
-      To ply those silver hollows -- a spry adventurer's dream! The years have wizened me beyond such foolish ambitions, but, you! Be not deterred so!
+      이 은빛 공동들을 좇는 것은 한창때인 모험가의 꿈이 아니겠는가! 비록 세월이 그런 어리석은 야망을 넘어 내 얼굴에 주름살을 가득 새겼으나, 그대는! 그대는 단념하지 말게!
     </node>
     <node ID="GyreReminder" Inherits="Welcome">
       <text>
-        The Gyre was a series of seven plagues that spread through and out of Qud a thousand years ago. One of these plagues was a scourge of girshlings, and they heralded the coming of the seventh plague, the Girsh Nephilim. These were terrible demons who ate the young of kith and kin. Resheph slew them, but now that girshlings are back, we don't know what to make of the Nephilim.
+        순회는 천 년 전 쿼드 안팎으로 퍼져나갔던 일련의 일곱 재앙을 부르는 말이라네. 재앙 중 하나는 끔찍한 거쉴링이었는데, 이들은 일곱 번째 재앙인 거쉬 네필림의 도래를 알리는 것이었어. 그들은 일가친척의 어린이들을 먹어치우는 끔찍한 악마들이었다네. 레셰프께서 처단하셨으나, 이제 거쉴링들이 다시 돌아왔으니 네필림을 어찌해야 할지 모르겠다네.
       </text>
       <choice Target="End">그대 삶에 물이 있기를.</choice>
     </node>
