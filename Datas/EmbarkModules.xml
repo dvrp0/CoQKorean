@@ -7,45 +7,45 @@
 
   <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
     <window ID="Chargen/Modes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
-      <title>:choose game mode:</title>
-      <name>Game Modes</name>
+      <title>:게임 모드 선택:</title>
+      <name>게임 모드</name>
     </window>
 
     <modes>
-      <mode ID="Classic" Title="Classic">
+      <mode ID="Classic" Title="클래식">
         <icon Tile="Creatures/class_gunslinger.bmp" Foreground="y" Detail="K"></icon>
         <description>
-          Permadeath: lose your character when you die.
+          영구적 사망: 사망하면 캐릭터가 사라집니다.
         </description>
         <stringgamestate Name="GameMode" Value="Classic"></stringgamestate>
       </mode>
 
-      <mode ID="Roleplay" Title="Roleplay">
+      <mode ID="Roleplay" Title="롤플레이">
         <icon Tile="UI/sw_roleplay_mode.bmp" Foreground="b" Detail="B"></icon>
         <description>
-          Checkpointing at settlements.
+          마을에서 중간 저장됩니다.
         </description>
         <stringgamestate Name="GameMode" Value="Roleplay"></stringgamestate>
         <stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
       </mode>
 
-      <mode ID="Wander" Title="Wander">
+      <mode ID="Wander" Title="방랑">
         <icon Tile="UI/sw_wander_mode.bmp" Foreground="g" Detail="C"></icon>
         <description>
-          {{c|&#249;}} Most creatures begin neutral to you.
-          {{c|&#249;}} No XP for killing.
-          {{c|&#249;}} More XP for discoveries and performing the water ritual.
-          {{c|&#249;}} Checkpointing at settlements.
+          {{c|&#249;}} 대부분의 생물이 당신을 중립적으로 대합니다.
+          {{c|&#249;}} 처치 시 XP를 획득하지 않습니다.
+          {{c|&#249;}} 새로운 것을 발견하거나 물의 의식을 행할 때 더 많은 XP를 획득합니다.
+          {{c|&#249;}} 마을에서 중간 저장됩니다.
         </description>
         <stringgamestate Name="GameMode" Value="Wander"></stringgamestate>
         <stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
       </mode>
 
-      <mode ID="Daily" Title="Daily" Editable="False">
+      <mode ID="Daily" Title="일일" Editable="False">
         <icon Tile="Items/sw_clockthing.bmp" Foreground="w" Detail="W"></icon>
         <description>
-          {{c|&#249;}} One chance with a fixed character and world seed.
-          {{c|&#249;}} Currently in day {{W|{day_of_year}}} of {{W|{year}}}.
+          {{c|&#249;}} 고정된 캐릭터와 월드 시드와 함께 한 번의 기회가 주어집니다.
+          {{c|&#249;}} 현재 {{W|{year}}}년의 {{W|{day_of_year}}}번째 날입니다.
         </description>
         <stringgamestate Name="GameMode" Value="Daily"></stringgamestate>
       </mode>
@@ -55,42 +55,42 @@
   <module Class="XRL.CharacterBuilds.Qud.QudChartypeModule">
     <window ID="Chargen/CharType" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudChartypeModuleWindow">
       <name>CharTypes</name>
-      <title>:choose character type:</title>
+      <title>:캐릭터 종류 선택:</title>
     </window>
 
     <types>
-      <type ID="Pregen" Title="Presets">
+      <type ID="Pregen" Title="프리셋">
         <icon Tile="Creatures/sw_marsh_taur.bmp" Foreground="W" Detail="w"></icon>
         <description>
-          Pick from several preset characters. Once you get comfortable, you can customize them.
+          프리셋 캐릭터 중에서 선택합니다. 익숙해지셨다면 원하는 대로 바꿔 보세요.
          </description>
       </type>
       
-      <type ID="New" Title="New">
+      <type ID="New" Title="새 캐릭터">
         <icon Tile="UI/sw_newchar.bmp" Foreground="W" Detail="w"></icon>
         <description>
-          Create a new character.
+          새로운 캐릭터를 만듭니다.
         </description>
       </type>
 
-      <type ID="Random" Title="Random">
+      <type ID="Random" Title="무작위">
         <icon Tile="UI/sw_random.bmp" Foreground="w" Detail="W"></icon>
         <description>
-          Roll a random character.
+          캐릭터를 무작위로 만듭니다.
         </description>
       </type>
 
-      <type ID="Library" Title="Library">
+      <type ID="Library" Title="저장소">
         <icon Tile="Items/sw_bookshelf1.bmp" Foreground="w" Detail="W"></icon>
         <description>
-          Choose a character from your build library.
+          내 빌드 저장소에서 캐릭터를 선택합니다.
         </description>
       </type>
 
-      <type ID="Last" Title="Last">
+      <type ID="Last" Title="이전 캐릭터">
         <icon Tile="UI/sw_lastchar.bmp" Foreground="W" Detail="w"></icon>
         <description>
-          Replay the last character you played.
+          마지막으로 플레이한 캐릭터를 다시 플레이합니다.
         </description>
       </type>
     </types>
@@ -99,21 +99,21 @@
   <module Class="XRL.CharacterBuilds.Qud.QudBuildLibraryModule">
     <window ID="Chargen/BuildLibrary" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudBuildLibraryModuleWindow">
       <name>Build Library</name>
-      <title>:build library:</title>
+      <title>:빌드 저장소:</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudGenotypeModule">
     <window ID="Chargen/ChooseGenotypes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGenotypeModuleWindow">
       <name>Genotypes</name>
-      <title>:choose genotype:</title>
+      <title>:유전자형 선택:</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
     <window ID="Chargen/Pregens" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudPregenModuleWindow">
       <name>Pregens</name>
-      <title>:choose preset:</title>
+      <title>:프리셋 선택:</title>
     </window>
 
     <pregens>
@@ -213,25 +213,25 @@
   <module Class="XRL.CharacterBuilds.Qud.QudSubtypeModule">
     <window ID="Chargen/ChooseSubtypes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleWindow">
       <name>Subtypes</name>
-      <title>:choose subtype:</title>
+      <title>:아형 선택:</title>
     </window>
     <window ID="Chargen/ChooseSubtypesCategory" Prefab="SwitchingScroller" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleCategoryWindow">
       <name>Subtypes with Category</name>
-      <title>:choose subtype:</title>
+      <title>:아형 선택:</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudMutationsModule">
     <window ID="Chargen/Mutations" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudMutationsModuleWindow">
       <name>Mutations</name>
-      <title>:choose mutations:</title>
+      <title>:변이 선택:</title>
     </window>
 
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudAttributesModule">
     <window ID="Chargen/PickAttributes" Prefab="HorizScrollerScroller" Class="XRL.CharacterBuilds.Qud.UI.QudAttributesModuleWindow">
-      <title>:choose attributes:</title>
+      <title>:특성 선택:</title>
       <name>Attributes</name>
     </window>
   </module>
@@ -239,34 +239,34 @@
   <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
     <window ID="Chargen/Cybernetic" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudCyberneticsModuleWindow">
       <name>Cybernetics</name>
-      <title>:choose cybernetic implant:</title>
+      <title>:사이버네틱 임플란트 선택:</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildSummaryModule">
     <window ID="Chargen/BuildSummary" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudBuildSummaryModuleWindow">
       <name>Summary</name>
-      <title>:build summary:</title>
+      <title>:빌드 요약:</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule">
     <window ID="Chargen/Customize" Prefab="VertScroll" Class="XRL.CharacterBuilds.Qud.UI.QudCustomizeCharacterModuleWindow">
       <name>Customize</name>
-      <title>:customize character:</title>
+      <title>:캐릭터 커스터마이즈:</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule">
     <window ID="Chargen/ChooseStartingLocation" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudChooseStartingLocationModuleWindow">
       <name>Starting Location</name>
-      <title>:choose starting location:</title>
+      <title>:시작 지점 선택:</title>
     </window>
     
     <locations>
       <location ID="Joppa" Name="{{Y|Joppa}}" Location="GlobalLocation:JoppaWorld.11.22.1.1.10@37,22">
         <description>
-          Recommended for new players.
+          신규 플레이어에게 권장합니다.
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="*Joppa"></stringgamestate>
@@ -290,11 +290,11 @@
         <grid Position="42" Tile="Terrain/sw_canyon.bmp" Foreground="w" Detail="w" Background="k"></grid>
       </location>
 
-      <location ID="SaltMarshVillage" Name="{{G|salt marsh}}&#10;village" Location="StringGameState:villageZeroStartingLocation">
+      <location ID="SaltMarshVillage" Name="{{G|소금 습지대}}&#10;마을" Location="StringGameState:villageZeroStartingLocation">
         <description>
-          {{c|&#249;}} Random village in the salt marshes.
-          {{c|&#249;}} Village teaches Harvestry.
-          {{c|&#249;}} +50 reputation with insects and fish.
+          {{c|&#249;}} 소금 습지대의 무작위 마을입니다.
+          {{c|&#249;}} 마을에서 수확을 배울 수 있습니다.
+          {{c|&#249;}} 곤충과 어류와의 평판이 +50 상승합니다.
           {{c|&#249;}} Start with a pair of {{g|crocc{{G|a}}sins}}.
         </description>
 
@@ -357,10 +357,10 @@
         <grid Position="42" Tile="Terrain/sw_ground_desert_9.bmp" Foreground="Y" Detail="Y" Background="k"></grid>
       </location>
 
-      <location ID="DesertCanyonsVillage" Name="{{W|desert canyon}}&#10;village" Location="StringGameState:villageZeroStartingLocation">
+      <location ID="DesertCanyonsVillage" Name="{{W|버려진 협곡}}&#10;마을" Location="StringGameState:villageZeroStartingLocation">
         <description>
-          {{c|&#249;}} Random village in the desert canyons.
-          {{c|&#249;}} Village teaches Wayfaring.
+          {{c|&#249;}} 버려진 협곡의 무작위 마을입니다.
+          {{c|&#249;}} 마을에서 여행을 배울 수 있습니다.
           {{c|&#249;}} +50 reputation with equines, tortoises, and vines.
         </description>
         
