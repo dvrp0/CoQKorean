@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <genotypes>
-  <genotype ID="Mutated Human" MutationPoints="12" AllowedMutations="*" DisplayName="Mutated Human" BodyTypes="Humanoid" Kits="Kits" Class="ChargenManagerMutatedHuman" Code="b">
+  <genotype ID="Mutated Human" MutationPoints="12" AllowedMutations="*" DisplayName="변이 인간" BodyTypes="Humanoid" Kits="Kits" Class="ChargenManagerMutatedHuman" Code="b">
     <startingstat Name="Strength" Minumum="10" Maximum="24"></startingstat>
     <startingstat Name="Agility" Minumum="10" Maximum="24"></startingstat>
     <startingstat Name="Toughness" Minumum="10" Maximum="24"></startingstat>
@@ -10,7 +10,7 @@
     <chargendisplay></chargendisplay>
   </genotype>
 
-  <genotype ID="True Kin" MutationPoints="0" AllowedMutations="" DisplayName="True Kin" BodyTypes="Humanoid" Kits="Castes" Class="ChargenManagerTrueKin" Code="a">
+  <genotype ID="True Kin" MutationPoints="0" AllowedMutations="" DisplayName="순혈 일족" BodyTypes="Humanoid" Kits="Castes" Class="ChargenManagerTrueKin" Code="a">
     <startingstat Name="Strength" Minumum="12" Maximum="24"></startingstat>
     <startingstat Name="Agility" Minumum="12" Maximum="24"></startingstat>
     <startingstat Name="Toughness" Minumum="12" Maximum="24"></startingstat>

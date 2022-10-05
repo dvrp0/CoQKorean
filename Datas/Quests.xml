@@ -11,11 +11,11 @@
     </step>
 
     <step Name="Find the critters" XP="100">
-      <text>Find the creatures that are eating Joppa's watervine.</text>
+      <text>Joppa의 수분덩굴을 뜯어먹는 생물을 찾으십시오.</text>
     </step>
 
     <step Name="Get a critter corpse" XP="100">
-      <text>Collect a corpse of one of the creatures.</text>
+      <text>그 생물의 시체 하나를 획득하십시오.</text>
     </step>
 
     <step Name="Return with a critter corpse" XP="750">
@@ -46,11 +46,11 @@ from Redrock.</text>
          HagiographCategory="Trysts">
     
     <step Name="Find a Knickknack" XP="0">
-      <text>Search Qud for an artifact.</text>
+      <text>쿼드에서 가공품 한 개를 찾으십시오.</text>
     </step>
 
     <step Name="Return to Argyve" XP="75">
-      <text>Return to Argyve with the artifact.</text>
+      <text>가공품을 갖고 아기브에게 돌아가십시오.</text>
     </step>
 
   </quest>
@@ -61,11 +61,11 @@ from Redrock.</text>
          HagiographCategory="Trysts">
 
     <step Name="Find Another Knickknack" XP="0">
-      <text>Search Qud for another artifact.</text>
+      <text>쿼드에서 가공품을 하나 더 찾으십시오.</text>
     </step>
 
     <step Name="Return to Argyve" XP="150">
-      <text>Return to Argyve with the artifact.</text>
+      <text>가공품을 갖고 아기브에게 돌아가십시오.</text>
     </step>
 
   </quest>
@@ -76,12 +76,12 @@ from Redrock.</text>
          HagiographCategory="CreatesSomething">
     
     <step Name="Find 200 feet of copper wire" XP="0">
-      <text>Search the Rustwells, east of Joppa, for 200 total feet
-of &amp;rCopper Wire&amp;Y</text>
+      <text>Joppa의 동쪽에 있는 녹슨 우물에서 총 200피트의 &amp;r구리 선&amp;Y을
+찾으십시오.</text>
     </step>
 
     <step Name="Return to Argyve" XP="500">
-      <text>Deliver 200 feet of &amp;rCopper Wire&amp;Y to Argyve</text>
+      <text>200피트의 &amp;r구리 선&amp;Y을 아기브에게 전달하십시오.</text>
     </step>
   </quest>
 
