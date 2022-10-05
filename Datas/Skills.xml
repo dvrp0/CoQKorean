@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <skills>
 
-  <skill Name="Acrobatics" Class="Acrobatics" Description="You are skilled at acrobatics." Cost="75" Attribute="Strength" Snippet="acrobatics">
-    <power Name="Swift Reflexes" Cost="0" Attribute="Agility" Minimum="17" Class="Acrobatics_SwiftReflexes" Snippet="reacting swiftly" Description="You gain a +5 bonus to your DV when flinching away from missile attacks."></power>
-    <power Name="Spry" Cost="100" Attribute="Agility" Minimum="17" Class="Acrobatics_Dodge" Snippet="being spry" Description="You gain a +2 bonus to your DV."></power>
-    <power Name="Jump" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="You jump into an unoccupied square within range 2. You cannot jump over a square occupied by a creature."></power>
-    <power Name="Tumble" Cost="150" Attribute="Agility" Minimum="23" Prereq="Tactics_Juke" Class="Acrobatics_Tumble" Snippet="tumbling" Description="You gain a +1 bonus to your DV. Additionally, Juke's cooldown is reduced to 20."></power>
+  <skill Name="곡예" Class="Acrobatics" Description="당신은 곡예를 능숙하게 펼칩니다." Cost="75" Attribute="Strength" Snippet="acrobatics">
+    <power Name="신속한 반사 신경" Cost="0" Attribute="Agility" Minimum="17" Class="Acrobatics_SwiftReflexes" Snippet="reacting swiftly" Description="투사체 공격을 회피하면 +5 DV를 추가로 획득합니다."></power>
+    <power Name="활발함" Cost="100" Attribute="Agility" Minimum="17" Class="Acrobatics_Dodge" Snippet="being spry" Description="+2 DV를 추가로 획득합니다."></power>
+    <power Name="점프" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="범위 2 이내의 비어 있는 칸으로 점프합니다. 생물이 차지한 칸을 넘어 점프할 수는 없습니다."></power>
+    <power Name="공중제비" Cost="150" Attribute="Agility" Minimum="23" Prereq="Tactics_Juke" Class="Acrobatics_Tumble" Snippet="tumbling" Description="+1 DV를 추가로 획득합니다. 또한 몸놀림의 재사용 대기시간이 20으로 감소합니다."></power>
   </skill>
 
-  <skill Name="Axe" Class="Axe" Description="You are skilled with axes." Cost="50" Attribute="Strength" Snippet="the axe">
-    <power Name="Axe Proficiency" Cost="0" Attribute="Strength" Minimum="0" Class="Axe_Expertise" Snippet="the axe" Description="You get +2 to hit with axes."></power>
+  <skill Name="도끼" Class="Axe" Description="당신은 도끼를 능숙하게 다룹니다." Cost="50" Attribute="Strength" Snippet="the axe">
+    <power Name="도끼 숙달" Cost="0" Attribute="Strength" Minimum="0" Class="Axe_Expertise" Snippet="the axe" Description="You get +2 to hit with axes."></power>
     <power Name="Cleave" Cost="150" Attribute="Strength" Minimum="19" Class="Axe_Cleave" Snippet="cleaving" Description="Whenever you hit an opponent with an axe, there's a 75% chance you cleave their armor, giving them a -1 penalty to their AV. This penalty can stack a number of times up to half your Str modifier, rounded up, +1 on a critical hit."></power>
     <power Name="Charging Strike" Cost="100" Attribute="Strength" Minimum="19" Class="Axe_ChargingStrike" Prereq="Axe_Cleave,Tactics_Charge" Snippet="charging and striking" Description="When you charge an opponent with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled."></power>
     <power Name="Dismember" Cost="150" Attribute="Strength" Minimum="21" Class="Axe_Dismember" Snippet="dismembering" Description="Activated; cooldown 30. Axe attack. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding (1-2 damage per turn. toughness save; difficulty 35). Additionally, your axe attacks that penetrate have a percentage chance to dismember: 3% for one-handed axes and 6% for two-handed axes."></power>
@@ -19,7 +19,7 @@
 You enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown."></power>
   </skill>
 
-  <skill Name="Bow and Rifle" Class="Rifles" Description="You are skilled with bows and rifles." Cost="100" Attribute="Agility" Snippet="the bow and the rifle">
+  <skill Name="활 및 소총" Class="Rifles" Description="당신은 활과 소총을 능숙하게 다룹니다." Cost="100" Attribute="Agility" Snippet="the bow and the rifle">
     <power Name="Steady Hands" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_SteadyHands" Snippet="the bow and the rifle" Description="For the purpose of determining your accuracy with bows and rifles, your agility is treated as if it were 4 points higher."></power>
     <power Name="Draw a Bead" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_DrawABead" Snippet="drawing a bead" Description="You spend a turn to draw a bead on a target and mark it. Whenever you fire at a marked target with a bow or rifle, your agility is treated as if it were 2 points higher for the purpose of determining your accuracy. You may only mark one target at a time. If you lose vision of a marked target, that target becomes unmarked."></power>
     <power Name="Kickback" Cost="50" Attribute="Strength" Minimum="19" Class="Rifle_Kickback" Snippet="kicking back" Description="Whenever you fire a two-handed weapon at a target in melee range, you attempt to kick the target backwards."></power>
@@ -158,11 +158,11 @@ You suffer no penalty for becoming famished."></power>
     <power Name="Shank" Cost="250" Attribute="Agility" Minimum="27" Class="ShortBlades_Shank" Snippet="shanking" Description="Activated; cooldown 10 (primary) or 20 (offhand). You make a melee attack with a short blade in your primary hand (preferred) or offhand. If you hit, the attack gets +2 penetration for each negative status effect your opponent suffers from."></power>
   </skill>
 
-  <skill Name="Tactics" Class="Tactics" Description="You are aware of basic combat tactics." Cost="50" Attribute="Agility" Snippet="tactics">
+  <skill Name="전술" Class="Tactics" Description="기본적인 전투 전술을 익혔습니다." Cost="50" Attribute="Agility" Snippet="tactics">
     <power Name="Hurdle" Cost="0" Attribute="Agility" Minimum="0" Class="Tactics_Hurdle" Snippet="hurdling" Description="You receive no penalty to your DV when you sprint."></power>
     <power Name="Deft Throwing" Cost="50" Attribute="Agility" Minimum="10" Class="Tactics_Throwing" Snippet="throwing" Description="Your throw range is increased by 3 and your throw variance is halved when throwing at a target inside your throw range."></power>
     <power Name="Charge" Cost="150" Attribute="Strength" Minimum="17" Class="Tactics_Charge" Snippet="charging" Description="You charge forward two or three squares and perform a melee attack at +1 penetration."></power>
-    <power Name="Juke" Cost="200" Attribute="Agility" Minimum="21" Class="Tactics_Juke" Snippet="juking" Description="Activated; cooldown 40. You move one square at no action cost. You may swap squares with a hostile opponent."></power>
+    <power Name="몸놀림" Cost="200" Attribute="Agility" Minimum="21" Class="Tactics_Juke" Snippet="juking" Description="Activated; cooldown 40. You move one square at no action cost. You may swap squares with a hostile opponent."></power>
   </skill>
 
   <skill Name="Tinkering" Class="Tinkering" Description="You are skilled at examining, building, repairing and modding artifacts." Cost="100" Attribute="Intelligence" Snippet="tinkering">

@@ -119,7 +119,7 @@
     <pregens>
       
     <!-- True Kin -->
-      <pregen Name="Praetorian Prime" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
+      <pregen Name="최고위 집정관" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
         <code>H4sIACEIKGEA/81U74vTQBD9fnD/wxL8mIZeLSJCP9T6AzmVei1VkPuwSYZkcbsbdmeVIP3fbyZNbfYKFgWlC6XNvDczL29m+/P6Soikklv4Ds4ra5IXIplk42wynmTTaZJ2eB6ULgeEGyKMe2xry6DBU/grPwvRleTTQ+u2AU76cvc+W9TSyQLBveSKPvsUSv68BWORaB+6hFTMvYdtrtvRYkUJTSo2+96zo7JULILG4GBmIKCTOhXLkGtV3EK7tt/AzEzQeq+xE1NKlCTjlzoKPeGev5EWy3pFBU6kHRtQvQOfS65dAHGrTEQ4sfCA7fY/dj35LyxchfwCHYxUnTewp3PBpZOA1in53xycIzqVBwR/YSY+Fnbex6VVBv0yuKKWHsq4H/uMDkyFNQHPB3mEzCulFbYEPIuBtQ1VbcDzRX+U884gaK0qMAW/xjRGPyutG/sD3Cn0urIcPMYO0+tQ2awaMEiM0dNhRwLuYCuVUaYicDyEcnrdeUPROOMfbs2izcEZQFVc2tqcKDu/N5qtG90MQx40FEjqB//w+xOtFDGP/VjUR1XVuFGd7dHUmWlDN9dhow7YSL7wDCVvJC3TEO5Hxef+j2bLX/fXV7sH0tV16+sGAAA=</code>
         <description>
 &amp;c&#249;&amp;y Charge-based melee fighter
@@ -128,7 +128,7 @@
         </description>
       </pregen>
 
-      <pregen Name="First Gardener" Genotype="True Kin" Tile="creatures/sw_first_horticulturalist.bmp" Foreground="y" Detail="g" Background="k">
+      <pregen Name="최초의 정원사" Genotype="True Kin" Tile="creatures/sw_first_horticulturalist.bmp" Foreground="y" Detail="g" Background="k">
         <code>H4sIAEQIKGEA/81UYYvTQBD9fnD/YQl+TEOvFhWhH2IVT06ltuEU5D5skiFd3O6G3Vk1SP/7zW7aa/YKFgWlC6XJvDczb99M++vygrGk4Rv4DsYKrZKXLJlk42wynmTTaZIGvHRC1gPCFRHGO2yjayfBUvirf2cslPRnBxVdCz7py/J9Nl9zwysE88pXtNknV/vPW1AaifYhJKQstxY2pexG8xUltCm77XvPDspSNncSnYGZAoeGy5QtXClFdQNdob+BmiknZa8xiKk5cpLxoI5CT3zP30iLZb2mAkfSDg2o3p7vSxbGAbsRKiIcWbjHtv3Ddkf+CwtXrjxDByNVpw3c0X3Ba21QVEGgsPi/XMwRjSgdgj0zIx8LO+3lQguFduFMteYW6rif9xoNqAbXBDwb5BGSN0IK7Ah4HgOFds1agfU/9kfQO4UgpWhAVf4a0xj9LKRs9Q8wx83eNNoHD7H99ALK21ULCokxevoiBpaw4UIJ1RA4HkIlXTdvKRpn/MOtmXclGAW0r+e2NkfKTu+N9NaNroYhCxIqJPWDf/n+RCtFzEM/L+qjruh+isu8hZ/DJj1XuzDZYasA3HIjeICSa+D1w6AGw/Ln7o+m67/uLi+295ltPBvxBgAA</code>
         <description>
 &amp;c&#249;&amp;y Hybrid melee and ranged fighter
@@ -137,7 +137,7 @@
         </description>
       </pregen>
 
-      <pregen Name="First Child of the Hearth" Genotype="True Kin" Tile="creatures/sw_first_child_of_the_hearth.bmp" Foreground="y" Detail="r" Background="k">
+      <pregen Name="난로의 첫째 아이" Genotype="True Kin" Tile="creatures/sw_first_child_of_the_hearth.bmp" Foreground="y" Detail="r" Background="k">
         <code>H4sIAFgIKGEA/81UYWvbMBD9Xuh/EGYfHZOkYYxCPqTeWEdXyBqTDUY/yPbNFlMkI502zMh/78lOGquBhQ02IghJ7r27e3p39q/LC8aiim/gBxgrtIquWTRNxsl0PE1msyju8NwJWQ4IEyKMd9hGl06CpfBX/5+xrqQ/OyhrG/BJXx4+JmnNDS8QzI2vaJNPrvSf96A0Eu2+S4jZwlrY5LIdpStKaGK27nvPD8piljqJzsBcgUPDZcyWLpeiuIM2099BzZWTstfYiSk5cpLxrI5Cr3zP30gLZb2lAkfSDg2o3p7vS2bGAbsTKiAcWbjHtv2P7Y78FxauXH6GDgaqThu4o/uCaU01mP7GsAZ2C9xg/b+sXCAakTsEe2ZuvhR22tClFgrt0pmi5hbKsJ83HA2oiqy9ZpPpIJGgRSWkwJaQ1yGQaVfVCqx/5F9AHxSClKICVfh7TEL0s5Cy0T/BEHQVQu8qTcHZIbYfX4fyZtWAQmKMrt6EwANsuFBCVQSOh1BO9100vlOQ8Q/XJm1zMApQFOe2N0fKTi+O9NaNhgOMLEgokNQP3vX9CXaKmId+3ZPMTS5KuOWqvNG0N8M+PV27brjhuhCw5kbwDop8tn0e1mBg/jz+0YT91+PlxfYJFKR47fsGAAA=</code>
         <description>
 &amp;c&#249;&amp;y Melee fighter and extreme bruiser
@@ -295,7 +295,7 @@
           {{c|&#249;}} 소금 습지대의 무작위 마을입니다.
           {{c|&#249;}} 마을에서 수확을 배울 수 있습니다.
           {{c|&#249;}} 곤충과 어류와의 평판이 +50 상승합니다.
-          {{c|&#249;}} Start with a pair of {{g|crocc{{G|a}}sins}}.
+          {{c|&#249;}} {{g|크로{{G|카}}신}} 한 켤레를 갖고 시작합니다.
         </description>
 
         <stringgamestate Name="VillageZeroRegion" Value="Saltmarsh"></stringgamestate>
@@ -324,12 +324,12 @@
         <grid Position="42" Tile="Terrain/sw_marsh_worldmap_3.bmp" Foreground="g" Detail="b" Background="k"></grid>
       </location>
 
-      <location ID="SaltDuneVillage" Name="{{Y|salt dunes}}&#10;village" Location="StringGameState:villageZeroStartingLocation">
+      <location ID="SaltDuneVillage" Name="{{Y|소금 사구}}&#10;마을" Location="StringGameState:villageZeroStartingLocation">
         <description>
-          {{c|&#249;}} Random village in the salt dunes.
-          {{c|&#249;}} Village teaches Fasting Way.
-          {{c|&#249;}} +100 reputation with reptiles.
-          {{c|&#249;}} Start with an {{Y|Issach{{r|a}}ri}} banner.
+          {{c|&#249;}} 소금 사구의 무작위 마을입니다.
+          {{c|&#249;}} 마을에서 절식을 배울 수 있습니다.
+          {{c|&#249;}} 파충류와의 평판이 +100 상승합니다.
+          {{c|&#249;}} {{Y|이사{{r|차}}리}} 깃발을 가지고 시작합니다.
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="Saltdunes"></stringgamestate>
@@ -361,7 +361,7 @@
         <description>
           {{c|&#249;}} 버려진 협곡의 무작위 마을입니다.
           {{c|&#249;}} 마을에서 여행을 배울 수 있습니다.
-          {{c|&#249;}} +50 reputation with equines, tortoises, and vines.
+          {{c|&#249;}} 말, 거북, 덩굴과의 평판이 +50 상승합니다.
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="DesertCanyon"></stringgamestate>
@@ -390,12 +390,12 @@
         <grid Position="42" Tile="Terrain/sw_canyon.bmp" Foreground="w" Detail="w" Background="k"></grid>
       </location>
   
-      <location ID="HillsVillage" Name="{{Y|hill}}&#10;village" Location="StringGameState:villageZeroStartingLocation">
+      <location ID="HillsVillage" Name="{{Y|구릉지}}&#10;마을" Location="StringGameState:villageZeroStartingLocation">
         <description>
-          {{c|&#249;}} Random village in the hills.
-          {{c|&#249;}} Village teaches Butchering.
-          {{c|&#249;}} +100 reputation with hermits.
-          {{c|&#249;}} Start with a {{r|blood-stained}} neck-ring
+          {{c|&#249;}} 구릉지의 무작위 마을입니다.
+          {{c|&#249;}} 마을에서 도살을 배울 수 있습니다.
+          {{c|&#249;}} 은자와의 평판이 +100 상승합니다.
+          {{c|&#249;}} {{r|피투성이}} 목고리를 가지고 시작합니다.
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="Hills"></stringgamestate>
